@@ -14,59 +14,108 @@
     </nav>
     <div class='container'>
         <form class='form'>
-        <h3> Restaurant Name *</h3>
-        <input name='name' type='text' placeholder='Enter restaurant name...' required>
-        
-        <h3> Address *</h3>
-        <input name='address' type='text' placeholder='Enter restaurant street address...' required>
-        
-        <h3> City *</h3>
-        <input name='city' type='text' placeholder='Washington...' required>
-        
-        <h3> State *</h3>
-        <input name='state' type='text' placeholder='DC...' required>
-        
-        <h3> ZIP *</h3>
-        <input name='ZIP' type='text' placeholder='20008...' required>
+        <div class='form-group'>
+            <label for='name'> Restaurant Name *</label>
+            <input name='name' type='text' placeholder='Enter restaurant name...' required>
+        </div>
 
-        <h3> Neighborhood *</h3>
-        <select name='neighborhood' required>
-            <option value='Adams Morgan'>Adam's Morgan</option>
-            <option value='Capitol Heights'>Capitol Heights</option>
-            <option value='Columbia Heights'>Columbia Heights</option>
-            <option value='Dupont Circle'>Dupont Circle</option>
-            <option value='Eastern Market'>Eastern Market</option>
-            <option value='Friendship Heights / Tenleytown'>Friendship Heights / Tenleytown</option>
-            <option value='Georgetown'>Georgetown</option>
-            <option value='H Street'>H. Street</option>
-            <option value='Logan Circle'>Logan Circle</option>
-            <option value='Petworth'>Petworth</option>
-            <option value='Shaw'>Shaw</option>
-            <option value='U Street'>U Street</option>
-            <option value='Southwest Waterfront'>Southwest Waterfront</option>
-        </select>      
+        <div class='form-group'>
+            <label for='address'> Address *</label>
+            <input name='address' type='text' placeholder='Enter restaurant street address...' required>
+        </div>
+
+        <div class='form-group'>
+            <label for='city'> City *</label>
+            <input name='city' type='text' placeholder='Washington...' required>
+        </div>
+
+        <div class='form-group'>
+            <label for='state'> State *</label>
+            <input name='state' type='text' placeholder='DC...' required>
+        </div>
         
-        <h3> Happy Hour Start Time *</h3>
-        <input name='startTime' type='time' required>
+        <div class='form-group'>
+            <label for='ZIP'> ZIP *</label>
+            <input name='ZIP' type='text' placeholder='20008...' required>
+        </div>
+
+        <div class='form-group'>
+            <label for='neighborhood'> Neighborhood *</label>
+            <select name='neighborhood' required>
+                <option value='Adams Morgan'>Adam's Morgan</option>
+                <option value='Capitol Heights'>Capitol Heights</option>
+                <option value='Columbia Heights'>Columbia Heights</option>
+                <option value='Dupont Circle'>Dupont Circle</option>
+                <option value='Eastern Market'>Eastern Market</option>
+                <option value='Friendship Heights / Tenleytown'>Friendship Heights / Tenleytown</option>
+                <option value='Georgetown'>Georgetown</option>
+                <option value='H Street'>H. Street</option>
+                <option value='Logan Circle'>Logan Circle</option>
+                <option value='Petworth'>Petworth</option>
+                <option value='Shaw'>Shaw</option>
+                <option value='U Street'>U Street</option>
+                <option value='Southwest Waterfront'>Southwest Waterfront</option>
+            </select>    
+        </div>
         
-        <h3> Happy Hour End Time *</h3>
-        <input name='endTime' type='time' required>
+        <div class='form-group'>
+            <label for='startTime'> Happy Hour Start Time *</label>
+            <input name='startTime' type='time' required>
+        </div>
+        
+        <div class='form-group'>
+            <label for='endTime'> Happy Hour End Time *</label>
+            <input name='endTime' type='time' required>
+        </div>
+        
+        <div class='form-group'>
+            <label for='price'> Price Point *</label>
+            <select name = 'price' required>
+                <option value='1'>$</option>
+                <option value='2'>$$</option>
+                <option value='3'>$$$</option>
+            </select>
+        </div>
 
-        <h3> Price Point *</h3>
-        <select name = 'price' required>
-            <option value='1'>$</option>
-            <option value='2'>$$</option>
-            <option value='3'>$$$</option>
-        </select>
+        <div class='form-group'>
+            <label for='phone'> Phone Number *</label>
+            <input name = 'phone' type = 'tel' required>
+        </div>
 
-        <h3> Cuisine Style</h3>
-        <select name ='cuisine'>
-            <option value='asian'>Asian</option>
-            <option value='pub'>Pub Fare</option>
-            <option value='mexican'>Mexican</option>
-            <option value='tapas'>Tapas</option>
+        <div class='form-group'>
+            <label for='cuisine'> Cuisine Style</label>
+            <select name ='cuisine'>
+                <option value='Caribbean'>Caribbean</option>
+                <option value='Chinese'>Chinese</option>
+                <option value='Ethiopian'>Ethiopian</option>
+                <option value='French'>French</option>
+                <option value='Indian'>Indian</option>
+                <option value='Irish'>Irish</option>
+                <option value='Italian'>Italian</option>
+                <option value='Japanese'>Japanese</option>
+                <option value='Korean'>Korean</option>
+                <option value='Mediterranean'>Mediterranean</option>
+                <option value='Mexican'>Mexican</option>
+                <option value='Pub'>Pub Fare</option>
+                <option value='Tapas'>Tapas</option>
+                <option value='Thai'>Thai Food</option>
+                <option value='Seafood'>Seafood</option>
+                <option value='Soul'>Soul Food</option>
+                <option value='Sushi'>Sushi</option>
+            </select>
+        </div>
 
+        <div class='form-group'>
+            <label for='image'> Image</label>
+            <input name = 'image' type='text'>
+        </div>
 
+        <div class='form-group'>
+            <label for='menuLink'>Menu (or website) Link</label>
+            <input name = 'menuLink' type ='text'>
+        </div>
+        
+        <input type = 'submit' value='Submit'>
         </form>
     <div>
 
