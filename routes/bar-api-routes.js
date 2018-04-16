@@ -1,7 +1,7 @@
 const db = require ("../models");
 module.exports= (app)=>{
     //all bars api
-    app.get("/api/bars", function(req,res){
+    app.get("/api/bars/data", function(req,res){
         db.Bars.find({})
         .then(function(dbBars){
             res.json(dbBars)
@@ -11,7 +11,7 @@ module.exports= (app)=>{
     })
 
     //one bar api
-    app.get("/api/bar/:id", function(req,res){
+    app.get("/api/bars/:id", function(req,res){
         db.Bars.findOne({_id:req.params.id})
         .then(function(dbBars){
             res.json(dbBars)
@@ -21,7 +21,7 @@ module.exports= (app)=>{
     })
 
     //insert bar into db
-    app.post("/api/new/bar:id", function(req,res){
+    app.post("/api/new/bars/:id", function(req,res){
         db.Bars.create(req.body)
         .then(function(dbBars){
             res.json(dbBars)
