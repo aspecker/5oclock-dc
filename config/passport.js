@@ -1,37 +1,54 @@
 const passport = require("passport");
+const cookieparser = require('cookie-parser');
 const LocalStrategy = require("passport-local").Strategy;
-
+const session =require("express-session")
 const db = require("../models");
 
-passport.use(new LocalStrategy({
-    usernameField: "email"
-  },
-  (email, password, done) => {
-    db.User.findOne({
-      where: {
-        email: email
-      }
-    }).then((dbUser) => {
-      if (!dbUser) {
-        return done(null, false, {
-          message: "Incorrect email."
-        });
-      } else if (!dbUser.validPassword(password)) {
-        return done(null, false, {
-          message: "Incorrect password."
-        });
-      }
-      return done(null, dbUser);
-    });
-  }
-));
+module.exports = (app)=>{
+  app.use(cookieparser())
+  app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: false,
+    rolling: true,
+    name: 'sid',
+    cookie:{
+      httpOnly:true,
+      maxAge: 20*60*1000
+    }
+  }));
 
-passport.serializeUser((user, cb) => {
-  cb(null, user);
-});
 
-passport.deserializeUser((obj, cb) => {
-  cb(null, obj);
-});
 
-module.exports = passport;
+
+    passport.use(new LocalStrategy(
+    (email, password, done) => {
+      db.User.findOne({email: email})
+      .then((dbUser) => {
+        if (!dbUser) {
+          return done(null, false, {
+            message: "Incorrect email."});
+        }
+          //here
+        return dbUser.validatePassword(password)
+        .then(ismatch=> done(null, isMatch ? user : false, isMatch ? null :{message: "incorrect email"}))
+      })
+      .catch(done);
+  }));
+
+  passport.serializeUser((user, cb) => {
+    cb(null, user._id);
+  });
+
+  passport.deserializeUser((userID, cb) => {
+    db.User.findById(userID)
+    .then(user=>{
+      cb(null, user);
+    })
+    .catch((err)=>{
+      cb(err)
+    })
+  });
+
+  module.exports = passport;
+}
