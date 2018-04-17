@@ -2,9 +2,9 @@ const axios = require('axios');
 const fs = require('fs');
 const keys =  require('./apiKeys.js');
 // API Keys - import and define
-const {yelpID, yelpAPIKey, fourSqID, fourSqSecret, gMapsAPIKey} = keys;
+const {yelpID, yelpAPIKey, fourSqID, fourSqSecret, gMapsAPIKey,ypAPIKey} = keys;
 
-console.log(yelpID, yelpAPIKey, fourSqID, fourSqSecret, gMapsAPIKey)
+// console.log(yelpID, yelpAPIKey, fourSqID, fourSqSecret, gMapsAPIKey, ypAPIkey)
 
 // NOTES
 // YELP 
@@ -31,7 +31,9 @@ console.log(yelpID, yelpAPIKey, fourSqID, fourSqSecret, gMapsAPIKey)
 //     console.log(err);
 // })
 
-axios.get('https://api.yelp.com/v3/businesses/search/categories=bars')
+let ypQuery = `http://api2.yp.com/listings/v1/search?term=rocket+bar&format=json&key=${ypAPIKey}`
+
+axios.get(ypQuery)
 .then((response)=>{
     console.log(response)
 })
