@@ -21,25 +21,20 @@ module.exports = (app)=>{
 
 
 
-    passport.use(new LocalStrategy({
-      usernameField: "email"
-    },
+    passport.use(new LocalStrategy(
     (email, password, done) => {
       db.User.findOne({email: email})
       .then((dbUser) => {
         if (!dbUser) {
           return done(null, false, {
-            message: "Incorrect email."
-          });
-        } else if (!dbUser.validPassword(password)) {
-          return done(null, false, {
-            message: "Incorrect password."
-          });
+            message: "Incorrect email."});
         }
-        return done(null, dbUser);
-      });
-    }
-  ));
+          //here
+        return dbUser.validatePassword(password)
+        .then(ismatch=> done(null, isMatch ? user : false, isMatch ? null :{message: "incorrect email"}))
+      })
+      .catch(done);
+  }));
 
   passport.serializeUser((user, cb) => {
     cb(null, user._id);

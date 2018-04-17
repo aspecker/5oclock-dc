@@ -6,7 +6,10 @@ import './App.css';
 
 class App extends Component {
   handlePost=(obj)=>{
-    API.signup(obj)
+    API.signUp(obj)
+  }
+  handleLogIn=(obj)=>{
+    API.logIn(obj)
   }
   render() {
     return (
@@ -19,7 +22,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        <Test handlePost={this.handlePost}/>
+        <Test handlePost={this.handlePost} handleLogIn={this.handleLogIn}/>
       </div>
     );
   }

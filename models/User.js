@@ -39,9 +39,9 @@ userSchema.pre('save', function(next){
     })
     
 });
-userSchema.methods.validatePassword = (cadidatePassword)=>{
-    return new Promise ((resolve, rejet)=>{
-        bcrypt.compare(cadidatePassword, this.password, (err,isMatch)=>{
+userSchema.methods.validatePassword = function(candidatePassword){
+    return new Promise ((resolve, reject)=>{
+        bcrypt.compare(candidatePassword, this.password, (err,isMatch)=>{
             if (err) return reject(err);
             resolve(isMatch)
         })
