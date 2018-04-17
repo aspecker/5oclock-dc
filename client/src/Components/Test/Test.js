@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Test extends Component{
    logIn={       
-    email: "h@h.com",
+    username: "hello",
     password:"helloone"
     } 
    testUser={
