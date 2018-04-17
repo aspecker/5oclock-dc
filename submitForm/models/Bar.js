@@ -18,6 +18,7 @@ const BarSchema = new Schema({
     phone: String,
     cuisine: String,
     image: String,
+    description: String,
     menuLink: String
 })
 
