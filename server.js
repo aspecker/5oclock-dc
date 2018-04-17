@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === "production") {
 //require the routes
 require("./config/passport.js")(app)
 require("./routes/user-api-routes.js")(app);
-require("./routes/link-api-routes.js")(app);
+require("./routes/bar-api-routes.js")(app);
 
 //mongoose boilerplate
 mongoose.connect(

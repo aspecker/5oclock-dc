@@ -1,8 +1,7 @@
-// no part of this is currently being used.
-// it is the first iteration of boilerplate for a future feature
-// it will likely neeed to be changed in order to work properly
-
+'use strict'
 const db =require("../models");
+const passport = require("../config/passport");
+
 module.exports = (app)=>{
 
     //current user Data
@@ -11,16 +10,17 @@ module.exports = (app)=>{
             res.json({})
         }else {
             db.User.findOne({_id:req.user.id})
-        }
-    }).then((dbUser)=>{
-        res.json(
-            {id: dbUser._id,
-            username: dbUser.username,
-            email: dbUser.email,
-            owner:dbUser.owner
-            })
-    }).catch((err)=>{
-        res.json(err)
+            .then((dbUser)=>{
+                res.json(
+                    {id: dbUser._id,
+                    username: dbUser.username,
+                    email: dbUser.email,
+                    owner:dbUser.owner
+                    })
+            }).catch((err)=>{
+                res.json(err)
+        })
+    }
     });
     
     //user login
@@ -32,6 +32,7 @@ module.exports = (app)=>{
 
     //User Signup
     app.post("/api/user/signup", (req,res)=>{
+        console.log("signup attempt", req.body)
         db.User.create(req.body)
         .then((dbUser)=>{
             console.log(dbUser)

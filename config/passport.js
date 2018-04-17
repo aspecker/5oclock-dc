@@ -1,7 +1,7 @@
 const passport = require("passport");
 const cookieparser = require('cookie-parser');
 const LocalStrategy = require("passport-local").Strategy;
-const session =reqiure("express-session")
+const session =require("express-session")
 const db = require("../models");
 
 module.exports = (app)=>{
