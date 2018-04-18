@@ -48,8 +48,9 @@ module.exports = (app)=>{
         console.log("signup attempt", req.body)
         db.User.create(req.body)
         .then((dbUser)=>{
-            console.log(dbUser)
+            console.log("signup sucess", dbUser)
             res.redirect(307, "/api/user/login")
+            // res.end()
         }).catch((err)=>{
             console.log(err)
             res.json(err)

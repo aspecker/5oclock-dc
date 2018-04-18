@@ -4,7 +4,7 @@ class Test extends Component{
    logIn={       
     username: "h@h.com",
     password:"helloone"
-} 
+    } 
    testUser={
         email:"h@h.com",
         username: "hello",
