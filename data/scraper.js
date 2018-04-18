@@ -5,6 +5,7 @@ const util = require('util')
 // 
 const keys =  require('./apiKeys.js');
 const bars = require('./newBars.json');
+const barInfo = require('./barDump.json')
 
 
 // API Keys - import and define
@@ -17,7 +18,7 @@ const client = yelp.client(yelpAPIKey);
 
 const testArr = [{name: 'J. Pauls'},{name: 'Old Glory BBQ'},{name: 'Pizzeria Paradiso'},{name: 'J. Pauls'},{name: 'Old Glory BBQ'},{name: 'Pizzeria Paradiso'},{name: 'J. Pauls'},{name: 'Old Glory BBQ'},{name: 'Pizzeria Paradiso'}]
 
-const query =(bar)=> {
+const query =(bar,index,arrayLength)=> {
     return client.search({
         term: bar.name,
         location: 'Washington, DC'
@@ -26,11 +27,20 @@ const query =(bar)=> {
         let barObj = {
             name: queryRes.name,
             address: queryRes.location.address1,
-            ZIP: queryRes.location.zip_code,
-            phone: queryRes.display_phone
+            ZIP: parseInt(queryRes.location.zip_code),
+            phone: queryRes.display_phone,
+            coords: queryRes.coordinates,
+            image: queryRes.image_url
         }
-        return console.log(barObj);
-        fs.appendFile('barDump.json',barObj)
+        console.log(barObj);
+        switch(index){
+            case 1: 
+                return fs.appendFileSync('./barDump.json',`[${JSON.stringify(barObj)},\n`);
+            case arrayLength:
+                return fs.appendFileSync('./barDump.json',`${JSON.stringify(barObj)}\n ]`);
+            default:
+                return fs.appendFileSync('./barDump.json',`${JSON.stringify(barObj)},\n`);
+        }
     })
     .catch(err=>{
         console.log(err); 
@@ -45,45 +55,48 @@ function queryAll(array) {
         let index = 0;
         let timer = setInterval(function(){
             if (index<array.length){
-                sendQuery(array[index++]).catch(()=>{
+                sendQuery(array[index++],index,array.length).catch(()=>{
                     clearInterval(timer);
                     reject();
                 });
             } else {
                 clearInterval(timer);
-                resolve()
+                resolve();
             }
-        }, 3000);
+        }, 1000);
     })
 }
 
-queryAll(testArr);
+// queryAll(bars);
 
 
-function delay(t, data) {
-    return new Promise(resolve => {
-        setTimeout(resolve.bind(null, data), t);
-    });
+// client.search({
+//     term: `Hank's Oyster Bar`,
+//     location: 'Washington, DC'
+// })
+// .then(res =>{
+//     console.log(res.jsonBody.businesses[0])
+// })
+// .catch(err=>{
+//     console.log(err)
+// })
+
+function mergeLists (bars,barInfo){
+    let newList = [];
+    for (let i =0; i<bars.length;i++){
+        let newBar = barInfo[i];
+        let newObj = {
+            ...bars[i], 
+            address: newBar.address,
+            ZIP: newBar.ZIP,
+            phone: newBar.phone,
+            coords: newBar.coords,
+            image: newBar.image
+
+        }
+        newList.push(JSON.stringify(newObj));
+    }
+    fs.writeFile('barList.json',newList);
 }
 
-//using reduce  -  only queries once and quits
-// testArr.reduce(function(p, bar) {
-//     return p.then(() => {
-//         return sendQuery(bar).then(delay.bind(null, 100));
-//     });
-// }, Promise.resolve()).then(() => {
-
-// }).catch(err => {
- 
-// });
-
-// using async away - still gets 429 error
-// const promises = testArr.map(async function(bar) {
-//     await sendQuery(bar).then(delay.bind(null, 5000));
-// });
-// Promise.all(promises).then(() => {
-
-// }).catch(err => {
-
-// });
-
+mergeLists(bars,barInfo);
