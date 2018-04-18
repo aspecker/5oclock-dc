@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./FilterModal.css";
-import {Button, CuisineDropDown, Input, NeighborhoodDropDown} from "../../Components/Search";
+import {Button, Dropdown} from "../../Components/Search";
 
 
 class FilterModal extends Component {
@@ -24,22 +24,40 @@ class FilterModal extends Component {
     event.preventDefault();
   }
 
-  handleOptionChange = changeEvent => {
+  handlePriceOptionChange = changeEvent => {
     this.setState({
-      selectedOption: changeEvent.target.value
+      selectedPriceOption: changeEvent.target.value
+    });
+  }
+  handleDrinkOptionChange = changeEvent => {
+    this.setState({
+      selectedDrinkOption: changeEvent.target.value
+    });
+  }
+  handleTimeOptionChange = changeEvent => {
+    this.setState({
+      selectedTimeOption: changeEvent.target.value
     });
   }
 
   handleFormSubmit = formSubmitEvent => {
     formSubmitEvent.preventDefault();
 
-    console.log(`You have selected: ${this.state.selectedOption}.`);
+    console.log(`You have selected: ${this.state.selectedPriceOption}.`);
+    console.log(`You have selected: ${this.state.selectedDrinkOption}.`);
+    console.log(`You have selected: ${this.state.selectedTimeOption}.`);
+
   }
 
   handleFilterSubmit = event => {
     event.preventDefault();
 
     // code to filter data and route user to results page with new params
+  }
+
+  handleFormReset = event => {
+    event.preventDefault();
+    // code to clear all search fields goes here
   }
 
   render() {
@@ -54,54 +72,54 @@ class FilterModal extends Component {
                 <div className="radio">
                   <label>
                     <input type="radio" value="$"
-                    checked={this.state.selectedOption === '$'}
-                    onChange={this.handleOptionChange} />
+                    checked={this.state.selectedPriceOption === '$'}
+                    onChange={this.handlePriceOptionChange} />
                     $
                   </label>
                 </div>
                 <div className="radio">
                   <label>
                     <input type="radio" value="$$"
-                    checked={this.state.selectedOption === '$$'}
-                    onChange={this.handleOptionChange} />
+                    checked={this.state.selectedPriceOption === '$$'}
+                    onChange={this.handlePriceOptionChange} />
                     $$
                   </label>
                 </div>
                 <div className="radio">
                   <label>
                     <input type="radio" value="$$$"
-                    checked={this.state.selectedOption === '$$$'}
-                    onChange={this.handleOptionChange} />
+                    checked={this.state.selectedPriceOption === '$$$'}
+                    onChange={this.handlePriceOptionChange} />
                     $$$
                   </label>
                 </div>
               </form>
             </div>
-            <CuisineDropDown>{this.state.cuisineArr} </CuisineDropDown>
+            <Dropdown>{this.state.cuisineArr} Choose your cuisine type...</Dropdown>
             <div className='booze-radio'>
                 <h4 className='filter-item'>Drink Type:</h4>
                 <form onSubmit={this.handleFormSubmit}>
                   <div className="radio">
                     <label>
                       <input type="radio" value="Beer"
-                      checked={this.state.selectedOption === 'Beer'}
-                      onChange={this.handleOptionChange} />
+                      checked={this.state.selectedDrinkOption === 'Beer'}
+                      onChange={this.handleDrinkOptionChange} />
                       Beer
                     </label>
                   </div>
                   <div className="radio">
                     <label>
                       <input type="radio" value="Wine"
-                      checked={this.state.selectedOption === 'Wine'}
-                      onChange={this.handleOptionChange} />
+                      checked={this.state.selectedDrinkOption === 'Wine'}
+                      onChange={this.handleDrinkOptionChange} />
                       Wine
                     </label>
                   </div>
                   <div className="radio">
                     <label>
                       <input type="radio" value="Cocktail"
-                      checked={this.state.selectedOption === 'Cocktail'}
-                      onChange={this.handleOptionChange} />
+                      checked={this.state.selectedDrinkOption === 'Cocktail'}
+                      onChange={this.handleDrinkOptionChange} />
                       Cocktail
                     </label>
                   </div>
@@ -113,22 +131,23 @@ class FilterModal extends Component {
                   <div className="radio">
                     <label>
                       <input type="radio" value="Before4"
-                      checked={this.state.selectedOption === 'Before4'}
-                      onChange={this.handleOptionChange} />
+                      checked={this.state.selectedTimeOption === 'Before4'}
+                      onChange={this.handleTimeOptionChange} />
                       Before 4PM
                     </label>
                   </div>
                   <div className="radio">
                     <label>
                       <input type="radio" value="After7"
-                      checked={this.state.selectedOption === 'After7'}
-                      onChange={this.handleOptionChange} />
+                      checked={this.state.selectedTimeOption === 'After7'}
+                      onChange={this.handleTimeOptionChange} />
                       After 7PM
                     </label>
                   </div>
                 </form>
               </div>
           <Button onClick={this.handleFilterSubmit}>Submit</Button>
+          <Button onClick={this.handleFormReset}>Reset</Button>
         </div>
       </div>
     )

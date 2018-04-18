@@ -24,7 +24,11 @@ class App extends Component {
         </p>
 
         <Test handlePost={this.handlePost} handleLogIn={this.handleLogIn}/>
+
+        <FilterModal />
+
       </div>
+
     );
   }
 }
