@@ -5,7 +5,7 @@ const session =require("express-session")
 const db = require("../models");
 
 module.exports = (app)=>{
-  app.use(cookieparser())
+  app.use(cookieparser());
   app.use(session({
     secret: 'keyboard cat',
     resave: false,
@@ -31,7 +31,7 @@ module.exports = (app)=>{
         }
           //here
         return dbUser.validatePassword(password)
-        .then(ismatch=> done(null, isMatch ? user : false, isMatch ? null :{message: "incorrect email"}))
+        .then(isMatch=> done(null, isMatch ? dbUser : false, isMatch ? null :{message: "incorrect email"}))
       })
       .catch(done);
   }));
@@ -49,6 +49,10 @@ module.exports = (app)=>{
       cb(err)
     })
   });
+  
+  app.use(passport.initialize());
+  app.use(passport.session());
+
 
   module.exports = passport;
 }

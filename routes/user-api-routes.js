@@ -4,9 +4,6 @@ const passport = require("../config/passport");
 
 module.exports = (app)=>{
     const getCurrentUser =(req, res) =>{
-        // I'm picking only the specific fields its OK for the audience to see publicly
-        // never send the whole user object in the response, and only show things it's OK
-        // for others to read (like ID, name, email address, etc.)
         const { id, username } = req.user;
         res.json({
           id, username
@@ -33,13 +30,12 @@ module.exports = (app)=>{
     
     //user login
     app.post("/api/user/login", passport.authenticate("local"), function (req,res) {
-        console.log("login attepmt", req.body, req.user)
+        console.log("login attepmt", req.body)
         if (!req.user) {
             return res.status(401).json({
               message: 'Invalid username or password.'
             })
           }
-      
           getCurrentUser(req, res);
     })
 
@@ -48,8 +44,8 @@ module.exports = (app)=>{
         console.log("signup attempt", req.body)
         db.User.create(req.body)
         .then((dbUser)=>{
-            console.log(dbUser)
-            res.redirect(307, "/api/user/login")
+            console.log("signup sucess")
+            res.end()
         }).catch((err)=>{
             console.log(err)
             res.json(err)
@@ -59,6 +55,6 @@ module.exports = (app)=>{
     //user logout
     app.get("/logout",(req, res)=>{
         req.logout();
-        res.redirect("/");
+        res.end();
     })
 }
