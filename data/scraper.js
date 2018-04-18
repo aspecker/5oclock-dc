@@ -99,4 +99,5 @@ function mergeLists (bars,barInfo){
     fs.writeFile('barList.json',newList);
 }
 
+
 mergeLists(bars,barInfo);
