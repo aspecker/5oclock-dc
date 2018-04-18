@@ -11,6 +11,9 @@ class App extends Component {
   handleLogIn=(obj)=>{
     API.logIn(obj)
   }
+  handleLogOut=()=>{
+    API.logOut()
+  }
   render() {
     return (
       <div className="App">
@@ -22,7 +25,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        <Test handlePost={this.handlePost} handleLogIn={this.handleLogIn}/>
+        <Test  handleLogOut={this.handleLogOut} handlePost={this.handlePost} handleLogIn={this.handleLogIn}/>
       </div>
     );
   }

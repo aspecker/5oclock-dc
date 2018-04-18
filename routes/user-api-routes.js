@@ -30,13 +30,14 @@ module.exports = (app)=>{
     
     //user login
     app.post("/api/user/login", passport.authenticate("local"), function (req,res) {
-        console.log("login attepmt", req.body, req.user)
+        console.log("login attepmt", req.body)
+        console.log("current user", req.user)
         if (!req.user) {
             return res.status(401).json({
               message: 'Invalid username or password.'
             })
           }
-        //   getCurrentUser(req, res);
+          getCurrentUser(req, res);
     })
 
     //User Signup

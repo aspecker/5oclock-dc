@@ -8,5 +8,8 @@ export default {
   },
   logIn: function(obj){
     return axios.post("/api/user/login", obj)
+  },
+  logOut: function(obj){
+    return axios.get("/logout")
   }
 };
