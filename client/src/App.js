@@ -3,6 +3,7 @@ import API from './utils/API'
 import Test from './Components/Test'
 import logo from './logo.svg';
 import './App.css';
+import FilterModal from './Components/FilterModal';
 
 class App extends Component {
   handlePost=(obj)=>{
@@ -23,6 +24,9 @@ class App extends Component {
         </p>
 
         <Test handlePost={this.handlePost} handleLogIn={this.handleLogIn}/>
+
+        <FilterModal />
+
       </div>
     );
   }
