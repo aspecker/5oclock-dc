@@ -3,6 +3,7 @@ import API from './utils/API'
 import Test from './Components/Test'
 import logo from './logo.svg';
 import './App.css';
+import FilterModal from './Components/FilterModal';
 
 class App extends Component {
   handlePost=(obj)=>{
@@ -10,9 +11,6 @@ class App extends Component {
   }
   handleLogIn=(obj)=>{
     API.logIn(obj)
-  }
-  handleLogOut=()=>{
-    API.logOut()
   }
   render() {
     return (
@@ -25,7 +23,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        <Test  handleLogOut={this.handleLogOut} handlePost={this.handlePost} handleLogIn={this.handleLogIn}/>
+        <Test handlePost={this.handlePost} handleLogIn={this.handleLogIn}/>
       </div>
     );
   }

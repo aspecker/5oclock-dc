@@ -3,7 +3,7 @@ import "./Search.css";
 
 
 export const Button = props => (
-  <button {...props} className="btn btn-outline-secondary">
+  <button {...props} className="btn">
     {props.children}
   </button>
 );
