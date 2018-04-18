@@ -17,8 +17,6 @@ module.exports = (app)=>{
       maxAge: 20*60*1000
     }
   }));
-  app.use(passport.initialize());
-  app.use(passport.session());
 
 
 
@@ -51,6 +49,10 @@ module.exports = (app)=>{
       cb(err)
     })
   });
+  
+  app.use(passport.initialize());
+  app.use(passport.session());
+
 
   module.exports = passport;
 }

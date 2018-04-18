@@ -1,6 +1,10 @@
-const bcrypt = require("bcrypt")
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const bcrypt = require("bcrypt")
+const bcryptN = require("bcrypt-nodejs")
+// ... this is so dumb
+// both of these are actually being used
+
 
 const userSchema = new Schema({
     username:{
@@ -11,7 +15,7 @@ const userSchema = new Schema({
     email:{
         type:String,
         required: true,
-        unique: true
+        index: {unique: true}
     },
     password:{
         type: String,
@@ -28,10 +32,10 @@ userSchema.pre('save', function(next){
     if(!user.isModified('password')){
         return next()
     }
-    bcrypt.genSalt (10, function (err,salt) {
+    bcryptN.genSalt (10, function (err,salt) {
         if(err)return next(err)
 
-        bcrypt.hash(user.password, salt, null, function (err,hash) {
+        bcryptN.hash(user.password, salt, null, function (err,hash) {
             if(err) return next(err);
             user.password=hash;
             next();
