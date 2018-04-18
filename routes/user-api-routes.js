@@ -31,7 +31,6 @@ module.exports = (app)=>{
     //user login
     app.post("/api/user/login", passport.authenticate("local"), function (req,res) {
         console.log("login attepmt", req.body)
-        console.log("current user", req.user)
         if (!req.user) {
             return res.status(401).json({
               message: 'Invalid username or password.'
@@ -45,9 +44,8 @@ module.exports = (app)=>{
         console.log("signup attempt", req.body)
         db.User.create(req.body)
         .then((dbUser)=>{
-            console.log("signup sucess", dbUser)
+            console.log("signup sucess")
             res.end()
-            // rather than the typical reload or redirect, the client will adjust the state to fit the current user
         }).catch((err)=>{
             console.log(err)
             res.json(err)
