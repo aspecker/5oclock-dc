@@ -21,7 +21,12 @@ class Results extends Component {
           <h1>{this.state.neighborhood}</h1>
           <Button handleClick={this.handleClick}>Filter</Button>
         </Hero>
-        <Input />
+        <Input
+            value={this.state.value}
+            key={this.state.id}
+            name={this.state.name}
+            />
+        <Button handleClick={this.handleClick}>Search</Button>
         <Container>
           <BarCard name={this.state.name}
             cuisine={this.state.cuisine}
