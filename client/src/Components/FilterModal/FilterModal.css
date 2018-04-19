@@ -13,6 +13,7 @@
 .price-radio, .booze-radio, .time-radio {
   display: flex;
     justify-content: center;
+  margin: 30px;
 }
 
 .price-radio form, .booze-radio form , .time-radio form {
