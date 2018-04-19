@@ -2,7 +2,7 @@
 //require dependancies
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongojs = require('mongojs');
+// const mongojs = require('mongojs');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
