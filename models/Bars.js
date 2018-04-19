@@ -13,11 +13,19 @@ const BarsSchema = new Schema({
         required:true,
         unique:true        
     },
-    addressCityZip:{
+    address:{
         type:String,
         required:true
     },
-    neihborhood:{
+    city:{
+        type: String,
+        required: true
+    },
+    ZIP :{
+        type: Number,
+        required: true
+    },
+    neighborhood:{
         type:String,
         required: true
     },
@@ -27,7 +35,7 @@ const BarsSchema = new Schema({
         required:true
     },
     price:{
-        type:String,
+        type:Number,
         required: true
     },
     cuisine:{
