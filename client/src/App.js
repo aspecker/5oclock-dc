@@ -21,8 +21,8 @@ handleCurrentUser = () =>{
     API.signUp(obj)
   }
 
-  handleLogout= () =>{
-    API.LogOut()
+  handleLogOut= () =>{
+    API.logOut()
   }
 
   handleLogIn=(obj)=>{
@@ -62,7 +62,7 @@ handleCurrentUser = () =>{
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        <Test handleSignUp={this.handleSignUp} handleLogIn={this.handleLogIn} handleLogout={this.handleLogout} handleCurrentUser={this.handleCurrentUser} />
+        <Test handleSignUp={this.handleSignUp} handleLogIn={this.handleLogIn} handleLogOut={this.handleLogOut} handleCurrentUser={this.handleCurrentUser} />
       </div>
     );
   }
