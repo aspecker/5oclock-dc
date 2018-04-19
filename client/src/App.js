@@ -4,6 +4,8 @@ import Test from './Components/Test'
 import logo from './logo.svg';
 import './App.css';
 import FilterModal from './Components/FilterModal';
+import EachBar from './Components/EachBar';
+
 
 class App extends Component {
   // functions that are used in testing
@@ -63,7 +65,12 @@ handleCurrentUser = () =>{
         </p>
 
         <Test handleSignUp={this.handleSignUp} handleLogIn={this.handleLogIn} handleLogOut={this.handleLogOut} handleCurrentUser={this.handleCurrentUser} />
+
+        <FilterModal />
+        <EachBar />
+
       </div>
+
     );
   }
 }

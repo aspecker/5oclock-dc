@@ -3,7 +3,7 @@ import "./Search.css";
 
 
 export const Button = props => (
-  <button {...props} className="btn">
+  <button {...props} onClick={props.handleClick} className="btn">
     {props.children}
   </button>
 );
