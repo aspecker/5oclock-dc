@@ -11,29 +11,33 @@ class App extends Component {
   // functions that are used in testing
 
   //user auth
-handleCurrentUser = () =>{
-  API.currentUser()
-    .then(res=>{
-    // use res.data in order to find what the record you are looking for
-    console.log(res.data)
-  })
-}
+  handleCurrentUser = () =>{
+    API.currentUser()
+      .then(res=>{
+      // use res.data in order to find what the record you are looking for
+      console.log(res.data)
+    })
+  };
 
   handleSignUp=(obj)=>{
     API.signUp(obj)
-  }
+  };
 
   handleLogOut= () =>{
     API.logOut()
-  }
+  };
 
   handleLogIn=(obj)=>{
     API.logIn(obj)
-  }
+  };
 
   //bars 
-  handleNewBar = (obj)=>{
+  handleBarCreate = (obj)=>{
     API.barNew(obj)
+  }
+
+  handleBarUpdate = (id, obj) =>{
+    API.barUpdate(id, obj)
   }
 
   handleFindBars = ()=>{
@@ -63,9 +67,11 @@ handleCurrentUser = () =>{
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-
-        <Test handleSignUp={this.handleSignUp} handleLogIn={this.handleLogIn} handleLogOut={this.handleLogOut} handleCurrentUser={this.handleCurrentUser} />
-
+        {/* test user auth */}
+        {/* <Test handleSignUp={this.handleSignUp} handleLogIn={this.handleLogIn} handleLogOut={this.handleLogOut} handleCurrentUser={this.handleCurrentUser} /> */}
+        
+        {/* test bar routes */}
+        <Test handleFindOneBar={this.handleFindOneBar} handleBarCreate={this.handleBarCreate} handleBarUpdate={this.handleBarUpdate} handleFindBars={this.handleFindBars} handleFindOneBar={this.handleFindOneBar} />
         <FilterModal />
         <EachBar />
 
