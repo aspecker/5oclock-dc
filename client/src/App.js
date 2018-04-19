@@ -8,12 +8,51 @@ import EachBar from './Components/EachBar';
 
 
 class App extends Component {
-  handlePost=(obj)=>{
+  // functions that are used in testing
+
+  //user auth
+handleCurrentUser = () =>{
+  API.currentUser()
+    .then(res=>{
+    // use res.data in order to find what the record you are looking for
+    console.log(res.data)
+  })
+}
+
+  handleSignUp=(obj)=>{
     API.signUp(obj)
   }
+
+  handleLogOut= () =>{
+    API.logOut()
+  }
+
   handleLogIn=(obj)=>{
     API.logIn(obj)
   }
+
+  //bars 
+  handleNewBar = (obj)=>{
+    API.barNew(obj)
+  }
+
+  handleFindBars = ()=>{
+    API.barFindAll()
+    .then(res=>{
+      // use res.data in order to find what the record you are looking for
+      console.log(res.data)
+    })
+  }
+
+  handleFindOneBar = (id) =>{
+    API.barFindOne(id)
+    .then(res=>{
+      // use res.data in order to find what the record you are looking for
+      console.log(res.data)
+    })
+  }
+  
+
   render() {
     return (
       <div className="App">
@@ -25,7 +64,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        <Test handlePost={this.handlePost} handleLogIn={this.handleLogIn}/>
+        <Test handleSignUp={this.handleSignUp} handleLogIn={this.handleLogIn} handleLogOut={this.handleLogOut} handleCurrentUser={this.handleCurrentUser} />
 
         <FilterModal />
         <EachBar />

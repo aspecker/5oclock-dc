@@ -3,12 +3,14 @@ const db =require("../models");
 const passport = require("../config/passport");
 
 module.exports = (app)=>{
+
     const getCurrentUser =(req, res) =>{
         const { id, username } = req.user;
         res.json({
           id, username
         });
       }
+
     //current user Data
     app.get("/api/user/current", (req,res)=>{
         if(!req.user){
@@ -29,6 +31,7 @@ module.exports = (app)=>{
     });
     
     //user login
+    //expects to receive an object from the client
     app.post("/api/user/login", passport.authenticate("local"), function (req,res) {
         console.log("login attepmt", req.body)
         if (!req.user) {
@@ -40,6 +43,7 @@ module.exports = (app)=>{
     })
 
     //User Signup
+    //expects to receive an object from the client
     app.post("/api/user/signup", (req,res)=>{
         console.log("signup attempt", req.body)
         db.User.create(req.body)
