@@ -1,4 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
+import EachBar from "../Components/EachBar";
+import API from "../utils/API";
+import { browserHistory } from 'react-router'
+
+
 
 class BarPage extends Component {
   state ={}
@@ -20,7 +25,6 @@ class BarPage extends Component {
         cuisine={this.state.cuisine}
         description={this.state.description}
         website={this.state.website}
-        handleFormSubmit={this.state.handleFormSubmit}
     );
   }
 }
