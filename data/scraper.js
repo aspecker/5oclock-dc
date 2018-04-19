@@ -67,19 +67,8 @@ function queryAll(array) {
     })
 }
 
+// query an API with
 // queryAll(bars);
-
-
-// client.search({
-//     term: `Hank's Oyster Bar`,
-//     location: 'Washington, DC'
-// })
-// .then(res =>{
-//     console.log(res.jsonBody.businesses[0])
-// })
-// .catch(err=>{
-//     console.log(err)
-// })
 
 function mergeLists (bars,barInfo){
     let newList = [];
@@ -100,4 +89,4 @@ function mergeLists (bars,barInfo){
 }
 
 
-mergeLists(bars,barInfo);
+// mergeLists(bars,barInfo);
