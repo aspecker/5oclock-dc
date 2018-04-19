@@ -8,11 +8,6 @@ const BarsSchema = new Schema({
         required: true,
         unique:true
     },
-    addressStreet:{
-        type:String,
-        required:true,
-        unique:true        
-    },
     address:{
         type:String,
         required:true
