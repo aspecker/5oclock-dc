@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import "./EachBar.css";
 
-class EachBar extends Component {
+const EachBar = props => (
 
-
-  render() {
-    return (
       <div className='bar-result'>
         <div className='bar-container'>
           <div className='img-container'>
@@ -22,16 +19,15 @@ class EachBar extends Component {
             <p>{props.hours}</p>
             <p>{props.price}</p>
             <p>{props.cuisine}</p>
-            // <p>{props.description}</p>
+            <p>{props.description}</p>
             <a href={props.website}>Menu</a>
-            // link to google maps "Get Directions" to this bar
           </div>
-          <button className='back-btn' onClick={this.handleClickFunction}>Back to Results</button>
+          <button type="submit" onClick={props.handleFormSubmit} className="btn btn-default">
+            Back to Results
+          </button>
         </div>
       </div>
-    )
-  }
-};
+);
 
 
 export default EachBar;
