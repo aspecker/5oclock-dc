@@ -27,7 +27,7 @@ export default {
     return axios.post("/api/bars/new", obj);
   },
   barUpdate: function(id, obj){
-    return axios.put(`/api/bars${id}`, obj)
+    return axios.put(`/api/bars/${id}`, obj)
   }
 
 

@@ -25,7 +25,11 @@ module.exports= (app)=>{
     app.put("/api/bars/:id", function(req, res){
         db.Bars.findByIdAndUpdate(
             req.params.id,
-            req.body
+            req.body,
+            (err, done)=>{
+                if(err){return res.status(500).send(err)}
+                return res.send(done);
+            }
         )
     })
 
