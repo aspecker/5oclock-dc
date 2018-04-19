@@ -22,11 +22,13 @@ class Test extends Component{
     render(){
         return(
             <div>
-                <button onClick={() => this.props.handlePost(this.testUser)}>User One : sign up</button>
+                <button onClick={() => this.props.handleSignUp(this.testUser)}>User One : sign up</button>
                 <button onClick={()=> this.props.handleLogIn(this.logIn)}>User One: Login</button>
-                <button onClick={()=>this.props.handlePost(this.testUserTwo)} >User Two : sign up</button>
+                <button onClick={()=>this.props.handleSignUp(this.testUserTwo)} >User Two : sign up</button>
                 <button onClick={()=> this.props.handleLogIn(this.logInTwo)} > User Two: Login</button>
                 <button onClick={()=> this.props.handleLogOut()} >logout</button>
+                <button onClick={()=> this.props.handleCurrentUser()} >Current User Info</button>
+                
             </div>
                 )
     }
