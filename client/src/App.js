@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import API from './utils/API'
-import Test from './Components/Test'
+// import Test from './Components/Test'
 import logo from './logo.svg';
 import './App.css';
 
@@ -22,7 +22,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 
-        <Test handlePost={this.handlePost} handleLogIn={this.handleLogIn}/>
+        {/* <Test handlePost={this.handlePost} handleLogIn={this.handleLogIn}/> */}
       </div>
     );
   }
