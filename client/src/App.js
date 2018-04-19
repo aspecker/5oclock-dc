@@ -4,6 +4,8 @@ import Test from './Components/Test'
 import logo from './logo.svg';
 import './App.css';
 import FilterModal from './Components/FilterModal';
+import EachBar from './Components/EachBar';
+
 
 class App extends Component {
   handlePost=(obj)=>{
@@ -26,6 +28,7 @@ class App extends Component {
         <Test handlePost={this.handlePost} handleLogIn={this.handleLogIn}/>
 
         <FilterModal />
+        <EachBar />
 
       </div>
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./EachBar.css";
-import { browserHistory } from 'react-router';
+// import { browserHistory } from 'react-router';
 
 
 const EachBar = props => (
@@ -24,7 +24,7 @@ const EachBar = props => (
             <p>{props.description}</p>
             <a href={props.website}>Menu</a>
           </div>
-          <button type="submit" onClick={browserHistory.goBack}> className="btn btn-default">
+          <button type="submit" onClick={props.handleClick} className="btn btn-default">
             Back to Results
           </button>
         </div>
