@@ -3,6 +3,10 @@ import Wrapper from "../Components/Wrapper";
 import Hero from "../Components/Hero";
 import NeighborhoodDropDown from "../Components/NeighborhoodDropDown";
 import Container from "../Components/Container";
+import { List, ListItem } from "../Components/List";
+import Footer from "../Components/Footer";
+
+
 
 
 
@@ -21,7 +25,7 @@ class Home extends Component {
           <NeighborhoodDropDown>{this.state.neighborhoodArr} Choose a Neighborhood</NeighborhoodDropDown>
         </Hero>
         <Container>
-          
+
         </Container>
       </Wrapper>
     ); // end of return
