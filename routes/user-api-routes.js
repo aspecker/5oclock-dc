@@ -1,41 +1,55 @@
-// no part of this is currently being used.
-// it is the first iteration of boilerplate for a future feature
-// it will likely neeed to be changed in order to work properly
-
+'use strict'
 const db =require("../models");
+const passport = require("../config/passport");
+
 module.exports = (app)=>{
+
+    const getCurrentUser =(req, res) =>{
+        const { id, username } = req.user;
+        res.json({
+          id, username
+        });
+      }
 
     //current user Data
     app.get("/api/user/current", (req,res)=>{
         if(!req.user){
-            res.json({})
+            return res.status(401).json({"error": "you must be logged in"})
         }else {
             db.User.findOne({_id:req.user.id})
-        }
-    }).then((dbUser)=>{
-        res.json(
-            {id: dbUser._id,
-            username: dbUser.username,
-            email: dbUser.email,
-            owner:dbUser.owner
-            })
-    }).catch((err)=>{
-        res.json(err)
+            .then((dbUser)=>{
+                res.json(
+                    {id: dbUser._id,
+                    username: dbUser.username,
+                    email: dbUser.email,
+                    owner:dbUser.owner
+                    })
+            }).catch((err)=>{
+                res.json(err)
+        })
+    }
     });
     
     //user login
-    app.post("/api/user/login", passport.authenticate("local"), (req,res)=>{
-        // change the ("/home") route here
-        res.json("/home")
-
+    //expects to receive an object from the client
+    app.post("/api/user/login", passport.authenticate("local"), function (req,res) {
+        console.log("login attepmt", req.body)
+        if (!req.user) {
+            return res.status(401).json({
+              message: 'Invalid username or password.'
+            })
+          }
+          getCurrentUser(req, res);
     })
 
     //User Signup
+    //expects to receive an object from the client
     app.post("/api/user/signup", (req,res)=>{
+        console.log("signup attempt", req.body)
         db.User.create(req.body)
         .then((dbUser)=>{
-            console.log(dbUser)
-            res.redirect(307, "api/user/login")
+            console.log("signup sucess")
+            res.end()
         }).catch((err)=>{
             console.log(err)
             res.json(err)
@@ -45,6 +59,6 @@ module.exports = (app)=>{
     //user logout
     app.get("/logout",(req, res)=>{
         req.logout();
-        res.redirect("/");
+        res.end();
     })
 }

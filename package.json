@@ -1,9 +1,10 @@
 {
   "name": "5oclock-dc",
   "version": "1.0.0",
-  "description": "",
+  "description": "happy hour selection tool",
   "main": "index.js",
   "scripts": {
+    "server": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "client": "npm run start --prefix client",
@@ -20,11 +21,16 @@
   },
   "homepage": "https://github.com/aspecker/5oclock-dc#readme",
   "dependencies": {
+    "bcrypt": "^2.0.0",
+    "concurrently": "^3.5.1",
+    "cookie-parser": "^1.4.3",
     "axios": "^0.18.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
+    "express-session": "^1.15.6",
     "mongoose": "^5.0.14",
+    "morgan": "^1.9.0",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.0",

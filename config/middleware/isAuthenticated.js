@@ -1,7 +1,15 @@
-module.exports = function(req, res, next) {
-  if (req.user) {
-    return next();
-  }
+module.exports = ()=>{  
+  return(req, res, next) =>{
+    if (req.isAuthenticated()) {
+      return next();
+    };
 
-  return res.redirect("/");
+    if(req.accepts('json')){
+      res.status(403).json ({ 
+        Message:" you must be logged in"
+      });
+    }else{
+      res.status(403).render ('forbidden')
+    };
+  };
 };

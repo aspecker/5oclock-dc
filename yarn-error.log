@@ -1,0 +1,78 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Adam\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js start
+
+PATH: 
+  C:\Users\Adam\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Adam\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\Adam\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Adam\AppData\Roaming\npm;C:\Program Files\Heroku\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "5oclock-dc",
+    "version": "1.0.0",
+    "description": "happy hour selection tool",
+    "main": "index.js",
+    "scripts": {
+      "server": "node server.js",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js",
+      "client": "npm run start --prefix client",
+      "dev": "concurrently \"npm run start\" \"npm run client\""
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/aspecker/5oclock-dc.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/aspecker/5oclock-dc/issues"
+    },
+    "homepage": "https://github.com/aspecker/5oclock-dc#readme",
+    "dependencies": {
+      "bcrypt": "^2.0.0",
+      "concurrently": "^3.5.1",
+      "cookie-parser": "^1.4.3",
+      "axios": "^0.18.0",
+      "bcrypt-nodejs": "0.0.3",
+      "body-parser": "^1.18.2",
+      "express": "^4.16.3",
+      "express-session": "^1.15.6",
+      "mongoose": "^5.0.14",
+      "morgan": "^1.9.0",
+      "passport": "^0.4.0",
+      "passport-local": "^1.0.0",
+      "passport-local-mongoose": "^5.0.0",
+      "path": "^0.12.7",
+      "yelp-fusion": "^2.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c node server.js
+  Directory: C:\Users\Adam\apps\5oclock-dc
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Users\Adam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Users\Adam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Users\Adam\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)

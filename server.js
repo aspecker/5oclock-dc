@@ -1,16 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser= require ("body-parser")
-const path = requitr("path")
+const path = require("path")
+const morgan = require("morgan")
 const app = express();
 const db = require("./models");
 
-//require the routes
-// require("./routes/user-api-routes.js")(app);
-//commented out users until i work through the passport mongoose more
-require("./routes/link-api-routes.js")(app);
 
-//express.user boilerplate
+//express.use boilerplate
+app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -24,6 +22,10 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+//require the routes
+require("./config/passport.js")(app)
+require("./routes/user-api-routes.js")(app);
+require("./routes/bar-api-routes.js")(app);
 
 //mongoose boilerplate
 mongoose.connect(

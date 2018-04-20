@@ -20,8 +20,22 @@ module.exports= (app)=>{
         })
     })
 
+    //edit bar
+    //expects to recieve an object from the client
+    app.put("/api/bars/:id", function(req, res){
+        db.Bars.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            (err, done)=>{
+                if(err){return res.status(500).send(err)}
+                return res.send(done);
+            }
+        )
+    })
+
     //insert bar into db
-    app.post("/api/new/bars/:id", function(req,res){
+    // expects to recieve an object from the client
+    app.post("/api/bars/new", function(req,res){
         db.Bars.create(req.body)
         .then(function(dbBars){
             res.json(dbBars)
