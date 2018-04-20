@@ -1,27 +1,19 @@
-import React, { Component } from 'react';
-import API from '../../utils/API'
-import Test from '../Test'
-import './App.css';
-import FilterModal from '../FilterModal';
-import EachBar from '../EachBar';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as actionCreators from '../../actions/actionCreators';
+import Main from './Main';
 
-
-class App extends Component {
-  // functions that are used in testing
-
-  //user auth
-  render() {
-    return (
-      <div>
-        <Test handleFindOneBar={this.handleFindOneBar} handleBarCreate={this.handleBarCreate} handleBarUpdate={this.handleBarUpdate} handleFindBars={this.handleFindBars} handleFindOneBar={this.handleFindOneBar} />
-        <FilterModal />
-        <EachBar />
-
-      </div>
-
-    );
+function mapStateToProps(state){
+  return{
+    bars: state.bars
   }
 }
+
+function mapDispatchToProps(dispatch){
+  return bindActionCreators(actionCreators,dispatch);
+}
+
+const App = connect(mapStateToProps,mapDispatchToProps)(Main);
 
 export default App;
 

@@ -12,19 +12,19 @@ import store from './store';
 
 const router = (
     <div>
-    {/* // <Provider store={store}>
-    //     <Router>
-    //         <Route path='/' component={App}>
-    //             <IndexRoute component={Landing}></IndexRoute>
-    //             <Route path ='/view/:neighborhood' component={Results}></Route>
-    //         </Route>
-    //     </Router>
-    // </Provider> */}
+    <Provider store={store}>
+         <Router>
+             <Route path='/' component={App}>
+                 <IndexRoute component={Landing}></IndexRoute>
+                 <Route path ='/view/:neighborhood' component={Results}></Route>
+            </Route>
+         </Router>
+     </Provider>
     RENDERING PAGE
     </div>
 )
 
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(router, document.getElementById('root'));
 

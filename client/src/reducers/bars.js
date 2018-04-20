@@ -3,7 +3,7 @@ function bars(state=[],action) {
         case `FILTER_RESULTS`:
             console.log('Filtering results');
             return state;
-        case 'SELECT_NEIGHBORHOOD':
+        case `SELECT_NEIGHBORHOOD`:
             console.log('Selecting neighborhood');
             return state;
         default:
