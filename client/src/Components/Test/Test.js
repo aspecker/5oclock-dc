@@ -56,6 +56,8 @@ class Test extends Component{
         price: "123456",
     }
 
+    //Test Queries
+
     render(){
         return(
             <div>
@@ -68,12 +70,16 @@ class Test extends Component{
                 <button onClick={()=> this.props.handleCurrentUser()} >Current User Info</button> */}
 
                 {/* bar crud testing */}
-                <button onClick={()=> this.props.handleBarCreate(this.barOne)}> Create Bar One </button>
+                {/* <button onClick={()=> this.props.handleBarCreate(this.barOne)}> Create Bar One </button>
                 <button onClick={()=> this.props.handleFindOneBar("5ad8be403a192627a0a44833")} > Find Bar One</button>
                 <button onClick={()=> this.props.handleBarCreate(this.barTwo)}> Create Bar two </button>
                 <button onClick={()=> this.props.handleFindOneBar("5ad8bd6e3a192627a0a44832")} > Find Bar Two</button>
                 <button onClick={()=> this.props.handleFindBars()}>Find All Bars</button>
-                <button onClick={()=> this.props.handleBarUpdate("5ad8be403a192627a0a44833",this.barUpdated)}> Update Bar One </button>
+                <button onClick={()=> this.props.handleBarUpdate("5ad8be403a192627a0a44833",this.barUpdated)}> Update Bar One </button> */}
+
+                {/* query Testing */}
+                <button onClick={()=> this.props.handleQueryNeighborhood("Georgetown")}> search for Georgetown bars </button>
+                
                 
             </div>
                 )

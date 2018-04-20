@@ -28,6 +28,10 @@ export default {
   },
   barUpdate: function(id, obj){
     return axios.put(`/api/bars/${id}`, obj)
+  },
+  //queries
+  queryNeighborhood: function(query){
+    return axios.get(`/api/neighborhood/${query}`)
   }
 
 

@@ -55,6 +55,14 @@ class App extends Component {
       console.log(res.data)
     })
   }
+
+  //queries
+  handleQueryNeighborhood =(query)=>{
+    API.queryNeighborhood(query)
+    .then(res =>{
+      console.log(res.data)
+    })
+  }
   
 
   render() {
@@ -71,7 +79,9 @@ class App extends Component {
         {/* <Test handleSignUp={this.handleSignUp} handleLogIn={this.handleLogIn} handleLogOut={this.handleLogOut} handleCurrentUser={this.handleCurrentUser} /> */}
         
         {/* test bar routes */}
-        <Test handleFindOneBar={this.handleFindOneBar} handleBarCreate={this.handleBarCreate} handleBarUpdate={this.handleBarUpdate} handleFindBars={this.handleFindBars} handleFindOneBar={this.handleFindOneBar} />
+        {/* <Test handleFindOneBar={this.handleFindOneBar} handleBarCreate={this.handleBarCreate} handleBarUpdate={this.handleBarUpdate} handleFindBars={this.handleFindBars} handleFindOneBar={this.handleFindOneBar} /> */}
+        {/* test queries */}
+        <Test handleQueryNeighborhood={this.handleQueryNeighborhood}/>
         <FilterModal />
         <EachBar />
 
