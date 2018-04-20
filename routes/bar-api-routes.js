@@ -19,6 +19,17 @@ module.exports= (app)=>{
             res.json(err)
         })
     })
+    // search for bars by neighborhood
+    app.get("/api/neighborhood/:neighborhood", function (req,res){
+        db.Bars.find({
+            neighborhood:req.params.neighborhood
+        })
+        .then(function(dbBars){
+            res.json(dbBars)
+        }).catch(function(err){
+            res.json(err)
+        })
+    })
 
     //edit bar
     //expects to recieve an object from the client
