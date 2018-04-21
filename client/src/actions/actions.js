@@ -17,10 +17,10 @@ export function selectNeighborhood(neighborhood){
 }
 
 // action to display more information about a bar
-export function examineBar(barId){
+export function examineBar(barObj){
     return {
         type: EXAMINE_BAR,
-        barId
+        barObj
     }
 }
 

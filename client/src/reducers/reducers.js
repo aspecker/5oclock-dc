@@ -6,6 +6,7 @@ import {
     SELECT_NEIGHBORHOOD
 } from '../actions'
 
+// reducer to select neighborhood from dropdown
 function selectedNeighborhood(state='No neighborhood selected yet!',action){
     switch (action.type){
         case SELECT_NEIGHBORHOOD:
@@ -15,10 +16,11 @@ function selectedNeighborhood(state='No neighborhood selected yet!',action){
     }
 }
 
+// reducer 
 function examinedBar(state={}, action){
     switch (action.type){
         case EXAMINE_BAR:
-            return 
+            return action.barObj
     }
 }
 
@@ -60,4 +62,28 @@ const rootReducer = combineReducers({
     barsByNeighborhood
 })
 
-export default rootReducer
+export default rootReducer;
+
+// STATE MODEL
+/* 
+{
+    selectedNeighborhood: 'Adam's Morgan',
+    examinedBar: {
+        name: name,
+        addres: address,
+        etc: etc,
+    },
+    barsByNeighborhood: {
+        Adam's Morgan: {
+            isFetching: false,
+            items: [{barObj},{barObj},{barObj}]
+        }
+        U Street: {
+            isFetching: true,
+            items: [{barObj},{barObj},{barObj}]function examinedBar(state={}, action)
+        }
+    }
+
+}
+
+*/
