@@ -43,8 +43,6 @@ function receiveBars(neighborhood,json){
     }
 }
 
-
-
 // function to actually get the bars from the database
 // NEEDS TO BE CONFIG'D FOR OUR DB ROUTE AND RESPONSE
 function fetchBars(neighborhood){

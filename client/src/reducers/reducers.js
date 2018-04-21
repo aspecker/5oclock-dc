@@ -15,10 +15,17 @@ function selectedNeighborhood(state='No neighborhood selected yet!',action){
     }
 }
 
+function examinedBar(state={}, action){
+    switch (action.type){
+        case EXAMINE_BAR:
+            return 
+    }
+}
+
 function bars(
     state={
         isFetching: false,
-        bars: []
+        items: []
     },
     action
     ){
@@ -28,16 +35,29 @@ function bars(
         case RECEIVE_BARS:
             return { ...state,
                 isFetching: false,
-                bars: action.bars
+                items: action.bars
             }
         default: 
             return state;
     }
 }
 
-function examinedBar(state={}, action){
+function barsByNeighborhood(state={},action){
     switch (action.type){
-        case EXAMINE_BAR:
-            return 
+        case REQUEST_BARS:
+        case RECEIVE_BARS:
+            return Object.assign({},state,{
+                [action.neighborhood]: bars(state[action.neighborhood],action)
+            })
+            default:
+                return state
     }
 }
+
+const rootReducer = combineReducers({
+    selectedNeighborhood,
+    examinedBar,
+    barsByNeighborhood
+})
+
+export default rootReducer
