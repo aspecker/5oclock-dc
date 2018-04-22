@@ -63,6 +63,12 @@ class App extends Component {
       console.log(res.data)
     })
   }
+  handleQueryFilter =(neighborhood, cuisine,price)=>{
+    API.queryFilters(neighborhood, cuisine,price)
+    .then(res =>{
+      console.log(res.data)
+    })
+  }
   
 
   render() {
@@ -81,7 +87,7 @@ class App extends Component {
         {/* test bar routes */}
         {/* <Test handleFindOneBar={this.handleFindOneBar} handleBarCreate={this.handleBarCreate} handleBarUpdate={this.handleBarUpdate} handleFindBars={this.handleFindBars} handleFindOneBar={this.handleFindOneBar} /> */}
         {/* test queries */}
-        <Test handleQueryNeighborhood={this.handleQueryNeighborhood}/>
+        <Test handleQueryNeighborhood={this.handleQueryNeighborhood} handleQueryFilter={this.handleQueryFilter} />
         <FilterModal />
         <EachBar />
 
