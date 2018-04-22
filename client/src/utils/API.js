@@ -32,6 +32,9 @@ export default {
   //queries
   queryNeighborhood: function(query){
     return axios.get(`/api/neighborhood/${query}`)
+  },
+  queryFilters: function(neighborhood, cuisine, price){
+    return axios.get(`/api/query/${neighborhood}/${price}/${cuisine}`)
   }
 
 

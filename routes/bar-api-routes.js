@@ -45,10 +45,14 @@ module.exports= (app)=>{
             if(cuisineQ!=="null"){
                 finalQuery.cuisine=cuisineQ
             }
-            // if(drinkQ){
-            //     finalQuery.drink=drinkQ
-            // }
             return finalQuery
+        //this function sets up the query object
+		//"/api/query/Georgetown/2/null"
+		//ie {
+			//neighborhoood: "Georgetown",
+			//price: 2,
+			//}
+    
         };
         console.log(query(neighborhood,price,cuisine))
         db.Bars.find(query(neighborhood,price,cuisine))

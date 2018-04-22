@@ -78,7 +78,11 @@ class Test extends Component{
                 <button onClick={()=> this.props.handleBarUpdate("5ad8be403a192627a0a44833",this.barUpdated)}> Update Bar One </button> */}
 
                 {/* query Testing */}
+                {/* by categry */}
                 <button onClick={()=> this.props.handleQueryNeighborhood("Georgetown")}> search for Georgetown bars </button>
+                {/* by filter */}
+                <button onClick={()=> this.props.handleQueryFilter("DuPont Circle", "null",2)}> search for dupont bars at 2 pricepoint </button>
+                
                 
                 
             </div>
