@@ -3,8 +3,8 @@ import Wrapper from "../Components/Wrapper";
 import Container from "../Components/Container";
 import EachBar from "../Components/EachBar";
 import API from "../utils/API";
-import { browserHistory } from 'react-router'
 import Footer from "../Components/Footer";
+import { Button } from '../Components/Search/Button'
 
 
 
