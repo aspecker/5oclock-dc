@@ -8,7 +8,9 @@ import App from './App'
 const Root = ({store}) =>(
 <Provider store={store}>
     <Router>
-        <Route path ='/:filter?' component={App}/>
+        <Route exact path ='/' component={App}/>
+        <Route exact path ='/neighborhood/:neighborhood' component={Results}/>
+        <Route exact path = '/bar/:bar' component={OneBar}/>
     </Router>
 </Provider>
 )

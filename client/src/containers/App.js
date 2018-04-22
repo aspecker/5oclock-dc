@@ -9,15 +9,27 @@ import {
 import Dropdown from '../components/Search/NeighborhoodDropDown';
 
 class App extends Component {
-    constructor(props){
-        super (props)
-        this.handleChange = this.handleChange.bind(this)
-        this.handleClick = this.handleClick.bind(this)
+    handleChange = (e)=>{
+        this.props.selectedNeighborhood(e.target.value)
+        this.props.fetchBars(e.target.value)
+        this.props.history.push(`/neighborhood/${e.target.value}`)
+    }
+    // if page is rendering before results are displayed
+    // add promise or async await
+
+    render() {
+        <Dropdown onChange={this.handleChange}/>
     }
 
+}
 
+function mapDispatchToProps (dispatch) {
+    return {
+        selectedNeighborhood: neighborhood => dispatch(selectedNeighborhood(neighborhood)),
+        fetchBars: neighborhood => dispatch(fetchBars(neighborhood))
+    }
 }
 
 
 
-export default App
+export default connect(null,mapDispatchToProps)(App);
