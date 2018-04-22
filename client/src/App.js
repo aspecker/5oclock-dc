@@ -9,6 +9,8 @@ import Container from './Components/Container';
 import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import BarCard from './Components/BarCard';
+import Row from './Components/Row';
+import Col from './Components/Col';
 
 
 class App extends Component {
@@ -79,7 +81,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" align='center'>
       {/*  <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
@@ -94,21 +96,6 @@ class App extends Component {
         {/* <Test handleFindOneBar={this.handleFindOneBar} handleBarCreate={this.handleBarCreate} handleBarUpdate={this.handleBarUpdate} handleFindBars={this.handleFindBars} handleFindOneBar={this.handleFindOneBar} /> */}
         {/* test queries */}
         <Test handleQueryNeighborhood={this.handleQueryNeighborhood}/>*/}
-        <Container className='fluid'>
-          <Hero style={this.state.image}>
-            <h1>{this.state.neighborhood}</h1>
-          </Hero>
-          <BarCard
-            image={this.state.image}
-            name={this.state.name}
-            cuisine={this.state.cuisine}
-            neighborhood={this.state.neighborhood}
-            hours={this.state.hours}
-            price={this.state.price}
-
-          />
-        </Container>
-        <Footer />
 
       </div>
 

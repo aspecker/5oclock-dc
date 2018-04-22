@@ -5,7 +5,8 @@ import Input from "../Components/Search";
 import Container from "../Components/Container";
 import BarCard from "../Components/BarCard";
 import { List, ListItem } from "../Components/List";
-
+import Row from "../Components/Row";
+import Col from "../Components/Col";
 
 class Results extends Component {
   state ={}
@@ -17,28 +18,25 @@ class Results extends Component {
     return (
 
       <Wrapper>
-        <Hero backgroundImage={this.state.image}>
-          <h1>{this.state.neighborhood}</h1>
-          <Button handleClick={this.handleClick}>Filter</Button>
-        </Hero>
-        <Input
-            value={this.state.value}
-            key={this.state.id}
-            name={this.state.name}
+        <Container className='fluid'>
+          <Hero style={this.state.image}>
+            <h1>{this.state.neighborhood}</h1>
+          </Hero>
+          <Row >
+            <Col size='sm-6 md-4'>
+            <BarCard
+              image={this.state.image}
+              name={this.state.name}
+              cuisine={this.state.cuisine}
+              neighborhood={this.state.neighborhood}
+              hours={this.state.hours}
+              price={this.state.price}
             />
-        <Button handleClick={this.handleClick}>Search</Button>
-        <Container>
-          <BarCard name={this.state.name}
-            cuisine={this.state.cuisine}
-            neighborhood={this.state.neighborhood}
-            hours={this.state.hours}
-            price={this.state.price} />
+            </Col>
+          </Row>
         </Container>
-        <List>
-          {/*  map through our neighborhood list and put them in the li*/}
-        <ListItem />
-        </List>
         <Footer />
+
       </Wrapper>
     ); // end of return
   } // end of render
