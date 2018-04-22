@@ -12,7 +12,8 @@ module.exports= (app)=>{
 
     //one bar api
     app.get("/api/bars/:id", function(req,res){
-        db.Bars.findOne({_id:req.params.id})
+        db.Bars.findOne({
+            _id:req.params.id})
         .then(function(dbBars){
             res.json(dbBars)
         }).catch(function(err){
@@ -29,6 +30,38 @@ module.exports= (app)=>{
         }).catch(function(err){
             res.json(err)
         })
+    })
+    // catch all query
+    //if a query filter is not selected, itm ust be defined as null
+    // ie api/query/georgetown/null/mexican/null
+    app.get("/api/query/:neighborhood/:price/:cuisine", function(req,res){
+        //functional programming
+        let{neighborhood, price, cuisine}= req.params
+        const query =(neighborhoodQ,priceQ, cuisineQ)=>{
+            let finalQuery={neighborhood:neighborhoodQ}
+            if(priceQ!=="null"){
+               finalQuery.price=priceQ
+            }
+            if(cuisineQ!=="null"){
+                finalQuery.cuisine=cuisineQ
+            }
+            return finalQuery
+        //this function sets up the query object
+		//"/api/query/Georgetown/2/null"
+		//ie {
+			//neighborhoood: "Georgetown",
+			//price: 2,
+			//}
+    
+        };
+        console.log(query(neighborhood,price,cuisine))
+        db.Bars.find(query(neighborhood,price,cuisine))
+        .then(function(dbBars){
+            res.json(dbBars)
+        }).catch(function(err){
+            res.json(err)
+        })
+
     })
 
     //edit bar

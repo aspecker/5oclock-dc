@@ -3,8 +3,8 @@ import Wrapper from "../Components/Wrapper";
 import Container from "../Components/Container";
 import EachBar from "../Components/EachBar";
 import API from "../utils/API";
-import { browserHistory } from 'react-router'
 import Footer from "../Components/Footer";
+import { Button } from '../Components/Search/Button'
 
 
 
@@ -12,25 +12,27 @@ import Footer from "../Components/Footer";
 class BarPage extends Component {
   state ={}
 
-  // stateful codes go here.
+
+  componentDidMount(){
+    this.fetchOneBar(this.props.match.params.bar)
+  }
+
+  fetchOneBar(barId){
+    API.barFindOne(barId)
+    .then(res=>{
+      console.log(res.data)
+      this.setState(res.data)
+    })
+    .catch(err=>console.log(err))
+  }
+
 
 
   render() {
     return (
       <Wrapper>
         <Container className="each-bar-container">
-          <EachBar
-            name={this.state.name}
-            neighborhood={this.state.neighborhood}
-            addressStreet={this.state.addressStreet}
-            addressCityZip={this.state.addressCityZip}
-            phone={this.state.phone}
-            hours={this.state.hours}
-            price={this.state.price}
-            cuisine={this.state.cuisine}
-            description={this.state.description}
-            website={this.state.website}
-           />
+          <h1>{this.state.name}</h1>
          </Container>
       </Wrapper>
     );

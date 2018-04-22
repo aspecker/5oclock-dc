@@ -1,40 +1,46 @@
-import React from "react";
+import React, { Component } from "react";
 import Wrapper from "../Components/Wrapper";
 import Hero from "../Components/Hero";
 import Input from "../Components/Search";
 import Container from "../Components/Container";
 import BarCard from "../Components/BarCard";
+import Footer from '../Components/Footer'
 import { List, ListItem } from "../Components/List";
-import Row from "../Components/Row";
-import Col from "../Components/Col";
+import API from '../utils/API'
+import { Link } from 'react-router-dom'
+
 
 class Results extends Component {
-  state ={}
+  state = {
+    bars: []
+  }
 
-  // stateful codes go here.
+  componentDidMount(){
+    this.fetchBars(this.props.match.params.neighborhood);
+  }
+
+  fetchBars(neighborhood){
+     API.queryNeighborhood(neighborhood)
+     .then(res =>{
+       console.log(res.data)
+      this.setState({bars: res.data})
+      })
+      .catch(err=> console.log(err));
+
+  }
 
 
   render() {
     return (
 
       <Wrapper>
-        <Container className='fluid'>
-          <Hero style={this.state.image}>
-            <h1>{this.state.neighborhood}</h1>
-          </Hero>
-          <Row >
-            <Col size='sm-6 md-4'>
-            <BarCard
-              image={this.state.image}
-              name={this.state.name}
-              cuisine={this.state.cuisine}
-              neighborhood={this.state.neighborhood}
-              hours={this.state.hours}
-              price={this.state.price}
-            />
-            </Col>
-          </Row>
-        </Container>
+        <List>
+          {this.state.bars.map(bar=>
+            <ListItem key={bar._id} id={bar._id}>
+              <Link to ={`/bar/${bar._id}`} >{bar.name}</Link>
+            </ListItem>
+          )}
+        </List>
         <Footer />
 
       </Wrapper>
