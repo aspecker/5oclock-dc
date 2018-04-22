@@ -32,7 +32,6 @@ class BarPage extends Component {
             website={this.state.website}
            />
          </Container>
-        <Button onclick={this.handleClick}>Back to Results</Button>
       </Wrapper>
     );
   }

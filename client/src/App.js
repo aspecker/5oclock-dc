@@ -67,7 +67,7 @@ class App extends Component {
   }
 
   state = {
-    image: 'https://unsplash.com/photos/ODua_Pc7VQY'
+    image: 'https://unsplash.com/photos/iwWJFIlnDm4'
   };
 
   render() {
@@ -88,20 +88,7 @@ class App extends Component {
         {/* test queries */}
         <Test handleQueryNeighborhood={this.handleQueryNeighborhood}/>*/}
         <Container className='fluid'>
-          <EachBar
-            src={this.state.image}
-            alt={this.state.image}
-            name={'Logan Tavern'}
-            neighborhood={'Logan Circle'}
-            addressStreet={'1423 P St NW,'}
-            addressCityZip={'Washington, DC 20005'}
-            phone={'(202) 332-3710'}
-            hours={'3PM to 7PM'}
-            price={'$$'}
-            cuisine={'American'}
-            description={'Mon-Fri, 3-7 PM, Sat-Sun, 4-7 PM At the bar, at the communal table or on the patio.'}
-            website={'http://logantavern.com/menu/'}
-          />
+          
         </Container>
         <Footer />
 

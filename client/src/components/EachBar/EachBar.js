@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./EachBar.css";
-import "./logan.jpg";
+import logan from "./logan.jpg";
 // import { browserHistory } from 'react-router';
 
 
