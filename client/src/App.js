@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import API from './utils/API'
 import Test from './Components/Test'
 import logo from './logo.svg';
@@ -96,5 +97,21 @@ class App extends Component {
     );
   }
 }
+=======
+import { BrowserRouter as Router,Route } from 'react-router-dom';
+import Home from './pages/Home';
+import BarPage from './pages/BarPage'
+import Results from './pages/Results'
+
+const App = () =>(
+  <Router basename={process.env.PUBLIC_URL}>
+    <div>
+    <Route exact path ='/' component={Home}/>
+    <Route exact path ='/results/:neighborhood' component={Results}/>
+    <Route exact path ='/bar/:bar' component={BarPage}/>
+    </div>
+  </Router>
+)
+>>>>>>> page-flow
 
 export default App;
