@@ -1,0 +1,10 @@
+.results-container {
+  background-color: (0,0,0,0.6);
+  padding: 50px;
+  margin: 50px;
+}
+
+.bar-card-container {
+  background-color: pink;
+  margin: 30px 75px;
+}

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: (0,0,0,0.6);
 }
 
 .App-logo {
@@ -20,6 +21,10 @@
 
 .App-intro {
   font-size: large;
+}
+
+.fluid {
+  background-color: rgba(0,0,0,0.6);
 }
 
 @keyframes App-logo-spin {

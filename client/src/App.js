@@ -7,6 +7,8 @@ import FilterModal from './Components/FilterModal';
 import EachBar from './Components/EachBar';
 import Container from './Components/Container';
 import Footer from './Components/Footer';
+import Hero from './Components/Hero';
+import BarCard from './Components/BarCard';
 
 
 class App extends Component {
@@ -67,7 +69,12 @@ class App extends Component {
   }
 
   state = {
-    image: 'https://unsplash.com/photos/iwWJFIlnDm4'
+    image: 'https://unsplash.com/photos/iwWJFIlnDm4',
+    neighborhood: 'Chinatown',
+    name: 'Rocket Grill',
+    cuisine: 'American',
+    hours: '4-7',
+    price: '$$'
   };
 
   render() {
@@ -88,7 +95,18 @@ class App extends Component {
         {/* test queries */}
         <Test handleQueryNeighborhood={this.handleQueryNeighborhood}/>*/}
         <Container className='fluid'>
-          
+          <Hero style={this.state.image}>
+            <h1>{this.state.neighborhood}</h1>
+          </Hero>
+          <BarCard
+            image={this.state.image}
+            name={this.state.name}
+            cuisine={this.state.cuisine}
+            neighborhood={this.state.neighborhood}
+            hours={this.state.hours}
+            price={this.state.price}
+
+          />
         </Container>
         <Footer />
 
