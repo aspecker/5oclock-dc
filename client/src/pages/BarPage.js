@@ -12,27 +12,28 @@ import { Button } from '../Components/Search/Button'
 class BarPage extends Component {
   state ={}
 
-  // stateful codes go here.
+
+  componentDidMount(){
+    this.fetchOneBar(this.props.match.params.bar)
+  }
+
+  fetchOneBar(barId){
+    API.barFindOne(barId)
+    .then(res=>{
+      console.log(res.data)
+      this.setState(res.data)
+    })
+    .catch(err=>console.log(err))
+  }
+
 
 
   render() {
     return (
       <Wrapper>
         <Container className="each-bar-container">
-          <EachBar
-            name={this.state.name}
-            neighborhood={this.state.neighborhood}
-            addressStreet={this.state.addressStreet}
-            addressCityZip={this.state.addressCityZip}
-            phone={this.state.phone}
-            hours={this.state.hours}
-            price={this.state.price}
-            cuisine={this.state.cuisine}
-            description={this.state.description}
-            website={this.state.website}
-           />
+          <h1>{this.state.name}</h1>
          </Container>
-        <Button onclick={this.handleClick}>Back to Results</Button>
       </Wrapper>
     );
   }

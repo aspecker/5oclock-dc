@@ -7,23 +7,26 @@ import BarCard from "../Components/BarCard";
 import Footer from '../Components/Footer'
 import { List, ListItem } from "../Components/List";
 import API from '../utils/API'
+import { Link } from 'react-router-dom'
 
 
 class Results extends Component {
   state = {
-    bars: {}
+    bars: []
   }
 
   componentDidMount(){
-    this.fetchBars('Petworth');
+    this.fetchBars(this.props.match.params.neighborhood);
   }
 
   fetchBars(neighborhood){
      API.queryNeighborhood(neighborhood)
-     .then(res =>
-      this.setState({bars: res.data}))
-      console.log(this.state)
-    
+     .then(res =>{
+       console.log(res.data)
+      this.setState({bars: res.data})
+      })
+      .catch(err=> console.log(err));
+     
   }
 
 
@@ -31,15 +34,12 @@ class Results extends Component {
     return (
 
       <Wrapper>
-
         <List>
-
-        <ListItem 
-        />
-
-
-
-
+          {this.state.bars.map(bar=>
+            <ListItem key={bar._id} id={bar._id}>
+              <Link to ={`/bar/${bar._id}`} >{bar.name}</Link>
+            </ListItem>
+          )}
         </List>
         <Footer />
       </Wrapper>

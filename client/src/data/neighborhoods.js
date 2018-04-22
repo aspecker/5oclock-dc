@@ -1,6 +1,6 @@
 const neighborhoods = [
     'Georgetown',
-    "Friendship Heights / Tenleytown",
+    "Friendship Heights | Tenleytown",
     "Adam's Morgan",
     "DuPont Circle",
     "Southwest Waterfront",
@@ -8,7 +8,7 @@ const neighborhoods = [
     "Capitol Hill",
     "H Street",
     "Logan Circle",
-    "Shaw / U Street",
+    "Shaw | U Street",
     "Eastern Market",
     "Columbia Heights",
 ]
