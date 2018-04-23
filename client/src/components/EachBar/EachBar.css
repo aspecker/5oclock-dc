@@ -1,5 +1,5 @@
 .bar-result {
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .bar-container {
@@ -11,10 +11,10 @@
 
 .bar-name, .bar-hood {
   color: #fff;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 .bar-hood {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .btn {
@@ -87,7 +87,7 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-      bottom: 70px;
+      bottom: 60px;
       left: 0;
       right: 0;
   }
@@ -95,7 +95,7 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-      bottom: 30px;
+      bottom: 25px;
       left: 0;
       right: 0;
   }
@@ -104,6 +104,15 @@
   }
 
 @media screen and (min-width: 700px) {
+  .bar-result {
+    padding-top: 50px;
+  }
+  .bar-name {
+    font-size: 4rem;
+  }
+  .bar-hood {
+    font-size: 2rem;
+  }
   .bar-container {
     margin: 0 10% 75px 10%;
   }
