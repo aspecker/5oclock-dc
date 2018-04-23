@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Wrapper from "../Components/Wrapper";
-import Container from "../Components/Container";
+// import Container from "../Components/Container";
 import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
-import { Button } from '../Components/Search/Button'
+// import { Button } from '../Components/Search/Button'
 
 
 
@@ -31,9 +31,23 @@ class BarPage extends Component {
   render() {
     return (
       <Wrapper>
-        <Container className="each-bar-container">
-          <h1>{this.state.name}</h1>
-         </Container>
+        <EachBar
+            name={this.state.name}
+            neighborhood={this.state.neighborhood}
+            address={this.state.address}
+            city={this.state.city}
+            state={this.state.state}
+            ZIP={this.state.ZIP}
+            phone={this.state.phone}
+            startTime={this.state.startTime}
+            endTime={this.state.endTime}
+            price={this.state.price}
+            cuisine={this.state.cuisine}
+            description={this.state.description}
+            menuLink={this.state.menuLink}
+            handleClick={this.state.handleClick}
+           />
+        <Footer />
       </Wrapper>
     );
   }

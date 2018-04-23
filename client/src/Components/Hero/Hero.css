@@ -1,8 +1,9 @@
 .hero {
-  height: 500px;
+  height: 350px;
   background-size: cover;
   background-position: center;
   position: relative;
+  text-align: center;
 }
 
 .hero::after {
@@ -27,7 +28,17 @@
 }
 
 .hero h1 {
-  font-size: 60px;
+  font-size: 3.7rem;
   padding-top: 200px;
   margin-top: 0;
+}
+
+@media screen and (min-width: 500px) {
+  .hero {
+    height: 500px;
+  }
+  .hero h1 {
+    font-size: 5rem;
+  }
+
 }
