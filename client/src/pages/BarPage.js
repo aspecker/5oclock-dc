@@ -25,6 +25,19 @@ class BarPage extends Component {
     .catch(err=>console.log(err))
   }
 
+  convertPrice(int){
+    switch (int){
+      case 1:
+        return '$'
+      case 2:
+        return  '$$'
+      case 3:
+        return '$$$'
+      default:
+        return 'No Price Available'
+    }
+  }
+
 
 
 
@@ -42,7 +55,7 @@ class BarPage extends Component {
             phone={this.state.phone}
             startTime={this.state.startTime}
             endTime={this.state.endTime}
-            price={this.state.price}
+            price={this.convertPrice(this.state.price)}
             cuisine={this.state.cuisine}
             description={this.state.description}
             menuLink={this.state.menuLink}

@@ -5,8 +5,8 @@ import Container from "../Components/Container";
 import Row from "../Components/Row";
 import Col from "../Components/Col";
 import BarCard from "../Components/BarCard";
-import Footer from '../Components/Footer'
-// import { List, ListItem } from "../Components/List";
+import Footer from '../Components/Footer';
+import { Button } from '../Components/Search/Button';
 import API from '../utils/API'
 import { Link } from 'react-router-dom'
 import "./Results.css";
@@ -58,7 +58,7 @@ class Results extends Component {
         <Hero backgroundImage= {this.findNeighborhoodImage(this.props.match.params.neighborhood)[0].image}>
           <h1>{this.props.match.params.neighborhood}</h1>
           <Link to = '/'>
-            <button> Another Neighborhood?</button>
+            <Button> Another Neighborhood?</Button>
           </Link>
         </Hero>
         <div className="card-results-wrapper">
