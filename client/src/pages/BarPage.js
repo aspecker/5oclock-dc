@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import EachBar from "../Components/EachBar/EachBar.js";
+import EachBar from "../Components/EachBar";
 import Wrapper from "../Components/Wrapper";
 
 import API from "../utils/API";
