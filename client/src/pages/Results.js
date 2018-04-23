@@ -39,7 +39,17 @@ class Results extends Component {
         {/*}<List>
           {this.state.bars.map(bar=>
             <ListItem key={bar._id} id={bar._id}>
-              <Link to ={`/bar/${bar._id}`} >{bar.name}</Link>
+              <Link to ={`/bar/${bar._id}`} >
+              <BarCard
+                name={bar.name}
+                key={bar._id}
+                id={bar._id}
+                cuisine={bar.cuisine}
+                neighborhood={bar.neighborhood}
+                hours = {bar.hours}
+                price = {bar.price}
+              />
+              </Link>
             </ListItem>
           )}
         </List>*/}
