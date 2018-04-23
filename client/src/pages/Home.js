@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "../Components/Wrapper";
 import Hero from "../Components/Hero";
-import About from '../Components/About';
+import About from '../components/About';
 import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
 import Footer from "../Components/Footer";
 
