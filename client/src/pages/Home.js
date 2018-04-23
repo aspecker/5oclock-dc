@@ -5,6 +5,8 @@ import About from '../Components/About';
 import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
 import Footer from "../Components/Footer";
 
+// attempt to fix deploy problems
+
 const Home = () =>(
       <Wrapper>
         <Hero>
