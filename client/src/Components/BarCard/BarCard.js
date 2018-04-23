@@ -16,7 +16,7 @@ const BarCard = props => (
           <h5 className="card-title">{props.name}</h5>
           <p className="card-text">{props.cuisine}</p>
           <p className="card-text">{props.startTime} - {props.endTime}</p>
-          <p className="card-text price-level">Price Level: {props.price}</p>
+          <p className="card-text price-level">Price: {props.price}</p>
         </div>
       </div>
     </div>

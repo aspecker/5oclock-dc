@@ -10,6 +10,7 @@ import Footer from '../Components/Footer'
 import API from '../utils/API'
 import { Link } from 'react-router-dom'
 import "./Results.css";
+import neighborhoods from '../data/neighborhoods.js'
 
 
 class Results extends Component {
@@ -31,34 +32,27 @@ class Results extends Component {
 
   }
 
+  processPrice(int){
+    switch (int){
+      case 1:
+        return "$"
+      case 2:
+        return "$$"
+      case 3:
+        return "$$$"
+      default:
+        return 'No Price Available'
+    }
+  }
+
 
   render() {
     return (
 
       <Wrapper>
-        {/*}<List>
-          {this.state.bars.map(bar=>
-            <ListItem key={bar._id} id={bar._id}>
-              <Link to ={`/bar/${bar._id}`} >
-              <BarCard
-                name={bar.name}
-                key={bar._id}
-                id={bar._id}
-                cuisine={bar.cuisine}
-                neighborhood={bar.neighborhood}
-                hours = {bar.hours}
-                price = {bar.price}
-              />
-              </Link>
-            </ListItem>
-          )}
-        </List>*/}
-        {this.state.bars.map(bar=>
-
-        <Hero key={bar._id} id={bar._id} style={this.state.image}>
-          <h1>{bar.neighborhood}</h1>
+        <Hero >
+          <h1></h1>
         </Hero>
-      )}
         <div className="card-results-wrapper">
           <Container>
             <Row >
@@ -74,7 +68,7 @@ class Results extends Component {
                       neighborhood={bar.neighborhood}
                       startTime={bar.startTime}
                       endTime={bar.endTime}
-                      price={bar.price}>
+                      price={this.processPrice(bar.price)}>
                     </BarCard>
                   </Link>
                 )}
