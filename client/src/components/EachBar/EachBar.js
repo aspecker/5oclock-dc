@@ -4,7 +4,7 @@ import logan from "./logan.jpg";
 // import { browserHistory } from 'react-router';
 
 
-const EachBar = props => (
+const EachBar = props =>{ (
 
       <div className='bar-result' align='center'>
         <div className='bar-container'>
@@ -29,7 +29,7 @@ const EachBar = props => (
           </div>
         </div>
       </div>
-);
+)};
 
 
 export default EachBar;
