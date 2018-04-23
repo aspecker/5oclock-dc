@@ -64,10 +64,10 @@ class Results extends Component {
         <div className="card-results-wrapper">
           <Container>
             <Row >
+            {this.state.bars.map(bar=>
               <Col size='sm-6 md-4'>
-                {this.state.bars.map(bar=>
-                  <Link key={bar._id}
-                  to ={`/bar/${bar._id}`}>
+                    <Link key={bar._id}
+                    to ={`/bar/${bar._id}`}>
                     <BarCard key={bar._id} id={bar._id}
                       backgroundImage={bar.image}
                       image={bar.image}
@@ -78,9 +78,9 @@ class Results extends Component {
                       endTime={bar.endTime}
                       price={this.convertPrice(bar.price)}>
                     </BarCard>
-                  </Link>
-                )}
+                    </Link>
               </Col>
+            )}
             </Row>
           </Container>
         </div>
