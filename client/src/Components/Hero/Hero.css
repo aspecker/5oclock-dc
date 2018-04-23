@@ -1,5 +1,5 @@
 .hero {
-  height: 350px;
+  height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -25,6 +25,7 @@
 
 .hero h1, .hero h2 {
   color: white;
+  text-shadow: 0 0 5px coral, 0 0 5px coral;
 }
 
 .hero h1 {
@@ -38,7 +39,7 @@
     height: 500px;
   }
   .hero h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
 }

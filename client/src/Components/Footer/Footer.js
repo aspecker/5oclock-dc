@@ -6,16 +6,21 @@ const Footer = () => (
     <div>
       <h3>Contact Us</h3>
     </div>
-    <div>
-      <a href="https://github.com/aspecker/5oclock-dc">
-        <i className="fab fa-github"></i>
-      </a>
-    </div>
-    <div>
-      <img src="/assets/images/instagram.svg" alt="instagram"/>
-    </div>
-    <div>
-      <a href="mailto:adriansander@hotmail.com?subject=5 O' Clock DC" target="_blank"></a>
+    <div className='media'>
+      <div>
+        <a href="https://github.com/aspecker/5oclock-dc">
+        <img src="/assets/images/github-logo-icon-2.png" alt="github"/>
+
+        </a>
+      </div>
+      <div>
+        <img src="/assets/images/instagram.svg" alt="instagram"/>
+      </div>
+      <div>
+        <a href="mailto:adriansander@hotmail.com?subject=5 O' Clock DC" target="_blank">
+        <img src="/assets/images/mail.png" alt="email"/>
+        </a>
+      </div>
     </div>
   </footer>
 
