@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./EachBar.css";
 import logan from "./logan.jpg";
 // import { browserHistory } from 'react-router';
@@ -9,7 +9,7 @@ const EachBar = props => (
       <div className='bar-result' align='center'>
         <div className='bar-container'>
           <div className='img-container'>
-            <img className='img img-responsive img-fluid bar-img' alt={props.name} src={props.image} />
+            <img className='img img-responsive img-fluid rest-img' alt={props.name} src={logan} />
             <h1 className='bar-name'>{props.name}</h1>
             <h3 className='bar-hood'>{props.neighborhood}</h3>
           </div>

@@ -6,7 +6,7 @@ import Row from "../Components/Row";
 import Col from "../Components/Col";
 import BarCard from "../Components/BarCard";
 import Footer from '../Components/Footer'
-import { List, ListItem } from "../Components/List";
+// import { List, ListItem } from "../Components/List";
 import API from '../utils/API'
 import { Link } from 'react-router-dom'
 import "./Results.css";

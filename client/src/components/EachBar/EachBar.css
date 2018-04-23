@@ -36,7 +36,7 @@
 .bar-info-container {
   background-color: #fff;
   font-size: 1.5rem;
-  margin: 30px;
+  margin: 15px;
   padding: 35px 10px 70px 10px;
 }
 .bar-info-container h4 {
@@ -81,7 +81,7 @@
 
 .img-container {
   position: relative;
-  min-height: 350px;
+  /* min-height: 350px; */
 }
   .bar-name {
     margin-left: auto;
@@ -99,6 +99,9 @@
       left: 0;
       right: 0;
   }
+  .rest-img {
+    width: 100%;
+  }
 
 @media screen and (min-width: 700px) {
   .bar-container {
@@ -106,6 +109,9 @@
   }
   .description {
     padding: 0 60px;
+  }
+  .bar-info-container {
+    margin: 30px;
   }
 
 }
