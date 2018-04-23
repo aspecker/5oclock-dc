@@ -1,5 +1,40 @@
 .results-container {
-  background-color: #fff;
-  border: 1px solid black;
-  margin-top: 20px;
+  max-width: 960px;
+  margin-bottom: 30px;
+
 }
+.card {
+  max-width: 500px;
+}
+
+.bar-img {
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  border-bottom: none;
+  min-height: 200px;
+  max-width: 350px;
+}
+
+.card-body {
+  background: #fff;
+  max-width: 350px;
+}
+
+.card-title, .card-text {
+  margin: 0;
+}
+
+.card-title {
+  font-size: 1.5em;
+  text-decoration: underline;
+  padding: 30px 0 40px 0;
+}
+
+.card-text {
+  font-size: 1.25em;
+  padding-bottom: 20px;
+}
+  .price-level {
+    padding-bottom: 50px;
+  }
