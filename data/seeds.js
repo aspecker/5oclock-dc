@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const db = require ('../models');
 mongoose.Promise = global.Promise;
 mongoose.connect(
-    process.env.MONGODB_UR || "mongodb://localhost/5oClock",
+    process.env.MONGODB_URI || "mongodb://localhost/5oClock",
 );
 const barList=require('./barList.json')
 
