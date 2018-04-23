@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Wrapper from "../Components/Wrapper";
 import Hero from "../Components/Hero";
-import Input from "../Components/Search";
 import Container from "../Components/Container";
 import Row from "../Components/Row";
 import Col from "../Components/Col";
