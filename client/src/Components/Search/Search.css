@@ -1,4 +1,4 @@
-select {
+/* select {
   background-color: rgba(0,0,0,0.7);
   border-radius: 0px!important;
   height: 50px;
@@ -9,6 +9,8 @@ select {
   padding-left: 15px;
   -webkit-appearance: none;
 }
+
+
 
 .input-group {
   border-radius: 0px!important;
@@ -30,4 +32,4 @@ select {
 
 .select-wrapper {
     border-radius: 0px!important;
-}
+} */

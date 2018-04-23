@@ -4,6 +4,8 @@ import Wrapper from "../Components/Wrapper";
 import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
+import { Link } from 'react-router-dom'
+
 // import { Button } from '../Components/Search/Button'
 
 
@@ -24,6 +26,10 @@ class BarPage extends Component {
       this.setState(res.data)
     })
     .catch(err=>console.log(err))
+  }
+
+  handleClick (e) {
+
   }
 
 
