@@ -1,6 +1,6 @@
 import React from "react";
 import "./BarCard.css";
-import logan from "../EachBar/logan.jpg";
+import logan from "../../pages/EachBar/logan.jpg";
 
 
 
