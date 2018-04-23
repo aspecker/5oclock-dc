@@ -1,5 +1,8 @@
 .bar-result {
   /* padding-top: 50px; */
+  /* background-color: coral; */
+  background-image: url('https://www.freepik.es/index.php?goto=74&idfoto=1306609');
+  background-size: cover;
 }
 
 .bar-container {
