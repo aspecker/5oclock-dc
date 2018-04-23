@@ -32,7 +32,7 @@ class BarPage extends Component {
   render() {
     return (
       <Wrapper>
-        <EachBar>
+        <EachBar
             name={this.state.name}
             neighborhood={this.state.neighborhood}
             address={this.state.address}
@@ -47,7 +47,7 @@ class BarPage extends Component {
             description={this.state.description}
             menuLink={this.state.menuLink}
             handleClick={this.state.handleClick}
-          </EachBar>
+          />
         <Footer />
       </Wrapper>
     );
