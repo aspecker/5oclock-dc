@@ -12,7 +12,7 @@ const Footer = () => (
       </a>
     </div>
     <div>
-      <img src="instagram.svg" alt="instagram"/>
+      <img src="/assets/images/instagram.svg" alt="instagram"/>
     </div>
     <div>
       <a href="mailto:adriansander@hotmail.com?subject=5 O' Clock DC" target="_blank"></a>
@@ -20,3 +20,5 @@ const Footer = () => (
   </footer>
 
 )
+
+export default Footer;
