@@ -2,16 +2,9 @@ import React, { Component } from "react";
 
 import EachBar from "./EachBar";
 import Wrapper from "../Components/Wrapper";
-<<<<<<< HEAD
-
+// import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
-
-=======
-import EachBar from "../Components/EachBar";
-import API from "../utils/API";
-import Footer from "../Components/Footer";
->>>>>>> master
 
 
 

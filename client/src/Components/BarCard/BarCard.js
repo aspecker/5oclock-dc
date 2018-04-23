@@ -1,9 +1,5 @@
 import React from "react";
 import "./BarCard.css";
-<<<<<<< HEAD
-import logan from "../../pages/EachBar/logan.jpg";
-=======
->>>>>>> master
 
 
 

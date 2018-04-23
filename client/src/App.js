@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import { BrowserRouter as Router,Route } from 'react-router-dom';
-=======
 import { BrowserRouter as Router,Route, Switch } from 'react-router-dom';
->>>>>>> master
 import Home from './pages/Home';
 import BarPage from './pages/BarPage'
 import Results from './pages/Results'
