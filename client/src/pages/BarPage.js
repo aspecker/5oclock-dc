@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import EachBar from "../Components/EachBar";
+// import EachBar from "../Components/EachBar";
 import Wrapper from "../Components/Wrapper";
 // import Container from "../Components/Container";
 import API from "../utils/API";
@@ -31,7 +31,7 @@ class BarPage extends Component {
   render() {
     return (
       <Wrapper>
-        <EachBar
+        {/* <EachBar
             name={this.state.name}
             neighborhood={this.state.neighborhood}
             address={this.state.address}
@@ -46,7 +46,7 @@ class BarPage extends Component {
             description={this.state.description}
             menuLink={this.state.menuLink}
             handleClick={this.state.handleClick}
-           />
+           /> */}
         <Footer />
       </Wrapper>
     );
