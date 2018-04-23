@@ -9,11 +9,11 @@ const App = () =>(
   <Router basename={process.env.PUBLIC_URL}>
     <div>
     <Switch>
-    <Route exact path ='/' component={Home}/>
-    <Route exact path ='/results/:neighborhood' component={Results}/>
-    <Route path = '/results' component={Home}/>
-    <Route exact path ='/bar/:bar' component={BarPage}/>
-    <Route component={NotFound}/>
+      <Route exact path ='/' component={Home}/>
+      <Route exact path ='/results/:neighborhood' component={Results}/>
+      <Route path = '/results' component={Home}/>
+      <Route exact path ='/bar/:bar' component={BarPage}/>
+      <Route component={NotFound}/>
     </Switch>
     </div>
   </Router>

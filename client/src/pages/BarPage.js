@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import Wrapper from "../Components/Wrapper";
-// import Container from "../Components/Container";
 import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
-// import { Button } from '../Components/Search/Button'
 
 
 
@@ -37,9 +35,6 @@ class BarPage extends Component {
         return 'No Price Available'
     }
   }
-
-
-
 
   render() {
     return (
