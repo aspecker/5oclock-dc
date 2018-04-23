@@ -2,20 +2,21 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => (
-  <footer className="footer">
-  <div className="">
-    <h3>Contact Us</h3>
-  </div>
+  <footer className="footer-icons">
     <div>
-      <i class="fab fa-github"><a href="https://github.com/aspecker/5oclock-dc"></a></i>
+      <h3>Contact Us</h3>
     </div>
-    <div>Instagram</div>
     <div>
-      <i class="fas fa-envelope">
-      </i>
+      <a href="https://github.com/aspecker/5oclock-dc">
+        <i className="fab fa-github"></i>
+      </a>
     </div>
-   
+    <div>
+      <img src="instagram.svg" alt="instagram"/>
+    </div>
+    <div>
+      <a href="mailto:adriansander@hotmail.com?subject=5 O' Clock DC" target="_blank"></a>
+    </div>
   </footer>
-);
 
-export default Footer;
+)
