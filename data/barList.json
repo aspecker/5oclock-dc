@@ -10,9 +10,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 333-3450",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/jpauls.jpg",
+      "/assets/images/bars/jpauls.jpg",
     "menuLink": "http://jpaulsdc.com/menus/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.905005, "longitude": -77.063473 }
@@ -30,7 +30,7 @@
     "phone": "(202) 337-3406",
     "cuisine": "Southern",
     "image":
-    "./assets/images/bars/old-glory-1",
+    "/assets/images/bars/old-glory-1",
     "menuLink": "http://www.oldglorybbq.com/menus/happy-hour",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9054641723633, "longitude": -77.0621948242188 }
@@ -48,7 +48,7 @@
     "phone": "(202) 223-1245",
     "cuisine": "Italian",
     "image":
-    "./assets/images/bars/paradiso.jpg",
+    "/assets/images/bars/paradiso.jpg",
     "menuLink": "https://www.eatyourpizza.com/happy-hour/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9098109186293, "longitude": -77.0451466967047 }
@@ -66,7 +66,7 @@
     "phone": "(202) 774-5875",
     "cuisine": "European",
     "image":
-    "./assets/images/bars/The-Sovereign.jpg",
+    "/assets/images/bars/The-Sovereign.jpg",
     "menuLink": "http://thesovereigndc.com/#menus",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9055439446593, "longitude": -77.063429367214 }
@@ -82,8 +82,8 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 237-7800",
-    "cuisine": "Pub",
-    "image": "./assets/images/bars/chef-geoff.jpg",
+    "cuisine": "Pub Fare",
+    "image": "/assets/images/bars/chef-geoff.jpg",
     "menuLink": "http://www.chefgeoff.com/menu/chef-geoffs",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.93311, "longitude": -77.08475 }
@@ -99,8 +99,8 @@
     "endTime": "19:00",
     "price": 1,
     "phone": "(202) 337-6668",
-    "cuisine": "Pub",
-    "image": "./assets/images/bars/thetombs.jpg",
+    "cuisine": "Pub Fare",
+    "image": "/assets/images/bars/thetombs.jpg",
     "menuLink": "http://www.tombs.com/#!menu",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.906042589577, "longitude": -77.0704738276551 }
@@ -116,9 +116,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 362-8040",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-    "./assets/images/bars/chatter.jpg",    
+    "/assets/images/bars/chatter.jpg",    
     "menuLink":
       "https://docs.wixstatic.com/ugd/c2a145_505cbb0822af4f6994c566de5806ad6a.pdf",
     "description": "WE SELL FOOD",
@@ -137,7 +137,7 @@
     "phone": "(202) 363-4453",
     "cuisine": "Japanese",
     "image":
-    "./assets/images/bars/yosaku.jpg",
+    "/assets/images/bars/yosaku.jpg",
     "menuLink": "https://www.yosakusushi.com/menu",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.95146, "longitude": -77.08139 }
@@ -153,9 +153,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 296-6500",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-    "./assets/images/bars/frontpage.jpg",
+    "/assets/images/bars/frontpage.jpg",
     "menuLink": "http://www.frontpagedc.com/happy-hour/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.90843, "longitude": -77.04399 }
@@ -173,7 +173,7 @@
     "phone": "(202) 667-5370",
     "cuisine": "Southern",
     "image":
-      "./assets/images/bars/madamsorgan.jpg",
+      "/assets/images/bars/madamsorgan.jpg",
     "menuLink": "http://www.madamsorgan.com/menuhtml",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9220428466797, "longitude": -77.0421447753906 }
@@ -191,7 +191,7 @@
     "phone": "(202) 319-9353",
     "cuisine": "Southern",
     "image":
-    "./assets/images/bars/smoke-and-barrel.jpg",
+    "/assets/images/bars/smoke-and-barrel.jpg",
     "menuLink": "https://smokeandbarreldc.com/menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.922291, "longitude": -77.042229 }
@@ -209,7 +209,7 @@
     "phone": "(202) 506-5257",
     "cuisine": "Seafood",
     "image":
-    "./assets/images/bars/johnnyshalfshell.jpg",
+    "/assets/images/bars/johnnyshalfshell.jpg",
     "menuLink": "https://www.johnnyshalfshell.net/menu",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9219, "longitude": -77.04367 }
@@ -225,9 +225,9 @@
     "endTime": "19:00",
     "price": 3,
     "phone": "(202) 232-7663",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-    "./assets/images/bars/roofersunion.jpg",
+    "/assets/images/bars/roofersunion.jpg",
     "menuLink": "https://roofersuniondc.com/dinner-menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9218181827909, "longitude": -77.0425165853195 }
@@ -245,7 +245,7 @@
     "phone": "(202) 628-1099",
     "cuisine": "Italian",
     "image":
-    "./assets/images/bars/casaluca2.png",
+    "/assets/images/bars/casaluca2.png",
     "menuLink": "http://www.casalucadc.com/menus/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9015429946663, "longitude": -77.0268639767212 }
@@ -263,7 +263,7 @@
     "phone": "(202) 525-2010",
     "cuisine": "Mexican",
     "image":
-    "./assets/images/bars/mission2.jpg",
+    "/assets/images/bars/mission2.jpg",
     "menuLink": "https://www.missionDuPontCircle.com/menus/#happy-hour",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9115118, "longitude": -77.0450537 }
@@ -281,7 +281,7 @@
     "phone": "(202) 588-7405",
     "cuisine": "Irish",
     "image":
-    "./assets/images/bars/shenanigans.jpg",
+    "/assets/images/bars/shenanigans.jpg",
     "menuLink": "http://www.shenaniganspubdc.com/menu",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9217687710409, "longitude": -77.042607737955 }
@@ -297,9 +297,9 @@
     "endTime": "19:00",
     "price": 3,
     "phone": "(202) 861-1310",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-    "./assets/images/bars/firefly.jpg",
+    "/assets/images/bars/firefly.jpg",
     "menuLink": "http://www.firefly-dc.com/en-us/menus/food-drinks.htm",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9076499, "longitude": -77.04582 }
@@ -317,7 +317,7 @@
     "phone": "(202) 483-3070",
     "cuisine": "Italian",
     "image":
-    "./assets/images/bars/sette",
+    "/assets/images/bars/sette.jpeg",
     "menuLink": "http://www.setteosteria.com/DuPontCircle-menuhtml",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.912580335231, "longitude": -77.045462203332 }
@@ -335,7 +335,7 @@
     "phone": "(202) 462-4265",
     "cuisine": "Seafood",
     "image":
-      "./assets/images/bars/hanks.jpg",
+      "/assets/images/bars/hanks.jpg",
     "menuLink":
       "https://hanksoysterbar.com/DuPontCircle-circle/menus/#happy-hour",
     "description": "WE SELL FOOD",
@@ -354,7 +354,7 @@
     "phone": "(202) 462-4265",
     "cuisine": "Seafood",
     "image":
-    "./assets/images/bars/hanks.jpg",
+    "/assets/images/bars/hanks.jpg",
     "menuLink": "https://hanksoysterbar.com/the-SouthwestWaterfront/menus/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.91086, "longitude": -77.03811 }
@@ -372,7 +372,7 @@
     "phone": "(202) 554-1101",
     "cuisine": "Indian",
     "image":
-    "./assets/images/bars/masala2.jpg",
+    "/assets/images/bars/masala2.jpg",
     "menuLink":
       "http://www.masalaartdc.com/southwest-categry/happy-hour-at-bar-only/",
     "description": "WE SELL FOOD",
@@ -391,7 +391,7 @@
     "phone": "(202) 554-2202",
     "cuisine": "Fusion",
     "image":
-      "./assets/images/bars/jennys2.jpg",
+      "/assets/images/bars/jennys2.jpg",
     "menuLink": "http://www.jennysdc.com/media/docs/JennysMenuMay2015.pdf",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.87775, "longitude": -77.02275 }
@@ -407,9 +407,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 488-0987",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/station4.jpg",
+      "/assets/images/bars/station4.jpg",
     "menuLink":
       "http://033ec7e.netsolhost.com/menu/happy-hour-baseball-specials/",
     "description": "WE SELL FOOD",
@@ -426,9 +426,9 @@
     "endTime": "19:00",
     "price": 1,
     "phone": "(202) 722-1212",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/airedale.jpg",
+      "/assets/images/bars/airedale.jpg",
     "menuLink": "http://www.airedaledc.com/menu-marquee/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9364166259766, "longitude": -77.0323944091797 }
@@ -444,9 +444,9 @@
     "endTime": "19:00",
     "price": 3,
     "phone": "(202) 795-2919",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/citybardc.jpg",
+      "/assets/images/bars/citybardc.jpg",
     "menuLink": "http://www.citybardc.com/menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.882907, "longitude": -77.017982 }
@@ -462,9 +462,9 @@
     "endTime": "19:00",
     "price": 1,
     "phone": "(202) 560-5142",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/thepitch.jpg",
+      "/assets/images/bars/thepitch.jpg",
     "menuLink": "https://www.thepitchtavern.com/menus-2",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9402933256822, "longitude": -77.0250112007551 }
@@ -480,9 +480,9 @@
     "endTime": "19:00",
     "price": 1,
     "phone": "(202) 722-7669",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/looking-glass.jpg",
+      "/assets/images/bars/looking-glass.jpg",
     "menuLink": "http://www.thelookingglasslounge.com/menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.935187, "longitude": -77.024495 }
@@ -498,9 +498,9 @@
     "endTime": "19:00",
     "price": 1,
     "phone": "(202) 506-7178",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/dcreynolds2.jpg",
+      "/assets/images/bars/dcreynolds2.jpg",
     "menuLink": "http://washingtondc.menupages.com/restaurants/dc-reynolds/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.934886932373, "longitude": -77.0242462158203 }
@@ -516,9 +516,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 547-0030",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/boxcar2.jpg",
+      "/assets/images/bars/boxcar2.jpg",
     "menuLink":
       "http://boxcartaverndc.com//happy-hour?_ga=2.197806761.744928053.1518799018-1523407922.1518555652",
     "description": "WE SELL FOOD",
@@ -535,9 +535,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 544-0518",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/hawkdove01.jpg",
+      "/assets/images/bars/hawkdove01.jpg",
     "menuLink": "http://hawkndovethehill.com/happy-hour",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.886547088623, "longitude": -76.9958114624023 }
@@ -555,7 +555,7 @@
     "phone": "(202) 506-2080",
     "cuisine": "Fusion",
     "image":
-      "./assets/images/bars/tentigers.jpg",
+      "/assets/images/bars/tentigers.jpg",
     "menuLink": "http://www.tentigersdc.com/happy-hour/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9381256103516, "longitude": -77.0242614746094 }
@@ -571,9 +571,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 872-1126",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/beaconbg.jpg",
+      "/assets/images/bars/beaconbg.jpg",
     "menuLink": "http://bbgwdc.com/happy-hour-bar-menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9068859409301, "longitude": -77.0379296176767 }
@@ -591,7 +591,7 @@
     "phone": "(202) 546-5006",
     "cuisine": "Italian",
     "image":
-      "./assets/images/bars/lavagna.jpg",
+      "/assets/images/bars/lavagna.jpg",
     "menuLink": "http://www.lavagnadc.com/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.8816113, "longitude": -76.9951403 }
@@ -607,9 +607,9 @@
     "endTime": "19:00",
     "price": 1,
     "phone": "(202) 547-8459",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/uglymug.jpg",
+      "/assets/images/bars/uglymug.jpg",
     "menuLink": "http://www.uglymugdc.com/food-drink/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.8804588317871, "longitude": -76.9953384399414 }
@@ -627,7 +627,7 @@
     "phone": "(202) 388-4053",
     "cuisine": "European",
     "image":
-      "./assets/images/bars/biergarten2.jpg",
+      "/assets/images/bars/biergarten2.jpg",
     "menuLink": "http://www.biergartenhaus.com/events",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.89996, "longitude": -76.98649 }
@@ -645,7 +645,7 @@
     "phone": "(202) 813-3039",
     "cuisine": "European",
     "image":
-      "./assets/images/bars/ambar.jpg",
+      "/assets/images/bars/ambar.jpg",
     "menuLink": "https://www.ambarrestaurant.com/menu-washington/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.88208, "longitude": -76.99534 }
@@ -663,7 +663,7 @@
     "phone": "(202) 399-4722",
     "cuisine": "Mexican",
     "image":
-      "./assets/images/bars/hstcountryclub.jpg",
+      "/assets/images/bars/hstcountryclub.jpg",
     "menuLink":
       "https://static1.squarespace.com/static/5327507de4b0c44d90acc3c5/t/5a0336319140b7583646359a/1510159921295/MENU-DRINKS-WINTER-2017.pdf",
     "description": "WE SELL FOOD",
@@ -682,7 +682,7 @@
     "phone": "(202) 758-2139",
     "cuisine": "European",
     "image":
-      "./assets/images/bars/pursuit.jpg",
+      "/assets/images/bars/pursuit.jpg",
     "menuLink": "http://www.thepursuitwinebar.com/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.8999863, "longitude": -76.9847193 }
@@ -698,9 +698,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 543-3630",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/bigboard.jpg",
+      "/assets/images/bars/bigboard.jpg",
     "menuLink": "http://thebigboarddc.com/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9000587463379, "longitude": -76.9997787475586 }
@@ -716,9 +716,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 750-6600",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/kingfisher1.jpg",
+      "/assets/images/bars/kingfisher1.jpg",
     "menuLink": "http://www.kingfisherdc.com/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.909378, "longitude": -77.032363 }
@@ -734,9 +734,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 621-7475",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/drafttable.jpeg",
+      "/assets/images/bars/drafttable.jpeg",
     "menuLink": "http://www.draftingtabledc.com/menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9107627868652, "longitude": -77.0315780639648 }
@@ -752,9 +752,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 545-3459",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/sotto.jpeg",
+      "/assets/images/bars/sotto.jpeg",
     "menuLink": "http://www.sottodc.com/dinner/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.91156, "longitude": -77.03236 }
@@ -772,7 +772,7 @@
     "phone": "(202) 560-5045",
     "cuisine": "Irish",
     "image":
-      "./assets/images/bars/thebrixton2.jpg",
+      "/assets/images/bars/thebrixton2.jpg",
     "menuLink": "http://brixtondc.com/#/menu",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9172157859639, "longitude": -77.024245262146 }
@@ -790,7 +790,7 @@
     "phone": "(202) 644-8806",
     "cuisine": "Fusion",
     "image":
-      "./assets/images/bars/chaplins2.jpg",
+      "/assets/images/bars/chaplins2.jpg",
     "menuLink": "http://chaplinsdc.com/chaplins-desserts_in_dc/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.909798, "longitude": -77.023651 }
@@ -808,7 +808,7 @@
     "phone": "(202) 350-9888",
     "cuisine": "European",
     "image":
-      "./assets/images/bars/dacha.jpg",
+      "/assets/images/bars/dacha.jpg",
     "menuLink": "https://dachadc.com/beergarden/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9109966, "longitude": -77.0219468 }
@@ -826,7 +826,7 @@
     "phone": "(202) 350-4350",
     "cuisine": "Seafood",
     "image":
-      "./assets/images/bars/drift7th.jpg",
+      "/assets/images/bars/drift7th.jpg",
     "menuLink": "http://drifton7th.com/images/menus/Drift-Happy-Hour-Menupdf",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9147579, "longitude": -77.0217751 }
@@ -842,9 +842,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 567-2576",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/churchkey.jpg",
+      "/assets/images/bars/churchkey.jpg",
     "menuLink": "http://churchkeydc.com/#menus",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9084128488013, "longitude": -77.0318697756855 }
@@ -860,9 +860,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 396-0038",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/smithcommons.jpg",
+      "/assets/images/bars/smithcommons.jpg",
     "menuLink": "http://www.smithcommonsdc.com/menu2",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.90001, "longitude": -76.9887 }
@@ -878,9 +878,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 518-4092",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/shawstavern.jpg",
+      "/assets/images/bars/shawstavern.jpg",
     "menuLink": "http://www.shawstavern.com/menu/dinner-menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.91512, "longitude": -77.0196 }
@@ -898,7 +898,7 @@
     "phone": "(202) 544-0100",
     "cuisine": "European",
     "image":
-      "./assets/images/bars/belga.jpg",
+      "/assets/images/bars/belga.jpg",
     "menuLink":
       "https://cdn-assets.indigenous.io/account_1346/Happy_Hour_food_2017_06_27_JZ_1515530138399.pdf",
     "description": "WE SELL FOOD",
@@ -915,9 +915,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 546-8412",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/mrhenrys.jpg",
+      "/assets/images/bars/mrhenrys.jpg",
     "menuLink": "http://www.mrhenrysdc.com/happy-hour",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.88519, "longitude": -76.99826 }
@@ -935,7 +935,7 @@
     "phone": "(202) 543-3700",
     "cuisine": "Mexican",
     "image":
-      "./assets/images/bars/lasplacitas.jpg",
+      "/assets/images/bars/lasplacitas.jpg",
     "menuLink": "http://www.lasplacitasrestaurant.com/8th_Menuhtml",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.87738, "longitude": -76.99469 }
@@ -953,7 +953,7 @@
     "phone": "(202) 332-3710",
     "cuisine": "European",
     "image":
-      "./assets/images/bars/logan-tavern.jpg",
+      "/assets/images/bars/logan-tavern.jpg",
     "menuLink": "http://logantavern.com/menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9097849, "longitude": -77.0325964 }
@@ -971,7 +971,7 @@
     "phone": "(202) 758-0086",
     "cuisine": "Italian",
     "image":
-      "./assets/images/bars/radici.jpg",
+      "/assets/images/bars/radici.jpg",
     "menuLink": "http://www.radici-market.com/pranzo-lunch/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.8858208, "longitude": -76.9962949 }
@@ -987,9 +987,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 629-2583",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/bravo-bar.jpg",
+      "/assets/images/bars/bravo-bar.jpg",
     "menuLink": "https://www.facebook.com/Bravo-Bar-247126958778878/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.927799, "longitude": -77.022782 }
@@ -1007,7 +1007,7 @@
     "phone": "(202) 290-3313",
     "cuisine": "Mexican",
     "image":
-      "./assets/images/bars/el-chucho2.jpg",
+      "/assets/images/bars/el-chucho2.jpg",
     "menuLink": "https://www.elchuchodc.com/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.931091, "longitude": -77.027794 }
@@ -1023,9 +1023,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 290-3342",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/the-coupe2.jpg",
+      "/assets/images/bars/the-coupe2.jpg",
     "menuLink": "http://www.thecoupedc.com/menudinner/happy-hour/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9325790405273, "longitude": -77.028190612793 }
@@ -1041,9 +1041,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 232-5263",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/wonderland-ballroom.jpeg",
+      "/assets/images/bars/wonderland-ballroom.jpeg",
     "menuLink": "http://www.thewonderlandballroom.com/menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9299231202487, "longitude": -77.0279416189186 }
@@ -1059,9 +1059,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 547-8459",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/uglymug.jpg",
+      "/assets/images/bars/uglymug.jpg",
     "menuLink": "http://www.uglymugdc.com/food-drink/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.8804588317871, "longitude": -76.9953384399414 }
@@ -1077,9 +1077,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 797-7227",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/the-heights.jpg",
+      "/assets/images/bars/the-heights.jpg",
     "menuLink": "https://www.theheightstaproom.com/print-menu",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.92975, "longitude": -77.03248 }
@@ -1095,9 +1095,9 @@
     "endTime": "19:00",
     "price": 1,
     "phone": "(202) 785-2333",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/the-big-hunt2.jpg",
+      "/assets/images/bars/the-big-hunt2.jpg",
     "menuLink": "http://thebighunt.net/menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.90851, "longitude": -77.0423 }
@@ -1113,9 +1113,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 642-2603",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/emissary.jpg",
+      "/assets/images/bars/emissary.jpg",
     "menuLink":
       "https://static1.squarespace.com/static/574c6dede707eb4fe6a5b076/t/59f2913a53450aa9d13fa6ef/1509069117828/Emissary+Day+Menu+Fall+2017.pdf",
     "description": "WE SELL FOOD",
@@ -1132,9 +1132,9 @@
     "endTime": "19:00",
     "price": 3,
     "phone": "(202) 733-5333",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/city-tap-house.jpg",
+      "/assets/images/bars/city-tap-house.jpg",
     "menuLink": "http://www.dupont.citytap.com",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9011329, "longitude": -77.0236995 }
@@ -1150,9 +1150,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 223-1831",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/1831-bar-lounge.jpg",
+      "/assets/images/bars/1831-bar-lounge.jpg",
     "menuLink": "https://www.1831dc.com/happy-hour",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.905921, "longitude": -77.042991 }
@@ -1168,9 +1168,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 733-5623",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/dukes-grocery2.jpg",
+      "/assets/images/bars/dukes-grocery2.jpg",
     "menuLink": "http://dukesgrocery.com/files/dukes-drinks.pdf",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9101969, "longitude": -77.038134 }
@@ -1186,9 +1186,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 234-1818",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/stoneys.jpg",
+      "/assets/images/bars/stoneys.jpg",
     "menuLink": "http://www.stoneys-dc.com/menu/happyhour/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9098666264388, "longitude": -77.0333090715806 }
@@ -1206,7 +1206,7 @@
     "phone": "(202) 319-1612",
     "cuisine": "Southern",
     "image":
-      "./assets/images/bars/black-jack.jpg",
+      "/assets/images/bars/black-jack.jpg",
     "menuLink": "http://www.blackjackdc.com/daily-specials/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.91163, "longitude": -77.03229 }
@@ -1222,9 +1222,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 290-2821",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/the-pig2.jpg",
+      "/assets/images/bars/the-pig2.jpg",
     "menuLink": "http://www.thepigdc.com/#menus_happy-hour",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.90793, "longitude": -77.03229 }
@@ -1242,7 +1242,7 @@
     "phone": "(202) 742-3150",
     "cuisine": "Spanish/Tapas",
     "image":
-      "./assets/images/bars/radiator.jpeg",
+      "/assets/images/bars/radiator.jpeg",
     "menuLink": "http://www.radiatordc.com/en-us/menus/menus.htm",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9080299, "longitude": -77.03295 }
@@ -1260,7 +1260,7 @@
     "phone": "(202) 808-8572",
     "cuisine": "Southern",
     "image":
-      "./assets/images/bars/commodore-public-house.jpg",
+      "/assets/images/bars/commodore-public-house.jpg",
     "menuLink": "http://thecommodoredc.com/files/2017/12/industrynights.pdf",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.930519, "longitude": -77.023757 }
@@ -1276,9 +1276,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 234-6870",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/union-drinkery.jpg",
+      "/assets/images/bars/union-drinkery.jpg",
     "menuLink": "http://uniondrinkery.com",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9095051, "longitude": -77.0272106 }
@@ -1296,7 +1296,7 @@
     "phone": "(202) 621-7300",
     "cuisine": "Pizza",
     "image":
-      "./assets/images/bars/red-rocks.jpg",
+      "/assets/images/bars/red-rocks.jpg",
     "menuLink":
       "https://static1.squarespace.com/static/568ffd049cadb6feaa159436/t/5a20a53b71c10b5ceff25c7b/1512088891635/CH_HappyHour.pdf",
     "description": "WE SELL FOOD",
@@ -1313,9 +1313,9 @@
     "endTime": "19:00",
     "price": 2,
     "phone": "(202) 588-1075",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/meridian-pint.jpg",
+      "/assets/images/bars/meridian-pint.jpg",
     "menuLink": "https://meridianpint.com/weekly-specials/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9319915771484, "longitude": -77.0285339355469 }
@@ -1331,9 +1331,9 @@
     "endTime": "19:00",
     "price": 1,
     "phone": "(202) 291-5000",
-    "cuisine": "Pub",
+    "cuisine": "Pub Fare",
     "image":
-      "./assets/images/bars/red-derby.jpg",
+      "/assets/images/bars/red-derby.jpg",
     "menuLink": "http://redderby.com",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.937687, "longitude": -77.033038 }
@@ -1351,7 +1351,7 @@
     "phone": "(202) 588-7442",
     "cuisine": "Italian",
     "image":
-      "./assets/images/bars/maple.jpg",
+      "/assets/images/bars/maple.jpg",
     "menuLink": "http://www.dc-maple.com/menu/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.9323273, "longitude": -77.0284103 }
@@ -1369,7 +1369,7 @@
     "phone": "(202) 347-2237",
     "cuisine": "European",
     "image":
-      "./assets/images/bars/maple.jpg",
+      "/assets/images/bars/maple.jpg",
     "menuLink": "http://thealibidc.com/happy-hour.html",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.89338, "longitude": -77.01346 }
@@ -1387,7 +1387,7 @@
     "phone": "(202) 733-1384",
     "cuisine": "European",
     "image":
-      "./assets/images/bars/beucherts-saloon.jpg",
+      "/assets/images/bars/beucherts-saloon.jpg",
     "menuLink": "http://www.beuchertssaloon.com/#!/menu",
     "coords": { "latitude": 38.8848457336426, "longitude": -76.9976577758789 }
   }

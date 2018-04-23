@@ -22,7 +22,7 @@ class NeighborhoodDropDown extends Component {
   render () {
   return (
   <div className="input-group">
-    <span class="select-wrapper">
+    <span className="select-wrapper">
       <select value={this.state.value} onChange={this.handleChange} className="form-control custom-select no-radius" id="hood-name">
         <option defaultValue>Choose a Neighborhood</option>
           {neighborhoods.map(neighborhood =>

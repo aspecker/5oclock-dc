@@ -26,11 +26,14 @@ class BarPage extends Component {
   }
 
 
+
+
   render() {
     return (
       <Wrapper>
         <EachBar
             name={this.state.name}
+            image={this.state.image}
             neighborhood={this.state.neighborhood}
             address={this.state.address}
             city={this.state.city}
