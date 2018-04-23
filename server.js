@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-app.use(express.static("clinet/build"));
+app.use(express.static("client/build"));
 app.use(routes);
 
 //require the routes
