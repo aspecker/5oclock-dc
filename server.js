@@ -22,7 +22,7 @@ app.use(routes);
 require("./config/passport.js")(app)
 require("./routes/api/user-api-routes.sj")(app);
 // require("./routes/bar-api-routes.js")(app);
-
+mongoose.Promise = global.Promise
 //mongoose boilerplate
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/5oClock"

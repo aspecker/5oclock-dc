@@ -80,7 +80,7 @@ router.route("/bars/:id").put(function(req, res){
 
 //insert bar into db
 // expects to recieve an object from the client
-router.route("/api/bars/new").post(function(req,res){
+router.route("/bars/new").post(function(req,res){
     db.Bars.create(req.body)
     .then(function(dbBars){
         res.json(dbBars)
@@ -88,4 +88,4 @@ router.route("/api/bars/new").post(function(req,res){
         res.json(err)
     })
 })
-module.exports -=router
+module.exports =router
