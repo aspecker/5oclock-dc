@@ -26,7 +26,7 @@ class Results extends Component {
   fetchBars(neighborhood){
      API.queryNeighborhood(neighborhood)
      .then(res =>{
-       console.log(res.data)
+       console.log("api ", res.data)
       this.setState({bars: res.data})
       })
       .catch(err=> console.log(err));
