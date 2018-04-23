@@ -14,7 +14,7 @@
     "client": "npm run start --prefix client",
     "seed":"node data/seeds.js",
     "dev": "concurrently \"npm run start\" \"npm run client\" ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && npm run seed"
   },
   "repository": {
     "type": "git",
