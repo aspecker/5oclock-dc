@@ -1,7 +1,6 @@
 import React from "react";
 import "./Search.css";
 
-
 export const Input = props => (
   <div className="form-group bar-search-input">
     <input value={props.search}

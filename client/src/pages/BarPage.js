@@ -1,17 +1,14 @@
 import React, { Component } from "react";
 import Wrapper from "../Components/Wrapper";
-// import Container from "../Components/Container";
 import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
-// import { Button } from '../Components/Search/Button'
 
 
 
 
 class BarPage extends Component {
   state ={}
-
 
   componentDidMount(){
     this.fetchOneBar(this.props.match.params.bar)
@@ -26,13 +23,25 @@ class BarPage extends Component {
     .catch(err=>console.log(err))
   }
 
-
+  convertPrice(int){
+    switch (int){
+      case 1:
+        return '$'
+      case 2:
+        return  '$$'
+      case 3:
+        return '$$$'
+      default:
+        return 'No Price Available'
+    }
+  }
 
   render() {
     return (
       <Wrapper>
         <EachBar
             name={this.state.name}
+            image={this.state.image}
             neighborhood={this.state.neighborhood}
             address={this.state.address}
             city={this.state.city}
@@ -41,7 +50,7 @@ class BarPage extends Component {
             phone={this.state.phone}
             startTime={this.state.startTime}
             endTime={this.state.endTime}
-            price={this.state.price}
+            price={this.convertPrice(this.state.price)}
             cuisine={this.state.cuisine}
             description={this.state.description}
             menuLink={this.state.menuLink}
