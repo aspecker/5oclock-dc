@@ -5,9 +5,7 @@ import logan from "./logan.jpg";
 
 
 const EachBar = props => (
-
-
-
+  
       <div className='bar-result' align='center'>
         <div className='bar-container'>
           <div className='img-container'>
