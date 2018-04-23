@@ -4,8 +4,8 @@ import logan from "./logan.jpg";
 // import { browserHistory } from 'react-router';
 
 
-const EachBar = props => (
-  
+export const EachBar = (props) => (
+
       <div className='bar-result' align='center'>
         <div className='bar-container'>
           <div className='img-container'>
@@ -32,4 +32,4 @@ const EachBar = props => (
 );
 
 
-export default EachBar;
+// export default EachBar;
