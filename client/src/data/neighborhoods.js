@@ -16,51 +16,51 @@
 const neighborhoods = [
     {
         name:'Georgetown',
-        image: './assets/images/neighborhoods/georgetown.png'
+        image: '/assets/images/neighborhoods/georgetown.png'
     },
     {
         name: "Friendship Heights | Tenleytown",
-        image: './assets/images/neighborhoods/friendship.jpg'
+        image: '/assets/images/neighborhoods/friendship.jpg'
     },
     {
         name: "Adam's Morgan",
-        image: './assets/images/neighborhoods/admo.jpg'
+        image: '/assets/images/neighborhoods/admo.jpg'
     },
     {
         name: "DuPont Circle",
-        image: './assets/images/neighborhoods/dupont.jpg'
+        image: '/assets/images/neighborhoods/dupont.jpg'
     },
     {
         name: "Southwest Waterfront",
-        image: './assets/images/neighborhoods/SW.jpg'
+        image: '/assets/images/neighborhoods/SW.jpg'
     },
     {
         name: "Petworth",
-        image: './assets/images/neighborhoods/petworth3.jpg'
+        image: '/assets/images/neighborhoods/petworth3.jpg'
     },
     {
         name: "Capitol Hill",
-        image: './assets/images/neighborhoods/capitolhill.jpg'
+        image: '/assets/images/neighborhoods/capitolhill.jpg'
     },
     {
         name: "H Street",
-        image: './assets/images/neighborhoods/Hst.jpg'
+        image: '/assets/images/neighborhoods/Hst.jpg'
     },
     {
         name: "Logan Circle",
-        image: './assets/images/neighborhoods/logan.jpg'
+        image: '/assets/images/neighborhoods/logan.jpg'
     },
     {
         name: "Shaw | U Street",
-        image: './assets/images/neighborhoods/ust.jpg'
+        image: '/assets/images/neighborhoods/ust.jpg'
     },
     {
         name: "Eastern Market",
-        image: './assets/images/neighborhoods/easternmarket.jpg'
+        image: '/assets/images/neighborhoods/easternmarket.jpg'
     },
     {
         name: "Columbia Heights",
-        image: './assets/images/neighborhoods/cohi.jpg'
+        image: '/assets/images/neighborhoods/cohi.jpg'
     }
 ]
 
