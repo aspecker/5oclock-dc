@@ -9,7 +9,7 @@ const EachBar = props => (
       <div className='bar-result' align='center'>
         <div className='bar-container'>
           <div className='img-container'>
-            <img className='img img-responsive img-fluid rest-img' alt={props.name} src={logan} />
+            <img className='img img-responsive img-fluid rest-img' alt={props.name} src={props.image} />
             <h1 className='bar-name'>{props.name}</h1>
             <h3 className='bar-hood'>{props.neighborhood}</h3>
           </div>

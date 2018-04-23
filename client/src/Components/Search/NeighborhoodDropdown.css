@@ -10,6 +10,10 @@ select {
   -webkit-appearance: none;
 }
 
+select option {
+  color: #fff;
+}
+
 .input-group {
   border-radius: 0px!important;
 }

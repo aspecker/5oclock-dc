@@ -4,8 +4,16 @@ import Wrapper from "../Components/Wrapper";
 import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
+import { Link } from 'react-router-dom';
+import Background from './texturedbg.jpg';
+
 // import { Button } from '../Components/Search/Button'
 
+const wrapperStyle = {
+
+  backgroundImage: `url(${Background})`,
+  backgroundRepeat: 'repeat'
+};
 
 
 
@@ -26,11 +34,15 @@ class BarPage extends Component {
     .catch(err=>console.log(err))
   }
 
+  handleClick (e) {
+
+  }
+
 
 
   render() {
     return (
-      <Wrapper>
+      <Wrapper style={wrapperStyle}>
         <EachBar
             name={this.state.name}
             neighborhood={this.state.neighborhood}
