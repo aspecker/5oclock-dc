@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./BarPage.css"
 import Wrapper from "../Components/Wrapper";
 import Container from "../Components/Container";
 import EachBar from "../Components/EachBar";
