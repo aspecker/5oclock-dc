@@ -12,7 +12,6 @@ import { Button } from '../Components/Search/Button'
 class BarPage extends Component {
   state ={}
 
-
   componentDidMount(){
     this.fetchOneBar(this.props.match.params.bar)
   }
@@ -25,7 +24,6 @@ class BarPage extends Component {
     })
     .catch(err=>console.log(err))
   }
-
 
 
   render() {
