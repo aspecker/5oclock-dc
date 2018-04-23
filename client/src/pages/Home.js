@@ -4,15 +4,13 @@ import Hero from "../Components/Hero";
 import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
 import Footer from "../Components/Footer";
 
-
-
-
 const Home = () =>(
       <Wrapper>
         <Hero>
           <h1>Find Your Happy Hour</h1>
           <NeighborhoodDropDown />
         </Hero>
+        <About />
         <Footer />
       </Wrapper>
 )
