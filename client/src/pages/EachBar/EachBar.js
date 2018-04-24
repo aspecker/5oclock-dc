@@ -1,38 +1,36 @@
-import React, {Component} from "react";
+import React from "react";
 import "./EachBar.css";
-import logan from "./logan.jpg";
-// import { browserHistory } from 'react-router';
+import { Link } from 'react-router-dom'
 
 
-// const EachBar = props => (
-class EachBar extends Component{
-  render(){
-  return(
+const EachBar = props => (
+
       <div className='bar-result' align='center'>
         <div className='bar-container'>
           <div className='img-container'>
-            <img className='img img-responsive img-fluid rest-img' alt={this.props.name} src={logan} />
-            <h1 className='bar-name'>{this.props.name}</h1>
-            <h3 className='bar-hood'>{this.props.neighborhood}</h3>
+            <img className='img img-responsive img-fluid rest-img' alt={props.name} src={props.image} />
+            <h1 className='bar-name'>{props.name}</h1>
+            <h3 className='bar-hood'>{props.neighborhood}</h3>
           </div>
           <div className='bar-info-container'>
-            <h4>{this.props.name}</h4>
-            <p className='address'>{this.props.address}</p>
-            <p className='address'>{this.props.city}, {this.props.state} {this.props.ZIP}</p>
-            <p>{this.props.phone}</p>
+            <h4>{props.name}</h4>
+            <p className='address'>{props.address}</p>
+            <p className='address'>{props.city}, {props.state} {props.ZIP}</p>
+            <p>{props.phone}</p>
             <p className='hours'>Hours</p>
-            <p>{this.props.startTime} - {this.props.endTime}</p>
-            <p>Price Level:  {this.props.price}</p>
-            <p>{this.props.cuisine}</p>
-            <p className='menu'><a href={this.props.menuLink}>Menu</a></p>
-            <button type="submit" onClick={this.props.handleClick} className="btn btn-default">
+            <p>{props.startTime} - {props.endTime}</p>
+            <p>{props.price}</p>
+            <p>{props.cuisine}</p>
+            <p className='menu'><a href={props.menuLink}>Menu</a></p>
+            <Link to ={`/results/${props.neighborhood}`}>
+            <button type="submit" onClick={props.handleClick} className="btn btn-default">
               Back to Results
             </button>
+            </Link>
           </div>
         </div>
       </div>
-  )}
-};
+);
 
 
 export default EachBar;
