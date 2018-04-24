@@ -1,0 +1,10 @@
+.about-us {
+  font-size: 24px;
+  max-width: 960px;
+  min-height: 500px;
+  padding: 20px 50px;
+}
+.about-us h2 {
+  color: #900;
+  font-size: 5rem;
+}
