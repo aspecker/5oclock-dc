@@ -19,7 +19,7 @@ const EachBar = props => (
             <p>{props.phone}</p>
             <p className='hours'>Hours</p>
             <p>{props.startTime} - {props.endTime}</p>
-            <p>Price:  {props.price}</p>
+            <p>{props.price}</p>
             <p>{props.cuisine}</p>
             <p className='menu'><a href={props.menuLink}>Menu</a></p>
             <Link to ={`/results/${props.neighborhood}`}>

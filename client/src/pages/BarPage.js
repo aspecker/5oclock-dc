@@ -4,9 +4,6 @@ import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
 
-
-
-
 class BarPage extends Component {
   state ={}
 
