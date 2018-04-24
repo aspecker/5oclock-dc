@@ -5,12 +5,12 @@ mongoose.connect(
     process.env.MONGODB_URI || "mongodb://localhost/5oClock",
 );
 const barList=require('./barList.json')
-
-db.Bars
-.remove({})
-.then(barList=>(
- db.Bars.collection.insertMany(barList, { ordered: false }))
-)
+// console.log (barList[0], barList[70])
+// db.Bars
+// .remove({})
+// .then(barList=>(
+ db.Bars.insertMany(barList, { ordered: false })
+// ))
 .then(data=>{
     // console.log(data.insertedIds.length)
     process.exit(0)

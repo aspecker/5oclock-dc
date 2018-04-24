@@ -54,6 +54,9 @@ const BarsSchema = new Schema({
     },
     phone:{
         type:String
+    },
+    menuLink:{
+        type:String
     }
 })
 var Bars= mongoose.model("Bars", BarsSchema);
