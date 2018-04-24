@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+
+import EachBar from "./EachBar";
 import Wrapper from "../Components/Wrapper";
-import EachBar from "../Components/EachBar";
+// import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
 import Background from "./greybg.jpg";
@@ -22,7 +24,6 @@ class BarPage extends Component {
   fetchOneBar(barId){
     API.barFindOne(barId)
     .then(res=>{
-      console.log(res.data)
       this.setState(res.data)
     })
     .catch(err=>console.log(err))
@@ -60,7 +61,7 @@ class BarPage extends Component {
             description={this.state.description}
             menuLink={this.state.menuLink}
             handleClick={this.state.handleClick}
-           />
+          />
         <Footer />
       </Wrapper>
     );

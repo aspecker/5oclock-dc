@@ -20,14 +20,13 @@ class Results extends Component {
   }
 
   componentDidMount(){
-    window.scrollTo(0,0);
+    window.scrollTo(0,150);
     this.fetchBars(this.props.match.params.neighborhood);
   }
 
   fetchBars(neighborhood){
      API.queryNeighborhood(neighborhood)
      .then(res =>{
-       console.log(res.data)
       this.setState({bars: res.data})
       })
       .catch(err=> console.log(err));
