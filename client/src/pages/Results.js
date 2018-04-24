@@ -19,6 +19,10 @@ const wrapperStyle = {
   backgroundRepeat: 'repeat'
 };
 
+const heroStyle = {
+  fontSize: '1rem'
+};
+
 
 class Results extends Component {
   state = {
@@ -62,7 +66,7 @@ class Results extends Component {
     return (
 
       <Wrapper style={wrapperStyle}>
-        <Hero backgroundImage= {this.findNeighborhoodImage(this.props.match.params.neighborhood)[0].image}>
+        <Hero style={heroStyle} backgroundImage= {this.findNeighborhoodImage(this.props.match.params.neighborhood)[0].image}>
           <h1>{this.props.match.params.neighborhood}</h1>
           <Link to = '/'>
             <Button> Change Neighborhood</Button>
