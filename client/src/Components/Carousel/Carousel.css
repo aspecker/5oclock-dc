@@ -4,9 +4,6 @@ slide1, slide2, slide3 {
 
 .backDrop {
     z-index: 0;
-    /* display: flex;
-    justify-content: center; */
-    /* flex-direction: column; */
 }
 
 .thumbs-wrapper {

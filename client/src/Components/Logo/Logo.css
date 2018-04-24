@@ -1,0 +1,23 @@
+.logo {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 15;
+    position: fixed;
+    top: 0;
+
+}
+
+.logo img  {
+  height: 120px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  position: fixed;
+  top: 65px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+}
