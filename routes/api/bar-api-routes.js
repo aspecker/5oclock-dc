@@ -1,5 +1,5 @@
 const db = require ("../../models");
-const router = require("express").Router
+const router = require("express").Router()
 
 //all bars api
 router.route("/bars/data").get(function(req,res){
