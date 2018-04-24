@@ -5,23 +5,31 @@ import "./Carousel.css";
 import slide1 from "./slide1.jpg";
 import slide2 from "./slide2.jpg";
 import slide3 from "./slide3.jpg";
+import slide4 from "./slide4.jpg";
+import slide5 from "./slide5.jpg";
 
-class NicoleSos extends Component {
+class Slide extends Component {
     render() {
         return (
-            <Carousel showArrows={false} showIndicators={false} infiniteLoop autoPlay className="backDrop">
+            <Carousel showArrows={false} showIndicators={false} infiniteLoop autoPlay transitionTime={2000} className="backDrop">
                <div>
                     <img src={ slide1 } />
                 </div>
                 <div>
-                    <img src={ slide2 } />
+                    <img src={ slide2} />
                 </div>
                 <div>
-                    <img src={ slide3} />
+                    <img src={ slide3 } />
+                </div>
+                <div>
+                    <img src={ slide4 } />
+                </div>
+                <div>
+                    <img src={ slide5 } />
                 </div>
             </Carousel>
         );
     }
 }
 
-export default NicoleSos;
+export default Slide;

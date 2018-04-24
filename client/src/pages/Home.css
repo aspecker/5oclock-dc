@@ -1,13 +1,33 @@
-.dropDrop {
+.dropDown {
     z-index: 2;
     position: absolute;
-    top: 40%;
-    margin: 0;
-    left: 33%;
-    width: 500px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    text-align: center;
 }
 
 h1 {
     color: #fff;
-    font-size: 40px;
+    font-size: 1.5em;
+    width: 100%; 
+    text-shadow: 0 0 5px magenta, 0 0 10px magenta;
 }
+
+@media screen and (min-width:500px) {
+    h1 {
+      font-size: 2.5em;
+      margin-top: 100px;
+    }
+  }
+  
+  @media screen and (min-width:700px) {
+    h1 {
+      font-size: 4em;
+    }
+
+    .dropDown {
+        top: 40%;
+    }
+  }

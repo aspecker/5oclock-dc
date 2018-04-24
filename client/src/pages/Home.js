@@ -1,14 +1,13 @@
 import React from "react";
 import Wrapper from "../Components/Wrapper";
-import Hero from "../Components/Hero";
-import NicoleSos from "../Components/Carousel";
+import Slide from "../Components/Carousel";
 import About from './About';
 import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
 import Footer from "../Components/Footer";
 import "./Home.css";
 import Background from './greybg.jpg';
 import Logo from "../Components/Logo";
-// import LogoImg from './five-pm-logo.png';
+
 
 
 const wrapperStyle = {
@@ -19,11 +18,11 @@ const wrapperStyle = {
 
 const Home = () =>(
       <Wrapper>
-        <NicoleSos />
-        <div className="dropDrop">
+        <div className="dropDown">
           <h1>Find Your Happy Hour</h1>
           <NeighborhoodDropDown />
         </div>
+        <Slide />
         <About />
         <Footer />
       </Wrapper>
