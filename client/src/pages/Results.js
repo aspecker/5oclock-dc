@@ -11,7 +11,13 @@ import API from '../utils/API'
 import { Link } from 'react-router-dom'
 import "./Results.css";
 import neighborhoods from '../data/neighborhoods.js'
+import Background from "./greybg.jpg";
 
+
+const wrapperStyle = {
+  backgroundImage: `url(${Background})`,
+  backgroundRepeat: 'repeat'
+};
 
 
 class Results extends Component {
@@ -55,7 +61,7 @@ class Results extends Component {
   render() {
     return (
 
-      <Wrapper>
+      <Wrapper style={wrapperStyle}>
         <Hero backgroundImage= {this.findNeighborhoodImage(this.props.match.params.neighborhood)[0].image}>
           <h1>{this.props.match.params.neighborhood}</h1>
           <Link to = '/'>
