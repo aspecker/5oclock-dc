@@ -24,7 +24,6 @@ class BarPage extends Component {
   fetchOneBar(barId){
     API.barFindOne(barId)
     .then(res=>{
-      console.log(res.data)
       this.setState(res.data)
     })
     .catch(err=>console.log(err))

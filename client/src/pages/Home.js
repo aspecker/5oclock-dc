@@ -14,7 +14,7 @@ const Home = () =>(
           <h1>Find Your Happy Hour</h1>
           <NeighborhoodDropDown />
         </Hero>
-        {/* <About /> */}
+        <About />
         <Footer />
       </Wrapper>
 )
