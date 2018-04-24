@@ -89,28 +89,24 @@ padding-bottom: 50px;
   position: relative;
   /* min-height: 350px; */
 }
+.bar-name, .bar-hood {
+  text-shadow: 0 0 3px coral, 0 0 5px coral;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
   .bar-name {
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-      bottom: 60px;
-      left: 0;
-      right: 0;
+    bottom: 60px;
   }
   .bar-hood {
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-      bottom: 25px;
-      left: 0;
-      right: 0;
+    bottom: 25px;
   }
   .rest-img {
     width: 100%;
   }
-  .rest-img h1, .rest-img h3 {
-    text-shadow: 0 0 10px coral, 0 0 10px coral;
-  }
+
 
 @media screen and (min-width: 700px) {
   .bar-result {
