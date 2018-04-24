@@ -29,7 +29,7 @@ select {
   .hood-submit:hover {
     color: #900;
     background-color: rgba(255,255,255,0.5);
-    border: 1px solid #000;
+    border: 1px solid #900;
   }
 
 .select-wrapper {
