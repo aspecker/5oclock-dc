@@ -4,7 +4,7 @@ import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
 import Background from "./greybg.jpg";
-
+import Logo from "../Components/Logo";
 
 const wrapperStyle = {
   backgroundImage: `url(${Background})`,
@@ -44,6 +44,7 @@ class BarPage extends Component {
   render() {
     return (
       <Wrapper style={wrapperStyle}>
+        <Logo />
         <EachBar
             name={this.state.name}
             image={this.state.image}

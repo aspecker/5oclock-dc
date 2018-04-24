@@ -4,10 +4,9 @@ import Hero from "../Components/Hero";
 // import About from '../components/About';
 import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
 import Footer from "../Components/Footer";
-import Genesis from './gensis.jpeg';
 import Background from './greybg.jpg';
 import Logo from "../Components/Logo";
-import LogoImg from './five-pm-logo.png';
+// import LogoImg from './five-pm-logo.png';
 
 
 const wrapperStyle = {
@@ -20,7 +19,7 @@ const Home = () =>(
 
     <Wrapper style={wrapperStyle}>
       <Logo />
-      <Hero backgroundImage={Genesis}>
+      <Hero>
         <h1>Find Your Happy Hour</h1>
         <NeighborhoodDropDown />
       </Hero>
