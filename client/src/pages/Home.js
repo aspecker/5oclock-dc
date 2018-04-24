@@ -18,6 +18,7 @@ const wrapperStyle = {
 
 const Home = () =>(
       <Wrapper>
+        <Logo />
         <div className="dropDown">
           <h1>Find Your Happy Hour</h1>
           <NeighborhoodDropDown />
