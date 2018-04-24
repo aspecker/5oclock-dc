@@ -4,16 +4,17 @@ import Hero from "../Components/Hero";
 import About from './About';
 import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
 import Footer from "../Components/Footer";
+import Genesis from './gensis.jpeg';
 
 // attempt to fix deploy problems
 
 const Home = () =>(
       <Wrapper>
-        <Hero>
+        <Hero backgroundImage={Genesis}>
           <h1>Find Your Happy Hour</h1>
           <NeighborhoodDropDown />
         </Hero>
-        <About />
+        {/* <About /> */}
         <Footer />
       </Wrapper>
 )

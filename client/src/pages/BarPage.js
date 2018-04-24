@@ -5,14 +5,19 @@ import Wrapper from "../Components/Wrapper";
 // import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
+import Background from "./greybg.jpg";
 
 
-
+const wrapperStyle = {
+  backgroundImage: `url(${Background})`,
+  backgroundRepeat: 'repeat'
+};
 
 class BarPage extends Component {
   state ={}
 
   componentDidMount(){
+    window.scrollTo(0,0);
     this.fetchOneBar(this.props.match.params.bar)
   }
 
@@ -40,7 +45,7 @@ class BarPage extends Component {
 
   render() {
     return (
-      <Wrapper>
+      <Wrapper style={wrapperStyle}>
         <EachBar
             name={this.state.name}
             image={this.state.image}

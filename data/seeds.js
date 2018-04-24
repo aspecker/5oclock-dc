@@ -8,8 +8,8 @@ const barList=require('./barList.json')
 
 db.Bars
 .remove({})
-.then(()=>
- db.Bars.collection.insertMany(barList, { ordered: false })
+.then(barList=>(
+ db.Bars.collection.insertMany(barList, { ordered: false }))
 )
 .then(data=>{
     // console.log(data.insertedIds.length)
