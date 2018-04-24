@@ -1,5 +1,5 @@
 .hero {
-  height: 350px;
+  height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -25,12 +25,14 @@
 
 .hero h1, .hero h2 {
   color: white;
+  text-shadow: 0 0 5px coral, 0 0 5px coral;
 }
 
 .hero h1 {
   font-size: 3.7rem;
   padding-top: 200px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 500px) {
@@ -38,7 +40,7 @@
     height: 500px;
   }
   .hero h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
 }
