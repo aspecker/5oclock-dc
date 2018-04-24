@@ -5,7 +5,6 @@ import NicoleSos from "../Components/Carousel";
 import About from './About';
 import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
 import Footer from "../Components/Footer";
-import Genesis from './gensis.jpeg';
 import "./Home.css";
 import Background from './greybg.jpg';
 import Logo from "../Components/Logo";
