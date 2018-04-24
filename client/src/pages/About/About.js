@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
-import Row from "./Components/Row";
-import Col from "./Components/Col"
+import Row from "../../Components/Row";
+import Col from "../../Components/Col"
 
 
 const About = props => (
