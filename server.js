@@ -4,6 +4,7 @@ const bodyParser= require ("body-parser")
 const path = require("path")
 const morgan = require("morgan")
 const app = express();
+const routes =require("./routes");
 const db = require("./models");
 
 
@@ -14,19 +15,14 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-  const path = require('path');
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-  });
-}
+app.use(express.static("client/build"));
+app.use(routes);
 
 //require the routes
 require("./config/passport.js")(app)
-require("./routes/user-api-routes.js")(app);
-require("./routes/bar-api-routes.js")(app);
-
+require("./routes/api/user-api-routes.js")(app);
+// require("./routes/bar-api-routes.js")(app);
+mongoose.Promise = global.Promise
 //mongoose boilerplate
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/5oClock"

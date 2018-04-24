@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "../Components/Wrapper";
 import Hero from "../Components/Hero";
-// import About from '../components/About';
+import About from './About';
 import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
 import Footer from "../Components/Footer";
 import Genesis from './gensis.jpeg';
@@ -14,7 +14,7 @@ const Home = () =>(
           <h1>Find Your Happy Hour</h1>
           <NeighborhoodDropDown />
         </Hero>
-        {/* <About /> */}
+        <About />
         <Footer />
       </Wrapper>
 )
