@@ -15,18 +15,7 @@ const wrapperStyle = {
   backgroundRepeat: 'repeat',
   minHeight: '100vh'
 };
-//
-// const logoStyle = {
-//   width: '100px',
-//   position: 'fixed',
-//   top: '10px',
-//   left: '10px',
-//   zIndex: 10
-// }
 
-// <img className='img img-responsive img-fluid' style={logoStyle} src={LogoImg} alt='logo' />
-
-// attempt to fix deploy problems
 const Home = () =>(
 
     <Wrapper style={wrapperStyle}>
