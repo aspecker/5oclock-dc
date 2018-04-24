@@ -24,10 +24,20 @@ const BarsSchema = new Schema({
         type:String,
         required: true
     },
-    hours:{
+    // hours:{
+    //     type: String,
+    //     //consider a different datatype
+    //     required:true
+    // },
+    startTime:{
         type: String,
-        //consider a different datatype
-        required:true
+        required: true
+
+    },
+    endTime:{
+        type: String,
+        required: true
+
     },
     price:{
         type:Number,
