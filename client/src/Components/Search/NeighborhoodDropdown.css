@@ -10,9 +10,11 @@ select {
   -webkit-appearance: none;
   margin-top: 50px;
 }
+select:hover {
+  border: none;
+}
 
 .input-group {
-  border-radius: 0px!important;
 }
 
 .hood-submit {
