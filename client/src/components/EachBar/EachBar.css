@@ -108,6 +108,9 @@ padding-bottom: 50px;
   .rest-img {
     width: 100%;
   }
+  .rest-img h1, .rest-img h3 {
+    text-shadow: 0 0 10px coral, 0 0 10px coral;
+  }
 
 @media screen and (min-width: 700px) {
   .bar-result {
