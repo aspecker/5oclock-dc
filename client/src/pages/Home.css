@@ -3,6 +3,7 @@
   position: absolute;
   top: 25%;
   left: 50%;
+  margin-top: 120px;
   transform: translate(-50%, -50%); 
   width: 100%;
   text-align: center;
