@@ -6,7 +6,7 @@ import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
 import Footer from "../Components/Footer";
 import Genesis from './gensis.jpeg';
 import Background from './greybg.jpg';
-// import Logo from "../Components/Logo";
+import Logo from "../Components/Logo";
 import LogoImg from './five-pm-logo.png';
 
 
@@ -15,19 +15,22 @@ const wrapperStyle = {
   backgroundRepeat: 'repeat',
   minHeight: '100vh'
 };
+//
+// const logoStyle = {
+//   width: '100px',
+//   position: 'fixed',
+//   top: '10px',
+//   left: '10px',
+//   zIndex: 10
+// }
 
-const logoStyle = {
-  width: '100px',
-  position: 'fixed',
-  top: '10px',
-  left: '10px',
-  zIndex: 10
-}
+// <img className='img img-responsive img-fluid' style={logoStyle} src={LogoImg} alt='logo' />
+
 // attempt to fix deploy problems
 const Home = () =>(
 
     <Wrapper style={wrapperStyle}>
-      <img className='img img-responsive img-fluid' style={logoStyle} src={LogoImg} alt='logo' />
+      <Logo />
       <Hero backgroundImage={Genesis}>
         <h1>Find Your Happy Hour</h1>
         <NeighborhoodDropDown />
