@@ -317,7 +317,7 @@
     "phone": "(202) 483-3070",
     "cuisine": "Italian",
     "image":
-    "/assets/images/bars/sette.jpeg",
+    "/assets/images/bars/sette.jpg",
     "menuLink": "http://www.setteosteria.com/DuPontCircle-menuhtml",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.912580335231, "longitude": -77.045462203332 }
@@ -754,7 +754,7 @@
     "phone": "(202) 545-3459",
     "cuisine": "Pub Fare",
     "image":
-      "/assets/images/bars/sotto.jpeg",
+      "/assets/images/bars/sotto.jpg",
     "menuLink": "http://www.sottodc.com/dinner/",
     "description": "WE SELL FOOD",
     "coords": { "latitude": 38.91156, "longitude": -77.03236 }
