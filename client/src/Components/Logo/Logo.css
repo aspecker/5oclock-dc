@@ -1,5 +1,4 @@
 .logo {
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +7,12 @@
 }
 
 .logo img  {
-  height: 80px;
+  height: 120px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
   border-radius: 50%;
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
 }
