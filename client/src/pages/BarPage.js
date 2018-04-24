@@ -11,6 +11,7 @@ class BarPage extends Component {
   state ={}
 
   componentDidMount(){
+    window.scrollTo(0,0);
     this.fetchOneBar(this.props.match.params.bar)
   }
 
