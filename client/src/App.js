@@ -3,7 +3,7 @@ import { BrowserRouter as Router,Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import BarPage from './pages/BarPage'
 import Results from './pages/Results'
-import NotFound from './pages/NotFound'
+import NotFound from './pages/NotFound' 
 
 const App = () =>(
   <Router basename={process.env.PUBLIC_URL}>
