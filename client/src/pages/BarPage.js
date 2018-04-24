@@ -5,12 +5,15 @@ import API from "../utils/API";
 import Footer from "../Components/Footer";
 import Background from "./greybg.jpg";
 
+<<<<<<< HEAD
 
 const wrapperStyle = {
   backgroundImage: `url(${Background})`,
   backgroundRepeat: 'repeat'
 };
 
+=======
+>>>>>>> touch-up
 class BarPage extends Component {
   state ={}
 

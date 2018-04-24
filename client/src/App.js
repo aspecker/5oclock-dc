@@ -13,6 +13,7 @@ const App = () =>(
       <Route exact path ='/results/:neighborhood' component={Results}/>
       <Route path = '/results' component={Home}/>
       <Route exact path ='/bar/:bar' component={BarPage}/>
+      <Route path = '/bar' component={Home}/>
       <Route component={NotFound}/>
     </Switch>
     </div>
