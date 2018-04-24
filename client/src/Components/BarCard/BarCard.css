@@ -6,13 +6,16 @@
 .card {
   max-width: 350px;
   margin: 0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  border: 1px solid black;
+
 }
 
 .bar-img {
   background-size: cover;
   background-position: center;
-  border: 1px solid black;
-  border-bottom: none;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+
   min-height: 150px;
   max-width: 350px;
 }
