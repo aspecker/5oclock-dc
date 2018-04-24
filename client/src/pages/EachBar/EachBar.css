@@ -1,10 +1,16 @@
-
+.bar-result {
+  background-color: rgba(0,0,0,0.2);
+padding-bottom: 50px;
+  /* padding-top: 50px; */
+}
 
 .bar-container {
   background-color: rgba(0,0,0,0.8);
   margin-bottom: 75px;
   max-width: 960px;
   padding-bottom: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+
 }
 
 .bar-name, .bar-hood {
@@ -36,6 +42,8 @@
   font-size: 1.5rem;
   margin: 15px;
   padding: 35px 10px 70px 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+
 }
 .bar-info-container h4 {
   font-size: 2.5rem;
@@ -81,25 +89,24 @@
   position: relative;
   /* min-height: 350px; */
 }
+.bar-name, .bar-hood {
+  text-shadow: 0 0 3px coral, 0 0 5px coral;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
   .bar-name {
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-      bottom: 60px;
-      left: 0;
-      right: 0;
+    bottom: 60px;
   }
   .bar-hood {
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-      bottom: 25px;
-      left: 0;
-      right: 0;
+    bottom: 25px;
   }
   .rest-img {
     width: 100%;
   }
+
 
 @media screen and (min-width: 700px) {
   .bar-result {

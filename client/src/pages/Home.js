@@ -7,8 +7,16 @@ import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
 import Footer from "../Components/Footer";
 import Genesis from './gensis.jpeg';
 import "./Home.css";
+import Background from './greybg.jpg';
+import Logo from "../Components/Logo";
+// import LogoImg from './five-pm-logo.png';
 
-// attempt to fix deploy problems
+
+const wrapperStyle = {
+  backgroundImage: `url(${Background})`,
+  backgroundRepeat: 'repeat',
+  minHeight: '100vh'
+};
 
 const Home = () =>(
       <Wrapper>

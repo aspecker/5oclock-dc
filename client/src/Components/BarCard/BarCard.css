@@ -6,13 +6,17 @@
 .card {
   max-width: 350px;
   margin: 0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.8);
+
 }
 
 .bar-img {
   background-size: cover;
   background-position: center;
-  border: 1px solid black;
-  border-bottom: none;
+  height: auto;
+  width: 100%;
   min-height: 150px;
   max-width: 350px;
 }
@@ -20,6 +24,8 @@
 .card-body {
   background: #fff;
   max-width: 350px;
+  margin: 0;
+  padding: 0;
 }
 
 .card-title, .card-text {
@@ -38,4 +44,26 @@
 }
   .price-level {
     padding-bottom: 50px;
+  }
+
+
+  @media screen and (min-width: 700px) {
+    .card, .bar-img, .card-body {
+      max-width: 550px;
+
+
+    }
+
+  }
+
+  @media screen and (min-width: 1024px) {
+    .card, .bar-img, .card-body {
+      max-width: 850px;
+
+
+    }
+    .bar-img {
+      width: 100%;
+    }
+
   }
