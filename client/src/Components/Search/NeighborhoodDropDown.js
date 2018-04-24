@@ -3,7 +3,6 @@ import "./NeighborhoodDropdown.css";
 import { Link } from 'react-router-dom'
 import neighborhoods from '../../data/neighborhoods'
 
-
 class NeighborhoodDropDown extends Component {
   constructor(props){
     super(props);
@@ -16,8 +15,6 @@ class NeighborhoodDropDown extends Component {
   handleChange (e) {
     this.setState({selectedNeighborhood: e.target.value})
   }
-
-
 
   render () {
   return (

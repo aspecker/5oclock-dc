@@ -1,0 +1,13 @@
+.dropDrop {
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    margin: 0;
+    left: 33%;
+    width: 500px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+}
