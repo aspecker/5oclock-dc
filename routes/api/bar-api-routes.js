@@ -1,4 +1,4 @@
-const db = require ("../models");
+const db = require ("../../models");
 const router = require("express").Router
 
 //all bars api
