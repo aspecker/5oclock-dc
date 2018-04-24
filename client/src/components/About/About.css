@@ -1,10 +1,36 @@
 .about-us {
-  font-size: 24px;
+  font-size: 20px;
   max-width: 960px;
-  min-height: 500px;
-  padding: 20px 50px;
+  /* min-height: 500px; */
+  padding: 20px;
 }
 .about-us h2 {
   color: #900;
-  font-size: 5rem;
+  font-size: 3rem;
+  margin-top: 0;
 }
+
+@media screen and (min-width:500px) {
+  .about-us {
+    padding: 0px 35px 50px 35px;
+  }
+  .about-us h2 {
+    font-size: 2.5em;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width:700px) {
+  .about-us {
+    font-size: 24px;
+    padding: 0px 50px 50px 50px;
+    
+  }
+
+  .about-us h2 {
+      margin-top: 50px;
+      margin-bottom: 15px;
+      font-size: 3.5em;
+  }
+}
+
