@@ -3,9 +3,6 @@ import "./Footer.css";
 
 const Footer = () => (
   <footer className="footer-icons">
-    <div>
-      <h3>Contact Us</h3>
-    </div>
     <div className='media'>
       <div>
         <a href="https://github.com/aspecker/5oclock-dc">

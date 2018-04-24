@@ -58,7 +58,7 @@ class Results extends Component {
         <Hero backgroundImage= {this.findNeighborhoodImage(this.props.match.params.neighborhood)[0].image}>
           <h1>{this.props.match.params.neighborhood}</h1>
           <Link to = '/'>
-            <Button> Another Neighborhood?</Button>
+            <Button> Change Neighborhood</Button>
           </Link>
         </Hero>
         <div className="card-results-wrapper">
@@ -66,6 +66,7 @@ class Results extends Component {
             <Row >
             {this.state.bars.map(bar=>
               <Col size='sm-6 md-4'>
+                <div className='card-columns'>
                     <Link key={bar._id}
                     to ={`/bar/${bar._id}`}>
                     <BarCard key={bar._id} id={bar._id}
@@ -79,6 +80,7 @@ class Results extends Component {
                       price={this.convertPrice(bar.price)}>
                     </BarCard>
                     </Link>
+                </div>
               </Col>
             )}
             </Row>

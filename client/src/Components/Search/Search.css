@@ -31,3 +31,7 @@
 .select-wrapper {
     border-radius: 0px!important;
 } */
+
+.btn {
+  border-radius: 25px;
+}

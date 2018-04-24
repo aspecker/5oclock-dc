@@ -8,6 +8,7 @@ select {
   font-size: 1em;
   padding-left: 15px;
   -webkit-appearance: none;
+  margin-top: 50px;
 }
 
 .input-group {

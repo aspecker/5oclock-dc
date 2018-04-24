@@ -5,17 +5,17 @@ footer {
   height: 200px;
   display: flex;
   justify-content: space-around;
-  padding: 0 75px;
+  flex-direction: column;
+  padding: 0 5px;
 }
 
 footer h3 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 
 }
 
 .media {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +26,6 @@ footer h3 {
 }
 
 .media img {
-  margin: 0 25px;
-  width: 70px;
+  margin: 0 15px;
+  width: 55px;
 }
