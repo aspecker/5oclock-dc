@@ -3,6 +3,7 @@ import { BrowserRouter as Router,Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import BarPage from './pages/BarPage'
 import Results from './pages/Results'
+import SubmitForm from './pages/SubmitForm'
 import NotFound from './pages/NotFound' 
 
 const App = () =>(
@@ -14,6 +15,7 @@ const App = () =>(
       <Route path = '/results' component={Home}/>
       <Route exact path ='/bar/:bar' component={BarPage}/>
       <Route path = '/bar' component={Home}/>
+      <Route path = '/submit' component={SubmitForm}/>
       <Route component={NotFound}/>
     </Switch>
     </div>
