@@ -1,21 +1,20 @@
-# 5 O'clock DC
-## A Happy Hour Selection Tool
+# 5 O'Clock DC
 
-### Overview
-* Striving to become DC's number one happy hour search application
-* Built using Node, Express, MongoDB and React
-* Find the deployed application at https://dc-5-o-clock.herokuapp.com/
+## Happy Hour Selection Tool for DC Metro Area
+* visit https://dc-5-oclock.herokuapp.com
+* want us to include your favorite bar? contact us to receive an account
+* have feedback for us? We'd love to hear it!
 
 
-#### Functionality in the Pipeline
-* submit form to allow users or bar owners to add venues
+### Vision
+* This app was conceived after noticing how frequently friends and coworkers had difficulty selecting a happy hour that fits their needs
+* People reported just settling on the nearest or most familiar restaurant
+* Available options are difficult and unpleasant to use
 
-* add more bars
+* We built a happy hour selection tool that is fun, informative, and **easy to use**
+* More bars and selection options are being added regularly
 
-* add more neighborhoods
+#### Technology used
+* built with React, Express, Node, and MongoDB
 
-* display 3 most recent tweets from eligible bars
 
-* add capacity to filter search results
-
-* give users the ability to comment or endorse venues
