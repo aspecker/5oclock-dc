@@ -1,0 +1,9 @@
+.container{
+    padding: 10px 20px 0px 20px;
+    background-image: url('../greybg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-group{
+    padding: 10px;
+}

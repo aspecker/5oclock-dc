@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './SubmitForm.css'
 import API from '../../utils/API'
 import neighborhoods from '../../data/neighborhoods'
 
@@ -23,10 +24,19 @@ class SubmitForm extends Component{
 
     handleSubmit(e){
         e.preventDefault();
-        console.log(this.state)
+        console.log(this.state);
+        API.barNew(this.state);
     }
 
+    convertPhone(number){
+        let numArr = [...number];
+        
+        console.log(numArr);
+    }
 
+    componentDidMount(number = '(202) 555-5555'){
+        this.convertPhone(number);
+    }
 
     render () {
         return (
