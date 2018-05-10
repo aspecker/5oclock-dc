@@ -25,8 +25,10 @@ class SubmitForm extends Component{
 
     handleSubmit(e){
         e.preventDefault();
-        console.log(this.state);
-        API.barNew(this.state);
+        let formattedPhone = this.convertPhone(this.state.phone);
+        let barObj = {...this.state,phone: formattedPhone};
+        console.log(barObj);
+        API.barNew(barObj);
     }
 
     convertPhone(number){
