@@ -10,6 +10,7 @@ class SubmitForm extends Component{
 
         this.handleInputChange = this.handleInputChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.convertPhone = this.convertPhone.bind(this);
     }
 
     handleInputChange(event){
@@ -29,14 +30,23 @@ class SubmitForm extends Component{
     }
 
     convertPhone(number){
-        let numArr = [...number];
-        
-        console.log(numArr);
+        let numArr = [...number]
+        let adjArr = [
+            '(',
+            ...numArr.slice(0,3),
+            ')',
+            ' ',
+            ...numArr.slice(3,6),
+            '-',
+            ...numArr.slice(6)
+        ]
+        let adjPhone = adjArr.join('');
+        return adjPhone;
     }
 
-    componentDidMount(number = '(202) 555-5555'){
-        this.convertPhone(number);
-    }
+    // componentDidMount(number = '1234567890'){
+    //     this.convertPhone(number);
+    // }
 
     render () {
         return (
