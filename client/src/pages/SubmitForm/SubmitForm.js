@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './SubmitForm.css'
 import API from '../../utils/API'
 import neighborhoods from '../../data/neighborhoods'
+import Logo from '../../Components/Logo'
 
 class SubmitForm extends Component{
     constructor(props){
@@ -53,57 +54,59 @@ class SubmitForm extends Component{
     render () {
         return (
     <div className='container'>
+      <Logo />
         <form className='form' onSubmit={this.handleSubmit}>
-        <div className='form-group'>
+        <div className='form-group restaurant'>
             <label htmlFor='name'> Restaurant Name *</label>
-            <input 
-                name='name' 
-                type='text' 
-                placeholder='Enter restaurant name...' 
+            <input
+                name='name'
+                type='text'
+                placeholder='Enter restaurant name...'
                 onChange={this.handleInputChange}
                 value= {this.state.name}
                 required/>
         </div>
 
-        <div className='form-group'>
+        <div className='form-group address'>
             <label htmlFor='address'> Address *</label>
-            <input 
-                name='address' 
-                type='text' 
-                placeholder='Enter restaurant street address...' 
+            <input
+                name='address'
+                type='text'
+                placeholder='Enter restaurant street address...'
                 onChange={this.handleInputChange}
                 value={this.state.address}
                 required/>
         </div>
 
-        <div className='form-group'>
+        <div className='form-group city'>
             <label htmlFor='city'> City *</label>
-            <input 
-                name='city' 
-                type='text' 
-                placeholder='Washington...' 
+            <input
+                name='city'
+                type='text'
+                placeholder='Washington...'
                 onChange={this.handleInputChange}
                 value={this.state.city}
                 required/>
         </div>
-        
-        <div className='form-group'>
+
+        <div className='form-group zip'>
             <label htmlFor='ZIP'> ZIP *</label>
-            <input 
-                name='ZIP' 
-                type='text' 
-                placeholder='20008...' 
+            <input
+                name='ZIP'
+                type='text'
+                placeholder='20008...'
                 onChange={this.handleInputChange}
                 value={this.state.ZIP}
                 required/>
         </div>
 
         <div className="input-group">
-            <select 
+        <label htmlFor='neighborhood'> Choose a Neighborhood *</label>
+            <select
                 name='neighborhood'
-                value={this.state.neighborhood} 
-                onChange={this.handleInputChange} 
-                className="form-control custom-select no-radius" 
+                value={this.state.neighborhood}
+                onChange={this.handleInputChange}
+                className="form-control custom-select no-radius"
                 id="hood-name"
                 required>
                 <option defaultValue>Choose a Neighborhood</option>
@@ -112,31 +115,33 @@ class SubmitForm extends Component{
                 )}
             </select>
         </div>
-        
-        <div className='form-group'>
+
+        <div className='form-group start'>
             <label htmlFor='startTime'> Happy Hour Start Time *</label>
-            <input 
-                name='startTime' 
-                type='text' 
+            <input
+                name='startTime'
+                placeholder='1600'
+                type='text'
                 onChange={this.handleInputChange}
                 value={this.state.startTime}
                 required/>
         </div>
-        
-        <div className='form-group'>
+
+        <div className='form-group end'>
             <label htmlFor='endTime'> Happy Hour End Time *</label>
-            <input 
-                name='endTime' 
-                type='text' 
+            <input
+                name='endTime'
+                placeholder='1900'
+                type='text'
                 onChange={this.handleInputChange}
                 value={this.state.endTime}
                 required/>
         </div>
-        
-        <div className='form-group'>
+
+        <div className='form-group price'>
             <label htmlFor='price'> Price Point *</label>
-            <select 
-                name = 'price' 
+            <select
+                name = 'price'
                 onChange={this.handleInputChange}
                 value={this.state.price}
                 required>
@@ -146,19 +151,20 @@ class SubmitForm extends Component{
             </select>
         </div>
 
-        <div className='form-group'>
+        <div className='form-group phone'>
             <label htmlFor='phone'> Phone Number *</label>
-            <input 
-                name = 'phone' 
-                type = 'tel' 
+            <input
+                name = 'phone'
+                type = 'tel'
+                placeholder='2025556789 (no spaces or dashes)'
                 onChange={this.handleInputChange}
                 value={this.state.phone}
                 required/>
         </div>
 
-        <div className='form-group'>
+        <div className='form-group cuisine'>
             <label htmlFor='cuisine'> Cuisine Style</label>
-            <select 
+            <select
                 name ='cuisine'
                 onChange={this.handleInputChange}
                 value={this.state.cuisine}>
@@ -185,37 +191,42 @@ class SubmitForm extends Component{
             </select>
         </div>
 
-        <div className='form-group'>
+        <div className='form-group image'>
             <label htmlFor='image'> Image Link</label>
-            <input 
+            <input
                 name = 'image'
+                placeholder='https://'
                 onChange={this.handleInputChange}
-                value={this.state.image} 
+                value={this.state.image}
                 type='text'/>
         </div>
 
-        <div className='form-group'>
+        <div className='form-group menu'>
             <label htmlFor='menuLink'>Menu Link</label>
-            <input 
-                name = 'menuLink' 
+            <input
+                name = 'menuLink'
                 type ='text'
+                placeholder='https://'
                 value={this.state.menuLink}
                 onChange={this.handleInputChange}/>
         </div>
 
-        <div className='form-group'>
+        <div className='form-group website'>
             <label htmlFor='website'>Website</label>
-            <input 
-                name = 'website' 
+            <input
+                name = 'website'
                 type ='text'
+                placeholder='https://'
                 value={this.state.website}
                 onChange={this.handleInputChange}/>
         </div>
-        
-        <input 
-        type = 'submit' 
+        <div className='submitDiv'>
+        <input
+        type = 'submit'
         value='Submit'
+        className='formSubmit'
          />
+         </div>
         </form>
     </div>
 
