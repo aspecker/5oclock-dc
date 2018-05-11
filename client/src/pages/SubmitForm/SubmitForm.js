@@ -3,15 +3,26 @@ import './SubmitForm.css'
 import API from '../../utils/API'
 import neighborhoods from '../../data/neighborhoods'
 import Logo from '../../Components/Logo'
+let defaultState = {
+    name: '',
+    address: '',
+    city: '',
+    ZIP: '',
+    neighborhood: '',
+    startTime: '',
+    endTime: '',
+    price: 1,
+    phone: '',
+    cuisine: '',
+    image: '',
+    menuLink: '',
+    website: '',
+};
 
 class SubmitForm extends Component{
     constructor(props){
         super(props);
-        this.state = {
-            name: '',
-            
-        };
-
+        this.state = defaultState;
         this.handleInputChange = this.handleInputChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this);
         this.convertPhone = this.convertPhone.bind(this);
@@ -34,6 +45,7 @@ class SubmitForm extends Component{
         let barObj = {...this.state,phone: formattedPhone};
         console.log(barObj);
         API.barNew(barObj);
+        this.setState(defaultState)
     }
 
     convertPhone(number){
