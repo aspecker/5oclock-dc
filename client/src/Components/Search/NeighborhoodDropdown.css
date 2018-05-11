@@ -45,6 +45,14 @@ select:hover {
   .input-group {
     margin-bottom: 20px;
   }
+  select {
+    height: 40px;
+    font-size: 1em;
+  }
+  .hood-submit {
+    font-size: 1em;
+    height: 40px;
+  }
 }
 
 @media screen and (min-width:700px) {
@@ -52,6 +60,12 @@ select:hover {
     margin-bottom: 50px;
   }
   select {
+    height: 55px;
     margin-top: 0px;
+    font-size: 1.3em;
+  }
+  .hood-submit {
+    font-size: 1.3em;
+    height: 55px;
   }
 }
