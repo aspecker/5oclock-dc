@@ -69,10 +69,10 @@ label {
   .form-group {
     width: 48%;
   }
-  .restaurant, .city, .start, .price, .cuisine, .menu {
+  .form-restaurant, .form-city, .form-start, .form-price, .form-cuisine, .form-menu {
     float: left;
   }
-  .address, .zip, .end, .phone, .image, .website {
+  .form-address, .form-zip, .form-end, .form-phone, .form-image, .form-website {
     float: right;
   }
 

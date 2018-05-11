@@ -72,7 +72,7 @@ class SubmitForm extends Component{
     <div className='container'>
       <Logo />
         <form className='form' onSubmit={this.handleSubmit}>
-        <div className='form-group restaurant'>
+        <div className='form-group form-restaurant'>
             <label htmlFor='name'> Restaurant Name *</label>
             <input
                 name='name'
@@ -83,7 +83,7 @@ class SubmitForm extends Component{
                 required/>
         </div>
 
-        <div className='form-group address'>
+        <div className='form-group form-address'>
             <label htmlFor='address'> Address *</label>
             <input
                 name='address'
@@ -94,7 +94,7 @@ class SubmitForm extends Component{
                 required/>
         </div>
 
-        <div className='form-group city'>
+        <div className='form-group form-city'>
             <label htmlFor='city'> City *</label>
             <input
                 name='city'
@@ -105,7 +105,7 @@ class SubmitForm extends Component{
                 required/>
         </div>
 
-        <div className='form-group zip'>
+        <div className='form-group form-zip'>
             <label htmlFor='ZIP'> ZIP *</label>
             <input
                 name='ZIP'
@@ -116,7 +116,7 @@ class SubmitForm extends Component{
                 required/>
         </div>
 
-        <div className="input-group">
+        <div className="input-group form-neighborhood">
         <label htmlFor='neighborhood'> Choose a Neighborhood *</label>
             <select
                 name='neighborhood'
@@ -132,7 +132,7 @@ class SubmitForm extends Component{
             </select>
         </div>
 
-        <div className='form-group start'>
+        <div className='form-group form-start'>
             <label htmlFor='startTime'> Happy Hour Start Time *</label>
             <input
                 name='startTime'
@@ -143,7 +143,7 @@ class SubmitForm extends Component{
                 required/>
         </div>
 
-        <div className='form-group end'>
+        <div className='form-group form-end'>
             <label htmlFor='endTime'> Happy Hour End Time *</label>
             <input
                 name='endTime'
@@ -155,7 +155,7 @@ class SubmitForm extends Component{
                 required/>
         </div>
 
-        <div className='form-group price'>
+        <div className='form-group form-price'>
             <label htmlFor='price'> Price Point *</label>
             <select
                 name = 'price'
@@ -169,7 +169,7 @@ class SubmitForm extends Component{
             </select>
         </div>
 
-        <div className='form-group phone'>
+        <div className='form-group form-phone'>
             <label htmlFor='phone'> Phone Number *</label>
             <input
                 name = 'phone'
@@ -180,7 +180,7 @@ class SubmitForm extends Component{
                 required/>
         </div>
 
-        <div className='form-group cuisine'>
+        <div className='form-group form-cuisine'>
             <label htmlFor='cuisine'> Cuisine Style</label>
             <select
                 name ='cuisine'
@@ -211,7 +211,7 @@ class SubmitForm extends Component{
             </select>
         </div>
 
-        <div className='form-group image'>
+        <div className='form-group form-image'>
             <label htmlFor='image'> Image Link</label>
             <input
                 name = 'image'
@@ -221,7 +221,7 @@ class SubmitForm extends Component{
                 type='text'/>
         </div>
 
-        <div className='form-group menu'>
+        <div className='form-group form-menu'>
             <label htmlFor='menuLink'>Menu Link</label>
             <input
                 name = 'menuLink'
@@ -231,7 +231,7 @@ class SubmitForm extends Component{
                 onChange={this.handleInputChange}/>
         </div>
 
-        <div className='form-group website'>
+        <div className='form-group form-website'>
             <label htmlFor='website'>Website</label>
             <input
                 name = 'website'
