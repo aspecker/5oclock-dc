@@ -8,6 +8,10 @@ const neighborhoods = [
         image: '/assets/images/neighborhoods/capitolhill.jpg'
     },
     {
+        name: "Chinatown",
+        image: '/assets/images/neighborhoods/chinatown.jpg'
+    },
+    {
         name: "Columbia Heights",
         image: '/assets/images/neighborhoods/cohi.jpg'
     },
@@ -34,6 +38,10 @@ const neighborhoods = [
     {
         name: "Logan Circle",
         image: '/assets/images/neighborhoods/logan.jpg'
+    },
+    {
+        name: "Metro Center",
+        image: '/assets/images/neighborhoods/metrocenter.jpg'
     },
     {
         name: "Petworth",
