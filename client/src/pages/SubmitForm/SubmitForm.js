@@ -6,7 +6,10 @@ import neighborhoods from '../../data/neighborhoods'
 class SubmitForm extends Component{
     constructor(props){
         super(props);
-        this.state = {};
+        this.state = {
+            name: '',
+            
+        };
 
         this.handleInputChange = this.handleInputChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -21,6 +24,7 @@ class SubmitForm extends Component{
         this.setState({
             [name]: value
         })
+        console.log(this.state);
     }
 
     handleSubmit(e){
