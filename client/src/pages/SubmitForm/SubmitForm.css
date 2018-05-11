@@ -40,7 +40,7 @@ label {
   padding-left: 5px;
 }
 
-select {
+.submitSelect {
   border-radius: 0;
   width: 98%;
   background-color: rgba(0,0,0,0.5);
@@ -98,7 +98,7 @@ select {
     font-size: 24px;
 
   }
-  select {
+  .submitSelect {
     width: 99%;
     height: 32px;
   }

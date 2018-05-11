@@ -106,7 +106,7 @@ class SubmitForm extends Component{
                 name='neighborhood'
                 value={this.state.neighborhood}
                 onChange={this.handleInputChange}
-                className="form-control custom-select no-radius"
+                className="form-control custom-select no-radius submitSelect"
                 id="hood-name"
                 required>
                 <option defaultValue>Choose a Neighborhood</option>
@@ -133,6 +133,7 @@ class SubmitForm extends Component{
                 name='endTime'
                 placeholder='1900'
                 type='text'
+                className='submitSelect'
                 onChange={this.handleInputChange}
                 value={this.state.endTime}
                 required/>
@@ -142,6 +143,7 @@ class SubmitForm extends Component{
             <label htmlFor='price'> Price Point *</label>
             <select
                 name = 'price'
+                className='submitSelect'
                 onChange={this.handleInputChange}
                 value={this.state.price}
                 required>
@@ -166,6 +168,7 @@ class SubmitForm extends Component{
             <label htmlFor='cuisine'> Cuisine Style</label>
             <select
                 name ='cuisine'
+                className='submitSelect'
                 onChange={this.handleInputChange}
                 value={this.state.cuisine}>
                 <option defaultValue>Choose a Cuisine Type</option>
