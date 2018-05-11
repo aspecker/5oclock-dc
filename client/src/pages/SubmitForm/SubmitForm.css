@@ -9,7 +9,7 @@
 }
 
 .form {
-  padding: 20px 10px 30px 15px;
+  padding: 20px 15px 30px 15px;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -30,7 +30,8 @@
 }
 
 label {
-  font-size: 18px;
+  font-size: 20px;
+  color: #900;
 }
 
 ::placeholder {

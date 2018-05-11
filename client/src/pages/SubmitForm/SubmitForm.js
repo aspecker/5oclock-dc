@@ -168,6 +168,7 @@ class SubmitForm extends Component{
                 name ='cuisine'
                 onChange={this.handleInputChange}
                 value={this.state.cuisine}>
+                <option defaultValue>Choose a Cuisine Type</option>
                 <option value='Fusion'>Asian Fusion</option>
                 <option value='Caribbean'>Caribbean</option>
                 <option value='Chinese'>Chinese</option>
@@ -221,11 +222,11 @@ class SubmitForm extends Component{
                 onChange={this.handleInputChange}/>
         </div>
         <div className='submitDiv'>
-        <input
-        type = 'submit'
-        value='Submit'
-        className='formSubmit'
-         />
+          <input
+          type = 'submit'
+          value='Submit'
+          className='formSubmit'
+           />
          </div>
         </form>
     </div>
