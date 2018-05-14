@@ -6,6 +6,7 @@ import Row from "../Components/Row";
 import Col from "../Components/Col";
 import BarCard from "../Components/BarCard";
 import Footer from "../Components/Footer";
+import FilterModal from "../Components/FilterModal";
 import { Button } from "../Components/Search/Button";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
@@ -83,13 +84,14 @@ class Results extends Component {
           <Link to="/">
             <Button> Change Neighborhood</Button>
           </Link>
+          <FilterModal />
         </Hero>
         <div className="card-results-wrapper">
           <Container>
-            <button onClick={() => this.filterBars("Georgetown", "null", 2)}>
+            {/* <button onClick={() => this.filterBars("Georgetown", "null", 2)}>
               {" "}
               search for Georgetown bars at 2 pricepoint{" "}
-            </button>
+            </button> */}
             <Row>
               {this.state.bars.map(bar => (
                 <Col size="sm-6 md-4">
