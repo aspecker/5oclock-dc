@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import API from "../../utils/API";
 import "./FilterModal.css";
 import { Button } from "../../Components/Search";
 
@@ -7,49 +8,54 @@ class FilterModal extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { value: "" };
+    this.state = {
+      selectedPriceOption: "null",
+      selectedCuisineOption: "null",
+      selectedDrinkOption: "null",
+      selectedTimeOption: "null"
+    };
 
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-    console.log(this.state);
-  }
+  // commenting out because this does not seem to be doing anything
+  // handleChange(event) {
+  //   this.setState({ value: event.target.value });
+  //   console.log(this.state);
+  // }
 
   handleSubmit(event) {
-    alert("Your favorite flavor is: " + this.state.value);
+    // might use this later down the line
     event.preventDefault();
     console.log(this.state);
   }
+  handleCuisineOptionChange = changeEvent => {
+    this.setState({
+      selectedCuisineOption: changeEvent.target.value
+    });
+  };
 
   handlePriceOptionChange = changeEvent => {
     this.setState({
       selectedPriceOption: changeEvent.target.value
     });
-    console.log(this.state);
   };
+
   handleDrinkOptionChange = changeEvent => {
     this.setState({
       selectedDrinkOption: changeEvent.target.value
     });
-    console.log(this.state);
   };
+
   handleTimeOptionChange = changeEvent => {
     this.setState({
       selectedTimeOption: changeEvent.target.value
     });
-    console.log(this.state);
   };
 
   handleFormSubmit = formSubmitEvent => {
     formSubmitEvent.preventDefault();
-    console.log;
-
-    console.log(`You have selected: ${this.state.selectedPriceOption}.`);
-    console.log(`You have selected: ${this.state.selectedDrinkOption}.`);
-    console.log(`You have selected: ${this.state.selectedTimeOption}.`);
+    console.log(this.state);
   };
 
   handleFilterSubmit = event => {
@@ -70,11 +76,10 @@ class FilterModal extends Component {
           <div className="modal-content">
             <h3>Narrow Your Search</h3>
             <p>* All fields are optional</p>
+            {/* filter by price */}
             <div className="price-radio">
               <h4 className="filter-item">Price:</h4>
-              <form
-              // onSubmit={this.handleFormSubmit}
-              >
+              <form>
                 <div className="radio">
                   <label>
                     <input
@@ -110,15 +115,13 @@ class FilterModal extends Component {
                 </div>
               </form>
             </div>
-            {/* <Dropdown>
-              {this.state.cuisineArr} Choose your cuisine type...
-            </Dropdown> */}
+            {/* filter by Cuisine */}
             <div className="form-group form-cuisine">
               <label htmlFor="cuisine"> Cuisine Style</label>
               <select
                 name="cuisine"
                 className="submitSelect"
-                onChange={this.handleInputChange}
+                onChange={this.handleCuisineOptionChange}
                 value={this.state.cuisine}
               >
                 <option defaultValue>Choose a Cuisine Type</option>
@@ -144,6 +147,7 @@ class FilterModal extends Component {
                 <option value="Sushi">Sushi</option>
               </select>
             </div>
+            {/* filter by drink type */}
             <div className="booze-radio">
               <h4 className="filter-item">Drink Type:</h4>
               <form
@@ -184,6 +188,7 @@ class FilterModal extends Component {
                 </div>
               </form>
             </div>
+            {/* filter by time */}
             <div className="time-radio">
               <h4 className="filter-item">Hours:</h4>
               <form

@@ -35,7 +35,7 @@ class Results extends Component {
     this.mounted = true;
   }
   componentWillUnmount() {
-    this.mounted == false;
+    this.mounted = false;
   }
 
   fetchBars(neighborhood) {
