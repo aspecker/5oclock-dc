@@ -5,7 +5,7 @@ import Col from "../../Components/Col"
 
 
 const About = props => (
-  <Row align='center'>
+  <Row className='aboutRow' align='center'>
     <Col size='sm-12'>
       <div className="about-us">
         <h2>
