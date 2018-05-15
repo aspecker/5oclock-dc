@@ -32,7 +32,7 @@ class Results extends Component {
   }
 
   componentDidMount(){
-    window.scrollTo(0,150);
+    window.scrollTo(0,200);
     this.fetchBars(this.props.match.params.neighborhood);
   }
 
