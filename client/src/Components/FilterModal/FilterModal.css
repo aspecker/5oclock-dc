@@ -54,6 +54,7 @@
   clear: both;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .modalCuisine {
@@ -89,9 +90,13 @@
   .filter-modal {
     width: 450px;
   }
+  .buttonDiv {
+    margin-top: 35px;
+  }
 }
 
 @media screen and (min-width: 700px) {
+
   .filter-modal {
     width: 550px;
   }
@@ -101,5 +106,8 @@
   .modalSelect {
     height: 50px!important;
     width: 70%!important;
-    }
+  }
+  .buttonDiv {
+    margin-top: 140px!important;
+  }
 }
