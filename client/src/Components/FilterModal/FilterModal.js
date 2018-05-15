@@ -90,8 +90,8 @@ class FilterModal extends Component {
                   <label>
                     <input
                       type="radio"
-                      value="$"
-                      checked={this.state.selectedPriceOption === "$"}
+                      value="1"
+                      checked={this.state.selectedPriceOption === "1"}
                       onChange={this.handlePriceOptionChange}
                     />
                     $
@@ -101,8 +101,8 @@ class FilterModal extends Component {
                   <label>
                     <input
                       type="radio"
-                      value="$$"
-                      checked={this.state.selectedPriceOption === "$$"}
+                      value="2"
+                      checked={this.state.selectedPriceOption === "2"}
                       onChange={this.handlePriceOptionChange}
                     />
                     $$
@@ -112,8 +112,8 @@ class FilterModal extends Component {
                   <label>
                     <input
                       type="radio"
-                      value="$$$"
-                      checked={this.state.selectedPriceOption === "$$$"}
+                      value="3"
+                      checked={this.state.selectedPriceOption === "3"}
                       onChange={this.handlePriceOptionChange}
                     />
                     $$$
