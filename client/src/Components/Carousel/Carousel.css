@@ -7,7 +7,7 @@ slide1, slide2, slide3 {
 }
 
 .thumbs-wrapper {
-    display: flex;
+    display: none;
     justify-content: center;
     z-index: 0;
 }
