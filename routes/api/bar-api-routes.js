@@ -81,6 +81,7 @@ router.route("/bars/:id").put(function(req, res){
 //insert bar into db
 // expects to recieve an object from the client
 router.route("/bars/new").post(function(req,res){
+    console.log("attempt made", req.body)
     db.Bars.create(req.body)
     .then(function(dbBars){
         res.json(dbBars)
