@@ -24,6 +24,11 @@ const heroStyle = {
   fontSize: "1rem"
 };
 
+const resultsBtn = {
+  marginLeft: '20px',
+  marginRight: '20px'
+}
+
 class Results extends Component {
   state = {
     bars: []
@@ -95,10 +100,12 @@ class Results extends Component {
           }
         >
           <h1>{this.props.match.params.neighborhood}</h1>
-          <Link to="/">
-            <Button> Change Neighborhood</Button>
-          </Link>
-          <Button handleClick={this.toggleModal}>Fiter Bars</Button>
+          <div className='buttonDiv'>
+            <Link to="/">
+              <Button style={resultsBtn}> Change Neighborhood</Button>
+            </Link>
+            <Button style={resultsBtn} handleClick={this.toggleModal}>Filter Bars</Button>
+          </div>
           <FilterModal
             show={this.state.modalOpen}
             onClose={this.toggleModal}

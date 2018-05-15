@@ -14,3 +14,13 @@ a {
 a:visited {
   color: #900;
 }
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px!important;
+}
+
+.resultsBtn {
+  margin-left: 20px;
+}
