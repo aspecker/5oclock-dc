@@ -93,18 +93,6 @@ class Results extends Component {
         </Hero>
         <div className="card-results-wrapper">
           <Container>
-            {/* <button
-              onClick={() =>
-                this.filterBars(
-                  this.props.match.params.neighborhood,
-                  "null",
-                  "Italian"
-                )
-              }
-            >
-              {" "}
-              search for Georgetown bars at 2 pricepoint{" "}
-            </button> */}
             <Row>
               {this.state.bars.map(bar => (
                 <Col size="sm-6 md-4">

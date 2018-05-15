@@ -156,9 +156,7 @@ class FilterModal extends Component {
             {/* filter by drink type */}
             <div className="booze-radio">
               <h4 className="filter-item">Drink Type:</h4>
-              <form
-              //  onSubmit={this.handleFormSubmit}
-              >
+              <form>
                 <div className="radio">
                   <label>
                     <input
@@ -197,9 +195,7 @@ class FilterModal extends Component {
             {/* filter by time */}
             <div className="time-radio">
               <h4 className="filter-item">Hours:</h4>
-              <form
-              // onSubmit={this.handleFormSubmit}
-              >
+              <form>
                 <div className="radio">
                   <label>
                     <input
