@@ -90,9 +90,6 @@ router.route("/bars/new").post(function(req, res) {
     })
     .catch(function(err) {
       res.json(err);
-    })
-    .catch(function(err) {
-      res.json(err);
     });
 });
 module.exports = router;
