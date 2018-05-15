@@ -98,6 +98,8 @@ class FilterModal extends Component {
     }
     return (
       <div className="filter-modal">
+      <button className='closeBtn' onClick={this.props.onClose}>X</button>
+
         <div className="filter-modal-container">
           <div className="modal-content">
             <h3>Narrow Your Search</h3>
