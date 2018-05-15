@@ -36,7 +36,6 @@ class FilterModal extends Component {
   handleSubmit(event) {
     // might use this later down the line
     event.preventDefault();
-    console.log(this.state);
   }
   handleCuisineOptionChange = changeEvent => {
     this.setState({
@@ -69,7 +68,6 @@ class FilterModal extends Component {
       this.state.selectedPriceOption,
       this.state.selectedCuisineOption
     );
-    console.log(this.state);
   };
 
   handleFilterSubmit = event => {
@@ -98,7 +96,9 @@ class FilterModal extends Component {
     }
     return (
       <div className="filter-modal">
-      <button className='closeBtn' onClick={this.props.onClose}>X</button>
+        <button className="closeBtn" onClick={this.props.onClose}>
+          X
+        </button>
         <div className="filter-modal-container">
           <div className="modal-content">
             <h3>Narrow Your Search</h3>
