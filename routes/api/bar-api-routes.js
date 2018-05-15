@@ -24,6 +24,7 @@ router.route("/bars/:id").get(function(req, res) {
       res.json(err);
     });
 });
+
 // search for bars by neighborhood
 router.route("/neighborhood/:neighborhood").get(function(req, res) {
   db.Bars.find({

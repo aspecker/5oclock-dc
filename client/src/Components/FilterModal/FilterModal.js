@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import API from "../../utils/API";
+// import API from "../../utils/API";
 import "./FilterModal.css";
 import { Button } from "../../Components/Search";
 
@@ -9,6 +9,7 @@ class FilterModal extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      neighborhood: this.props.neighborhood,
       selectedPriceOption: "null",
       selectedCuisineOption: "null",
       selectedDrinkOption: "null",
@@ -55,6 +56,11 @@ class FilterModal extends Component {
 
   handleFormSubmit = formSubmitEvent => {
     formSubmitEvent.preventDefault();
+    this.props.filterAPI(
+      this.state.neighborhood,
+      this.state.selectedPriceOption,
+      this.state.selectedCuisineOption
+    );
     console.log(this.state);
   };
 
@@ -218,6 +224,15 @@ class FilterModal extends Component {
                 </div>
               </form>
             </div>
+
+            <button
+              onClick={() =>
+                this.props.filterAPI(this.props.neighborhood, "null", "Italian")
+              }
+            >
+              {" "}
+              search for Georgetown bars at 2 pricepoint{" "}
+            </button>
             <Button handleClick={this.handleFormSubmit}>Submit</Button>
             <Button onClick={this.handleFormReset}>Reset</Button>
           </div>

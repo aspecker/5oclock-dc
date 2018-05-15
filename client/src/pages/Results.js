@@ -45,13 +45,15 @@ class Results extends Component {
       })
       .catch(err => console.log(err));
   }
-  filterBars(neighborhood, cuisine, price) {
-    API.queryFilters(neighborhood, cuisine, price).then(res => {
+
+  filterBars(neighborhood, price, cuisine) {
+    API.queryFilters(neighborhood, price, cuisine).then(res => {
       console.log(res.data);
       this.setState({ bars: res.data });
       console.log(this.state.bars);
     });
   }
+
   findNeighborhoodImage(neighborhood) {
     return neighborhoods.filter(hood => hood.name === neighborhood);
   }
@@ -84,11 +86,22 @@ class Results extends Component {
           <Link to="/">
             <Button> Change Neighborhood</Button>
           </Link>
-          <FilterModal />
+          <FilterModal
+            filterAPI={this.filterBars}
+            neighborhood={this.props.match.params.neighborhood}
+          />
         </Hero>
         <div className="card-results-wrapper">
           <Container>
-            {/* <button onClick={() => this.filterBars("Georgetown", "null", 2)}>
+            {/* <button
+              onClick={() =>
+                this.filterBars(
+                  this.props.match.params.neighborhood,
+                  "null",
+                  "Italian"
+                )
+              }
+            >
               {" "}
               search for Georgetown bars at 2 pricepoint{" "}
             </button> */}
