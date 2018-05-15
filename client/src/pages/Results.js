@@ -87,7 +87,7 @@ class Results extends Component {
             <Button> Change Neighborhood</Button>
           </Link>
           <FilterModal
-            filterAPI={this.filterBars}
+            filterAPI={this.filterBars.bind(this)}
             neighborhood={this.props.match.params.neighborhood}
           />
         </Hero>
