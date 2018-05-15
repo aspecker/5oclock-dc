@@ -102,6 +102,7 @@ class Results extends Component {
           <FilterModal
             show={this.state.modalOpen}
             filterAPI={this.filterBars.bind(this)}
+            toggle={this.toggleModal.bind(this)}
             neighborhood={this.props.match.params.neighborhood}
           />
         </Hero>

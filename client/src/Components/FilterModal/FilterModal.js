@@ -80,7 +80,16 @@ class FilterModal extends Component {
 
   handleFormReset = event => {
     event.preventDefault();
-    // code to clear all search fields goes here
+    // this.setState({
+    //   selectedCuisineOption: "null",
+    //   selectedPriceOption: "null",
+    //   selectedDrinkOption: "null",
+    //   selectedTimeOption: "null"
+    // });
+    // this.props.toggle();
+
+    window.location.reload();
+    // slapdash solution that works for now. Will use a better one in the future
   };
 
   render() {
@@ -249,9 +258,12 @@ class FilterModal extends Component {
                 Submit
               </Button>
 
-              <Link to={`/results/${this.props.neighborhood}`}>
-                <Button> Reset</Button>
-              </Link>
+              {/* <Link to={`/results/${this.props.neighborhood}`}> */}
+              <Button style={buttonStyle} handleClick={this.handleFormReset}>
+                {" "}
+                Reset
+              </Button>
+              {/* </Link> */}
             </div>
           </div>
         </div>
