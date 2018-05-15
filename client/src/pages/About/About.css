@@ -9,6 +9,11 @@
     /* min-height: 500px; */
   }
 
+  .about-us p {
+    margin: 0;
+    padding: 0 20px 30px 20px;
+  }
+
   .about-us h2 {
     color: #900;
     font-size: 3rem;
