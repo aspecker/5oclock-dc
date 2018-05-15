@@ -101,10 +101,12 @@ class Results extends Component {
           <Button handleClick={this.toggleModal}>Fiter Bars</Button>
           <FilterModal
             show={this.state.modalOpen}
+            onClose={this.toggleModal}
             filterAPI={this.filterBars.bind(this)}
             toggle={this.toggleModal.bind(this)}
             neighborhood={this.props.match.params.neighborhood}
-          />
+            >
+          </FilterModal>
         </Hero>
         <div className="card-results-wrapper">
           <Container>
