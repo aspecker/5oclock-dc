@@ -3,15 +3,13 @@ import React, { Component } from "react";
 import "./FilterModal.css";
 import { Button } from "../../Components/Search";
 
-
 const buttonStyle = {
-  height: '40px',
-  width: '120px',
-  marginTop: '30px',
-  marginLeft: '20px',
-  marginRight: '20px'
-
-}
+  height: "40px",
+  width: "120px",
+  marginTop: "30px",
+  marginLeft: "20px",
+  marginRight: "20px"
+};
 
 class FilterModal extends Component {
   state = {};
@@ -86,12 +84,15 @@ class FilterModal extends Component {
   };
 
   render() {
+    if (!this.props.show) {
+      return null;
+    }
     return (
       <div className="filter-modal">
         <div className="filter-modal-container">
           <div className="modal-content">
             <h3>Narrow Your Search</h3>
-            <p className='optional'>* All fields are optional</p>
+            <p className="optional">* All fields are optional</p>
             {/* filter by price */}
             <div className="price-radio">
               <h4 className="filter-item">Price:</h4>
@@ -133,7 +134,10 @@ class FilterModal extends Component {
             </div>
             {/* filter by Cuisine */}
             <div className="form-group form-cuisine modalCuisine">
-              <label className='cuisineLabel' htmlFor="cuisine"> Cuisine Style:</label>
+              <label className="cuisineLabel" htmlFor="cuisine">
+                {" "}
+                Cuisine Style:
+              </label>
               <select
                 name="cuisine"
                 className="submitSelect cuisineSelect modalSelect"
@@ -234,9 +238,13 @@ class FilterModal extends Component {
                 </div>
               </form>
             </div> */}
-            <div className='buttonDiv'>
-              <Button style={buttonStyle} handleClick={this.handleFormSubmit}>Submit</Button>
-              <Button style={buttonStyle} onClick={this.handleFormReset}>Reset</Button>
+            <div className="buttonDiv">
+              <Button style={buttonStyle} handleClick={this.handleFormSubmit}>
+                Submit
+              </Button>
+              <Button style={buttonStyle} onClick={this.handleFormReset}>
+                Reset
+              </Button>
             </div>
           </div>
         </div>

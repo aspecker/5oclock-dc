@@ -33,7 +33,18 @@ class Results extends Component {
     window.scrollTo(0, 150);
     this.fetchBars(this.props.match.params.neighborhood);
     this.mounted = true;
+    this.setState({
+      modalOpen: false
+    });
   }
+
+  toggleModal = () => {
+    this.setState({
+      modalOpen: !this.state.modalOpen
+    });
+    console.log("toggler pressed");
+  };
+
   componentWillUnmount() {
     this.mounted = false;
   }
@@ -52,6 +63,7 @@ class Results extends Component {
       this.setState({ bars: res.data });
       console.log(this.state.bars);
     });
+    this.toggleModal.bind(this)();
   }
 
   findNeighborhoodImage(neighborhood) {
@@ -86,7 +98,9 @@ class Results extends Component {
           <Link to="/">
             <Button> Change Neighborhood</Button>
           </Link>
+          <Button handleClick={this.toggleModal}>Fiter Bars</Button>
           <FilterModal
+            show={this.state.modalOpen}
             filterAPI={this.filterBars.bind(this)}
             neighborhood={this.props.match.params.neighborhood}
           />
