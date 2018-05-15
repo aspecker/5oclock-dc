@@ -154,7 +154,9 @@ class FilterModal extends Component {
               </select>
             </div>
             {/* filter by drink type */}
-            <div className="booze-radio">
+            {/* Not currently in Database */}
+            {/* ***** */}
+            {/* <div className="booze-radio">
               <h4 className="filter-item">Drink Type:</h4>
               <form>
                 <div className="radio">
@@ -191,9 +193,11 @@ class FilterModal extends Component {
                   </label>
                 </div>
               </form>
-            </div>
+            </div> */}
             {/* filter by time */}
-            <div className="time-radio">
+            {/* Working on solution */}
+            {/* ***** */}
+            {/* <div className="time-radio">
               <h4 className="filter-item">Hours:</h4>
               <form>
                 <div className="radio">
@@ -219,16 +223,7 @@ class FilterModal extends Component {
                   </label>
                 </div>
               </form>
-            </div>
-
-            <button
-              onClick={() =>
-                this.props.filterAPI(this.props.neighborhood, "null", "Italian")
-              }
-            >
-              {" "}
-              search for Georgetown bars at 2 pricepoint{" "}
-            </button>
+            </div> */}
             <Button handleClick={this.handleFormSubmit}>Submit</Button>
             <Button onClick={this.handleFormReset}>Reset</Button>
           </div>
