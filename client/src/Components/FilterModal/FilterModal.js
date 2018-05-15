@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import API from "../../utils/API";
+import { Link } from "react-router-dom";
 import "./FilterModal.css";
 import { Button } from "../../Components/Search";
 
@@ -144,7 +144,13 @@ class FilterModal extends Component {
                 onChange={this.handleCuisineOptionChange}
                 value={this.state.cuisine}
               >
-                <option defaultValue>Choose a Cuisine Type</option>
+                {this.state.selectedCuisineOption === "null" ? (
+                  <option defaultValue>Choose a Cuisine Type</option>
+                ) : (
+                  <option defaultValue>
+                    {this.state.selectedCuisineOption}
+                  </option>
+                )}
                 <option value="Fusion">Asian Fusion</option>
                 <option value="Caribbean">Caribbean</option>
                 <option value="Chinese">Chinese</option>
@@ -242,9 +248,10 @@ class FilterModal extends Component {
               <Button style={buttonStyle} handleClick={this.handleFormSubmit}>
                 Submit
               </Button>
-              <Button style={buttonStyle} onClick={this.handleFormReset}>
-                Reset
-              </Button>
+
+              <Link to={`/results/${this.props.neighborhood}`}>
+                <Button> Reset</Button>
+              </Link>
             </div>
           </div>
         </div>
