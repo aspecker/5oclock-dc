@@ -25,9 +25,9 @@ const heroStyle = {
 };
 
 const resultsBtn = {
-  marginLeft: '20px',
-  marginRight: '20px'
-}
+  marginLeft: "20px",
+  marginRight: "20px"
+};
 
 class Results extends Component {
   state = {
@@ -100,11 +100,13 @@ class Results extends Component {
           }
         >
           <h1>{this.props.match.params.neighborhood}</h1>
-          <div className='buttonDiv'>
+          <div className="buttonDiv">
             <Link to="/">
               <Button style={resultsBtn}> Change Neighborhood</Button>
             </Link>
-            <Button style={resultsBtn} handleClick={this.toggleModal}>Filter Bars</Button>
+            <Button style={resultsBtn} handleClick={this.toggleModal}>
+              Filter Bars
+            </Button>
           </div>
           <FilterModal
             show={this.state.modalOpen}
@@ -112,35 +114,37 @@ class Results extends Component {
             filterAPI={this.filterBars.bind(this)}
             toggle={this.toggleModal.bind(this)}
             neighborhood={this.props.match.params.neighborhood}
-            >
-          </FilterModal>
+          />
         </Hero>
         <div className="card-results-wrapper">
           <Container>
             <Row>
-              {this.state.bars.map(bar => (
-                <Col size="sm-6 md-4">
-                 <div className='results-container'>
-
-                  <div className="card-columns">
-                    <Link key={bar._id} to={`/bar/${bar._id}`}>
-                      <BarCard
-                        key={bar._id}
-                        id={bar._id}
-                        backgroundImage={bar.image}
-                        image={bar.image}
-                        name={bar.name}
-                        cuisine={bar.cuisine}
-                        neighborhood={bar.neighborhood}
-                        startTime={bar.startTime}
-                        endTime={bar.endTime}
-                        price={this.convertPrice(bar.price)}
-                      />
-                    </Link>
-                  </div>
-                  </div>
-                </Col>
-              ))}
+              {this.state.bars.length === 0 ? (
+                <div> Nothing Found </div>
+              ) : (
+                this.state.bars.map(bar => (
+                  <Col size="sm-6 md-4">
+                    <div className="results-container">
+                      <div className="card-columns">
+                        <Link key={bar._id} to={`/bar/${bar._id}`}>
+                          <BarCard
+                            key={bar._id}
+                            id={bar._id}
+                            backgroundImage={bar.image}
+                            image={bar.image}
+                            name={bar.name}
+                            cuisine={bar.cuisine}
+                            neighborhood={bar.neighborhood}
+                            startTime={bar.startTime}
+                            endTime={bar.endTime}
+                            price={this.convertPrice(bar.price)}
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                  </Col>
+                ))
+              )}
             </Row>
           </Container>
         </div>
