@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import ScrollLock from "react-scrolllock";
 import "./FilterModal.css";
 import { Button } from "../../Components/Search";
 
@@ -268,6 +269,7 @@ class FilterModal extends Component {
             </div>
           </div>
         </div>
+        <ScrollLock />
       </div>
     );
   }
