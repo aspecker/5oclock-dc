@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import Wrapper from "../Components/Wrapper";
 import Slide from "../Components/Carousel";
 import About from './About';
@@ -16,7 +16,14 @@ const wrapperStyle = {
   minHeight: '100vh'
 };
 
-const Home = () =>(
+class Home extends Component {
+      
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+  
+  render () {
+      return (
       <Wrapper style={wrapperStyle}>
         <Logo />
         <div className="dropDown">
@@ -27,6 +34,8 @@ const Home = () =>(
         <About />
         <Footer />
       </Wrapper>
-)
+    )
+}
+}
 
 export default Home;
