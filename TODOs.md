@@ -7,6 +7,8 @@
 
 * filter modal
     * add ability to search all neighborhoods
-    
+
+* data edge cases
+    * some bars have different happy hours based on day of the week (incorporate in the future?)
 
 #DONES
