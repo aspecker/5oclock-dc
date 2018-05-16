@@ -44,12 +44,15 @@ router.route("/query/:neighborhood/:price/:cuisine").get(function(req, res) {
   //functional programming
   let { neighborhood, price, cuisine } = req.params;
   const query = (neighborhoodQ, priceQ, cuisineQ) => {
-    let finalQuery = { neighborhood: neighborhoodQ };
+    let finalQuery = {};
     if (priceQ !== "null") {
       finalQuery.price = priceQ;
     }
     if (cuisineQ !== "null") {
       finalQuery.cuisine = cuisineQ;
+    }
+    if (neighborhoodQ !== "null") {
+      finalQuery.neighborhood = neighborhoodQ;
     }
     return finalQuery;
     //this function sets up the query object
