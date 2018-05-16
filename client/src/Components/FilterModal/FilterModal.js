@@ -176,7 +176,7 @@ class FilterModal extends Component {
                 <option value="Korean">Korean</option>
                 <option value="Mediterranean">Mediterranean</option>
                 <option value="Mexican">Mexican</option>
-                <option value="Pub">Pub Fare</option>
+                <option value="Pub Fare">Pub Fare</option>
                 <option value="Tapas">Tapas</option>
                 <option value="Thai">Thai Food</option>
                 <option value="Seafood">Seafood</option>
