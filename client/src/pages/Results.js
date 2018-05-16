@@ -119,6 +119,9 @@ class Results extends Component {
         <div className="card-results-wrapper">
           <Container>
             <Row>
+              {/* Filter Conditional */}
+              {/* If there are no bars found in the filter, render nothing found
+                  Else render the bar cards */}
               {this.state.bars.length === 0 ? (
                 <div> Nothing Found </div>
               ) : (
@@ -126,7 +129,25 @@ class Results extends Component {
                   <Col size="sm-6 md-4">
                     <div className="results-container">
                       <div className="card-columns">
-                        <Link key={bar._id} to={`/bar/${bar._id}`}>
+                        {/* modal conditional */}
+                        {/* If the modal is not open, render the bar cards as links
+                            Else  no links*/}
+                        {!this.state.modalOpen ? (
+                          <Link key={bar._id} to={`/bar/${bar._id}`}>
+                            <BarCard
+                              key={bar._id}
+                              id={bar._id}
+                              backgroundImage={bar.image}
+                              image={bar.image}
+                              name={bar.name}
+                              cuisine={bar.cuisine}
+                              neighborhood={bar.neighborhood}
+                              startTime={bar.startTime}
+                              endTime={bar.endTime}
+                              price={this.convertPrice(bar.price)}
+                            />
+                          </Link>
+                        ) : (
                           <BarCard
                             key={bar._id}
                             id={bar._id}
@@ -139,12 +160,14 @@ class Results extends Component {
                             endTime={bar.endTime}
                             price={this.convertPrice(bar.price)}
                           />
-                        </Link>
+                        )}{" "}
+                        {/* End of Modal Conditional*/}
                       </div>
                     </div>
                   </Col>
                 ))
-              )}
+              )}{" "}
+              {/* End of Filter Conditional */}
             </Row>
           </Container>
         </div>
