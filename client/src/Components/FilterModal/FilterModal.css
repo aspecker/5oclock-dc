@@ -1,5 +1,5 @@
 .filter-modal {
-  background-color: rgba(0, 0, 0 ,0.7);
+  background-color: rgba(0, 0, 0);
   border: 15px solid #900;
   padding-bottom: 30px;
   margin: 0;
@@ -27,9 +27,9 @@
   border: none;
 }
 
-.modal-content {
-  /* min-height: 500px; */
-}
+/* .modal-content {
+  min-height: 500px;
+} */
 
 .modal-content h3 {
   font-size: 36px;
@@ -41,7 +41,7 @@
 
 .price-radio {
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
 
 .price-radio h4 {
@@ -81,24 +81,24 @@
 .modalSelect {
   margin: 0 auto;
   font-size: 14px;
-  width: 90%!important;
-  color: #aaa!important;
-  background-color: rgba(0, 0, 0 ,0.9)!important;
-  border: 1px solid rgba(255, 255, 255, 0.6)!important;
-  border-radius: 25px!important;
+  width: 90% !important;
+  color: #aaa !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  border-radius: 25px !important;
 }
 
 @media screen and (min-width: 500px) {
-
   .filter-modal {
     width: 450px;
   }
-  .modalCuisine, .cuisineSelect {
-    width: 100%!important;
+  .modalCuisine,
+  .cuisineSelect {
+    width: 100% !important;
   }
 
   .modalSelect {
-    width: 80%!important;
+    width: 80% !important;
   }
   .filter-modal {
     width: 450px;
@@ -109,18 +109,18 @@
 }
 
 @media screen and (min-width: 700px) {
-
   .filter-modal {
     width: 550px;
   }
-  .modalCuisine, .cuisineSelect {
-    width: 100%!important;
+  .modalCuisine,
+  .cuisineSelect {
+    width: 100% !important;
   }
   .modalSelect {
-    height: 50px!important;
-    width: 70%!important;
+    height: 50px !important;
+    width: 70% !important;
   }
   .buttonDiv {
-    margin-top: 140px!important;
+    margin-top: 140px !important;
   }
 }
