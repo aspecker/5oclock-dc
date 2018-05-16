@@ -29,11 +29,6 @@ const resultsBtn = {
   marginRight: '20px'
 }
 
-const cardStyle = {
-  marginLeft: '0px',
-  marginRight: '0px'
-}
-
 class Results extends Component {
   state = {
     bars: []
@@ -140,7 +135,6 @@ class Results extends Component {
                         startTime={bar.startTime}
                         endTime={bar.endTime}
                         price={this.convertPrice(bar.price)}
-                        style={cardStyle}
                       />
                     </Link>
                   </div>

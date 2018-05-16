@@ -29,18 +29,18 @@ a:visited {
   margin-left: 20px;
 }
 
-/* @media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {
 
   .results-container {
-    max-width: 350px;
+    max-width: 450px;
   }
 
-} */
+}
 
 @media screen and (min-width: 700px) {
 
   .results-container {
-    max-width: 550px;
+    max-width: 650px;
   }
 
 }
@@ -51,8 +51,5 @@ a:visited {
   .results-container {
     max-width: 850px;
   }
-/*
-  .bar-img {
-    width: 100%;
-  } */
+
 }
