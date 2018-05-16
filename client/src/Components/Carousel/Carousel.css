@@ -3,11 +3,12 @@ slide1, slide2, slide3 {
 }
 
 .backDrop {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
     z-index: 0;
 }
 
 .thumbs-wrapper {
-    display: flex;
+    display: none;
     justify-content: center;
     z-index: 0;
 }

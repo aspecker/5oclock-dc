@@ -1,5 +1,5 @@
 .hero {
-  height: 500px;
+  height: 300px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -33,15 +33,31 @@
 }
 
 .hero h1 {
-  font-size: 3.7rem;
-  padding-top: 180px;
+  font-size: 3rem;
+  padding-top: 100px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 @media screen and (min-width: 500px) {
-  .hero h1 {
-    font-size: 4.5rem;
-  }
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero {
+  height: 350px;
+}
+}
+
+@media screen and (min-width: 700px) {
+
+.hero h1 {
+  font-size: 4.5rem;
+}
+
+.hero {
+  height: 400px;
+}
 
 }

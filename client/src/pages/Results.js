@@ -120,6 +120,8 @@ class Results extends Component {
             <Row>
               {this.state.bars.map(bar => (
                 <Col size="sm-6 md-4">
+                 <div className='results-container'>
+
                   <div className="card-columns">
                     <Link key={bar._id} to={`/bar/${bar._id}`}>
                       <BarCard
@@ -135,6 +137,7 @@ class Results extends Component {
                         price={this.convertPrice(bar.price)}
                       />
                     </Link>
+                  </div>
                   </div>
                 </Col>
               ))}

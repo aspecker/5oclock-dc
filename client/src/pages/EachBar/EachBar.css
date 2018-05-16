@@ -1,34 +1,32 @@
 .bar-result {
-  background-color: rgba(0,0,0,0.2);
-padding-bottom: 50px;
-  /* padding-top: 50px; */
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .bar-container {
   background-color: rgba(0,0,0,0.8);
-  margin-bottom: 75px;
   max-width: 960px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 
 }
 
 .bar-name, .bar-hood {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
+
 .bar-hood {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .btn {
   background-color: #900;
-  /* border-radius: 25px; */
   color: #fff;
-  font-size: 16px;
-  height: 50px;
-  width: 150px;
-  margin-top: 50px;
+  font-size: 10px;
+  height: 30px;
+  width: 120px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
   .btn:hover {
@@ -41,40 +39,40 @@ padding-bottom: 50px;
   background-color: #fff;
   font-size: 1.5rem;
   margin: 15px;
-  padding: 35px 10px 70px 10px;
+  padding: 10px 10px 20px 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 
 }
 .bar-info-container h4 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-decoration: underline;
+  margin: 20px 0;
 }
 .bar-info-container a {
   color: #900;
   cursor: pointer;
 }
+
+.bar-info-container p {
+  font-size: 18px;
+}
 .hours {
   margin: 0;
 }
 
-.bar-info-container a:hover {
-  color: coral;
-  text-decoration: none;
-}
-
 .address {
-  color: black;
+  color: #000;
   margin: 0;
 }
 .menu {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 .bar-info-container p:nth-child(2) {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .bar-info-container p:nth-child(4) {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .bar-info-container p:nth-child(6) {
@@ -82,7 +80,7 @@ padding-bottom: 50px;
 }
 
 .bar-info-container p:last-child {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .img-container {
@@ -90,7 +88,7 @@ padding-bottom: 50px;
   /* min-height: 350px; */
 }
 .bar-name, .bar-hood {
-  text-shadow: 0 0 3px coral, 0 0 5px coral;
+  text-shadow: 0 0 7px coral, 0 0 7px coral;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -98,7 +96,7 @@ padding-bottom: 50px;
   right: 0;
 }
   .bar-name {
-    bottom: 60px;
+    bottom: 50px;
   }
   .bar-hood {
     bottom: 25px;
@@ -108,24 +106,36 @@ padding-bottom: 50px;
   }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
   .bar-result {
     padding-top: 50px;
+    padding-bottom: 10px;
+
   }
   .bar-name {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .bar-hood {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .bar-container {
-    margin: 0 10% 75px 10%;
+    margin: 0 5% 75px 5%;
   }
-  .description {
-    padding: 0 60px;
-  }
+
   .bar-info-container {
     margin: 30px;
   }
+  .bar-info-container h4 {
+    font-size: 2rem;
+  }
 
+}
+
+@media screen and (min-width: 700px) {
+
+  .btn {
+    font-size: 14px;
+    height: 40px;
+    width: 130px;
+  }
 }

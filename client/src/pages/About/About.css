@@ -1,9 +1,19 @@
+.aboutRow {
+  background-color: #fff;
+  padding-top: 20px;
+}
+
 .about-us {
     font-size: 20px;
     max-width: 960px;
     /* min-height: 500px; */
-    padding: 20px;
   }
+
+  .about-us p {
+    margin: 0;
+    padding: 0 20px 30px 20px;
+  }
+
   .about-us h2 {
     color: #900;
     font-size: 3rem;
@@ -22,7 +32,7 @@
     .about-us {
       font-size: 24px;
       padding: 0px 50px 50px 50px;
-      
+
     }
     .about-us h2 {
         margin-top: 50px;

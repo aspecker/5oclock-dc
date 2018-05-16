@@ -1,6 +1,6 @@
 
 .logo {
-  height: 130px;
+  height: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -13,12 +13,34 @@
 }
 
 .logo img  {
-  height: 120px;
+  height: 75px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   position: fixed;
-  top: 65px;
+  top: 40px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 15;
+}
+
+@media screen and (min-width: 500px) {
+  .logo {
+    height: 100px;
+  }
+
+  .logo img {
+    height: 95px;
+    top: 50px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .logo {
+    height: 130px;
+  }
+
+  .logo img {
+    height: 120px;
+    top: 65px;
+  }
 }
