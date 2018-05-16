@@ -55,6 +55,14 @@ class Results extends Component {
   }
 
   fetchBars(neighborhood) {
+    if (neighborhood === "All Bars") {
+      API.barFindAll()
+        .then(res => {
+          this.setState({ bars: res.data });
+        })
+        .catch(err => console.log(err));
+      return;
+    }
     API.queryNeighborhood(neighborhood)
       .then(res => {
         this.setState({ bars: res.data });
@@ -63,6 +71,15 @@ class Results extends Component {
   }
 
   filterBars(neighborhood, price, cuisine) {
+    if (neighborhood === "All Bars") {
+      API.queryFilters("null", price, cuisine).then(res => {
+        console.log(res.data);
+        this.setState({ bars: res.data });
+        console.log(this.state.bars);
+      });
+      this.toggleModal.bind(this)();
+      return;
+    }
     API.queryFilters(neighborhood, price, cuisine).then(res => {
       console.log(res.data);
       this.setState({ bars: res.data });

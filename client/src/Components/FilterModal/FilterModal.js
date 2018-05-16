@@ -162,25 +162,25 @@ class FilterModal extends Component {
                     {this.state.selectedCuisineOption}
                   </option>
                 )}
-                <option value="Fusion">Asian Fusion</option>
+                {/* <option value="Fusion">Asian Fusion</option>
                 <option value="Caribbean">Caribbean</option>
                 <option value="Chinese">Chinese</option>
-                <option value="Ethiopian">Ethiopian</option>
+                <option value="Ethiopian">Ethiopian</option> */}
                 <option value="European">European</option>
                 <option value="French">French</option>
-                <option value="German">German</option>
+                {/* <option value="German">German</option> */}
                 <option value="Indian">Indian</option>
                 <option value="Irish">Irish</option>
                 <option value="Italian">Italian</option>
                 <option value="Japanese">Japanese</option>
-                <option value="Korean">Korean</option>
+                {/* <option value="Korean">Korean</option> */}
                 <option value="Mediterranean">Mediterranean</option>
                 <option value="Mexican">Mexican</option>
                 <option value="Pub Fare">Pub Fare</option>
                 <option value="Tapas">Tapas</option>
                 <option value="Thai">Thai Food</option>
                 <option value="Seafood">Seafood</option>
-                <option value="Soul">Soul Food</option>
+                {/* <option value="Soul Food">Soul Food</option> */}
                 <option value="Sushi">Sushi</option>
               </select>
             </div>
