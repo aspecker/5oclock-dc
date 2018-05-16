@@ -1,3 +1,7 @@
+.results-container {
+  max-width: 350px;
+  margin-bottom: 30px;
+}
 
 .card-results-wrapper {
   margin: -80px 0px 20px 0px;
@@ -23,4 +27,32 @@ a:visited {
 
 .resultsBtn {
   margin-left: 20px;
+}
+
+/* @media screen and (min-width: 500px) {
+
+  .results-container {
+    max-width: 350px;
+  }
+
+} */
+
+@media screen and (min-width: 700px) {
+
+  .results-container {
+    max-width: 550px;
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  .results-container {
+    max-width: 850px;
+  }
+/*
+  .bar-img {
+    width: 100%;
+  } */
 }

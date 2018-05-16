@@ -4,9 +4,9 @@ import "./BarCard.css";
 
 
 const BarCard = props => (
-  <div className='results-container'>
-    <div className='card-columns'>
-      <div className="card">
+  // <div className='results-container'>
+  //   <div className='card-columns'>
+      <div className="card resultsCard">
         {/*}<div className="bar-img card-img-top" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
           {props.children}
         </div>*/}
@@ -18,8 +18,8 @@ const BarCard = props => (
           <p className="card-text price-level">{props.price}</p>
         </div>
       </div>
-    </div>
-  </div>
+  //   </div>
+  // </div>
 
 
 );
