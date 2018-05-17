@@ -180,7 +180,7 @@ class FilterModal extends Component {
                 <option value="Tapas">Tapas</option>
                 <option value="Thai">Thai Food</option>
                 <option value="Seafood">Seafood</option>
-                {/* <option value="Soul Food">Soul Food</option> */}
+                <option value="Southern">Southern</option>
                 <option value="Sushi">Sushi</option>
               </select>
             </div>
