@@ -166,6 +166,7 @@ class FilterModal extends Component {
                 <option value="Caribbean">Caribbean</option>
                 <option value="Chinese">Chinese</option>
                 <option value="Ethiopian">Ethiopian</option> */}
+                <option value = "Drinks Only">Drinks Only</option>
                 <option value="European">European</option>
                 <option value="French">French</option>
                 {/* <option value="German">German</option> */}
