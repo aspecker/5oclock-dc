@@ -20,6 +20,11 @@
     * place info on top of picture rather than below
     * display multiple bars per row on large screens
 
+* submit form
+    * instead of the user inputting address, zip etc, integrate the yelp scraper to pull that data
+    * allow users to upload their own photograph
+    * take image link and download it into our database(Possible?)
+
 #DONES
 * add ability to search all neighborhoods
 * change existing 'Pub' cuisine entries to 'Pub Fare'
