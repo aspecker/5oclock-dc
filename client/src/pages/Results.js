@@ -140,8 +140,9 @@ class Results extends Component {
               {/* If there are no bars found in the filter, render nothing found
                   Else render the bar cards */}
               {this.state.bars.length === 0 ? (
-                <div>
-                  <h1> Nothing Found </h1>
+                <div className='noBarsFound'>
+                  <h1> No Bars Found </h1>
+                  <p> There are no bars that match your search criteria in this neighborhood.  Please try again or search in all bars category in the neighborhood selection.</p>
                   <Button handleClick={() => window.location.reload()}>
                     Clear Filter
                   </Button>

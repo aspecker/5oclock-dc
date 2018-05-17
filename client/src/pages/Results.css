@@ -29,10 +29,27 @@ a:visited {
   margin-left: 20px;
 }
 
+.noBarsFound {
+  border: 10px solid rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  margin: 0 20px;
+}
+
+.noBarsFound h1 {
+  text-shadow: none;
+  color: black;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 500px) {
 
   .results-container {
     max-width: 450px;
+  }
+
+  .noBarsFound {
+    margin: 0 60px;
   }
 
 }
@@ -42,6 +59,9 @@ a:visited {
   .results-container {
     max-width: 650px;
   }
+  .noBarsFound {
+    margin: 0 130px;
+  }
 
 }
 
@@ -49,6 +69,10 @@ a:visited {
 @media screen and (min-width: 1024px) {
 
   .results-container {
+    max-width: 850px;
+  }
+  .noBarsFound {
+    margin: 0 210px;
     max-width: 850px;
   }
 
