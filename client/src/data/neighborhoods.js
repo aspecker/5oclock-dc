@@ -1,7 +1,7 @@
 const neighborhoods = [
   {
     name: "All Bars",
-    image: "https://media.giphy.com/media/l0HUer50UJu0qJeDu/giphy.gif"
+    image: "/assets/images/neighborhoods/all-bars.jpeg"
   },
   {
     name: "Adam's Morgan",
