@@ -2,7 +2,7 @@
 footer {
   color: #fff;
   background-color: #900;
-  height: 200px;
+  height: 130px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -11,16 +11,16 @@ footer {
 
 }
 
-footer h3 {
-  text-align: center;
-  font-size: 2rem;
-
+footer p {
+  color: #000;
+  font-family: sans-serif;
 }
 
 .media {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  margin-top: 80px;
 }
 
 .media:hover {
@@ -29,5 +29,19 @@ footer h3 {
 
 .media img {
   margin: 0 15px;
-  width: 55px;
+  width: 45px;
+}
+
+@media screen and (min-width: 500px) {
+  footer {
+    height: 160px;
+  }
+  .media img {
+    width: 55px;
+  }
+}
+@media screen and (min-width: 700px) {
+  footer {
+    height: 200px;
+  }
 }

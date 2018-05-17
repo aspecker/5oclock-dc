@@ -15,11 +15,12 @@ const Footer = () => (
         </a>
       </div>
       <div>
-        <a href="mailto:adriansander@hotmail.com?subject=5 O' Clock DC">
+        <a href="mailto:5oclockdc@gmail.com?subject=5 O' Clock DC">
         <img src="/assets/images/mail.png" alt="email"/>
         </a>
       </div>
     </div>
+    <p>&copy; Copyright 5 O'Clock DC 2018</p>
   </footer>
 )
 
