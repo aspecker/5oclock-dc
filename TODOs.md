@@ -13,6 +13,12 @@
 * data clean up
     * go back and change bedrock billiards, board room to N/A
 
+* map functionality
+    * decide on a map tech to use
+
+* results page layout
+    * place info on top of picture rather than below
+    * display multiple bars per row on large screens
 
 #DONES
 * add ability to search all neighborhoods
