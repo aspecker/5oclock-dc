@@ -13,6 +13,9 @@
     margin: 0;
     padding: 0 20px 30px 20px;
   }
+  #emailUs{
+    color: #900;
+  }
 
   .about-us h2 {
     color: #900;
