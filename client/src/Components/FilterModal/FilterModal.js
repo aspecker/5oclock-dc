@@ -257,14 +257,15 @@ class FilterModal extends Component {
               </form>
             </div> */}
             <div className="buttonDiv">
-              <Button style={buttonStyle} handleClick={this.handleFormSubmit}>
-                Submit
-              </Button>
 
               {/* <Link to={`/results/${this.props.neighborhood}`}> */}
               <Button style={buttonStyle} handleClick={this.handleFormReset}>
                 {" "}
                 Reset
+              </Button>
+
+              <Button style={buttonStyle} handleClick={this.handleFormSubmit}>
+                Submit
               </Button>
               {/* </Link> */}
             </div>
