@@ -200,6 +200,7 @@ class SubmitForm extends Component {
               value={this.state.cuisine}
             >
               <option defaultValue>Choose a Cuisine Type</option>
+              <option value="Drinks Only">Drinks Only</option>
               <option value="Fusion">Asian Fusion</option>
               <option value="Caribbean">Caribbean</option>
               <option value="Chinese">Chinese</option>
