@@ -30,9 +30,19 @@ const resultsBtn = {
 };
 
 class Results extends Component {
-  state = {
-    bars: []
-  };
+  // state = {
+  //   bars: []
+  // };
+
+  constructor(props){
+    super(props);
+    this.state = {
+      bars: [],
+      selectedBar: ''
+    }
+    this.handleChange = this.handleChange.bind(this)
+  }
+
 
   componentDidMount() {
     window.scrollTo(0, 100);
@@ -105,6 +115,11 @@ class Results extends Component {
     }
   }
 
+
+    handleChange (e) {
+      this.setState({selectedBar: e.target.value})
+    }
+
   render() {
     return (
       <Wrapper style={wrapperStyle}>
@@ -135,6 +150,19 @@ class Results extends Component {
         </Hero>
         <div className="card-results-wrapper">
           <Container>
+            <div className="input-group">
+              <span className="select-wrapper">
+                <select value={this.state.value} onChange={this.handleChange} className="form-control custom-select no-radius" id="bar-name">
+                  <option defaultValue>Choose a Bar</option>
+                    {this.state.bars.map(bar =>
+                  <option  value={bar._id} key={bar._id}>{bar.name}</option>
+                )}
+                </select>
+              </span>
+              <Link to={`/bar/${this.state.selectedBar}`}>
+                <button className='bar-submit'>Submit</button>
+              </Link>
+            </div>
             <Row>
               {/* Filter Conditional */}
               {/* If there are no bars found in the filter, render nothing found
