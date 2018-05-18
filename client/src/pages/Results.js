@@ -115,7 +115,7 @@ class Results extends Component {
     }
   }
 
-
+// handle selection of bar from dropdown
     handleChange (e) {
       this.setState({selectedBar: e.target.value})
     }
@@ -150,7 +150,7 @@ class Results extends Component {
         </Hero>
         <div className="card-results-wrapper">
           <Container>
-            <div className="input-group">
+            <div className="input-group barInput">
               <span className="select-wrapper">
                 <select value={this.state.value} onChange={this.handleChange} className="form-control custom-select no-radius" id="bar-name">
                   <option defaultValue>Choose a Bar</option>
@@ -160,7 +160,7 @@ class Results extends Component {
                 </select>
               </span>
               <Link to={`/bar/${this.state.selectedBar}`}>
-                <button className='bar-submit'>Submit</button>
+                <button className='hood-submit'>Submit</button>
               </Link>
             </div>
             <Row>
