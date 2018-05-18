@@ -1,7 +1,7 @@
 .dropDown {
   z-index: 2;
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   margin-top: 40px;
   transform: translate(-50%, -50%);
@@ -16,6 +16,11 @@ h1 {
   text-shadow: 0 0 5px magenta, 0 0 10px magenta;
 }
 
+.homeTitle {
+  font-size: 2.2em!important;
+  text-shadow: 0 0 5px magenta, 0 0 10px coral!important;
+}
+
 @media screen and (min-width:500px) {
   h1 {
     font-size: 2.5em;
@@ -23,6 +28,9 @@ h1 {
   }
   .dropDown {
       top: 25%;
+  }
+  .homeTitle {
+    font-size: 3.1em!important;
   }
 }
 
@@ -34,7 +42,9 @@ h1 {
 
   .dropDown {
       top: 30%;
-
+  }
+  .homeTitle {
+    font-size: 3.8em!important;
   }
 }
 
@@ -45,7 +55,9 @@ h1 {
   }
 
   .dropDown {
-      top: 40%;
-
+      top: 32%;
+  }
+  .homeTitle {
+    font-size: 4.4em!important;
   }
 }

@@ -1,17 +1,17 @@
 .wrapper {
   min-height: 100%;
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 
 @media screen and (min-width: 500px) {
   .wrapper {
-    padding-top: 100px;
+    /* padding-top: 100px; */
   }
 }
 
 @media screen and (min-width: 700px) {
   .wrapper {
-    padding-top: 130px;
+    /* padding-top: 130px; */
   }
 }
