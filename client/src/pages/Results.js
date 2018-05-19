@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Hero from "../Components/Hero";
 import BarCard from "../Components/BarCard";
-import Footer from "../Components/Footer";
 import FilterModal from "../Components/FilterModal";
 import { Button } from "../Components/Search/Button";
 import API from "../utils/API";
@@ -158,7 +157,7 @@ class Results extends Component {
               )}{" "}
               {/* End of Filter Conditional */}
         </div>
-        <Footer />
+
       </div>
     ); // end of return
   } // end of render

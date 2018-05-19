@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-
 import EachBar from "./EachBar";
 import API from "../utils/API";
-import Footer from "../Components/Footer";
 
 class BarPage extends Component {
   state ={}
@@ -53,7 +51,6 @@ class BarPage extends Component {
             menuLink={this.state.menuLink}
             onClick={this.state.onClick}
           />
-        <Footer />
       </div>
     );
   }

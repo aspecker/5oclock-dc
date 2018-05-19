@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import Hero from "../Components/Hero";
 import About from './About';
 import NeighborhoodDropDown from "../Components/Search/NeighborhoodDropDown";
-import Footer from "../Components/Footer";
 import HeroPic from './slide5.jpg';
 
 class Home extends Component {
@@ -21,7 +20,6 @@ class Home extends Component {
           </div>
         </Hero>
         <About />
-        <Footer />
       </div>
     )
 }

@@ -5,6 +5,7 @@ import BarPage from './pages/BarPage'
 import Results from './pages/Results'
 import SubmitForm from './pages/SubmitForm'
 import NotFound from './pages/NotFound'
+import Footer from './Components/Footer'
 // images
 import FivePM from './five-pm-logo.png';
 
@@ -24,6 +25,7 @@ const App = () =>(
         <Route component={NotFound}/>
       </Switch>
     </Router>
+    <Footer />
   </div>
 )
 

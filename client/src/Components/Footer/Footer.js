@@ -1,9 +1,8 @@
 import React from "react";
-import "./Footer.css";
 
 const Footer = () => (
-  <footer className="footer-icons">
-    <div className='media'>
+  <footer>
+    <div>
       <div>
         <a href="https://github.com/aspecker/5oclock-dc">
         <img src="/assets/images/github-logo-icon-2.png" alt="github"/>
