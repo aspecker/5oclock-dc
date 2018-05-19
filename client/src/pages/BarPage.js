@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 
 import EachBar from "./EachBar";
-import Wrapper from "../Components/Wrapper";
-// import EachBar from "../Components/EachBar";
 import API from "../utils/API";
 import Footer from "../Components/Footer";
-import Logo from "../Components/Logo";
 
 class BarPage extends Component {
   state ={}
@@ -38,8 +35,7 @@ class BarPage extends Component {
 
   render() {
     return (
-      <Wrapper>
-        <Logo />
+      <div>
         <EachBar
             name={this.state.name}
             image={this.state.image}
@@ -58,7 +54,7 @@ class BarPage extends Component {
             onClick={this.state.onClick}
           />
         <Footer />
-      </Wrapper>
+      </div>
     );
   }
 }

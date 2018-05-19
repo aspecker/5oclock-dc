@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import neighborhoods from "../../data/neighborhoods";
-import Logo from "../../Components/Logo";
 let defaultState = {
   name: "",
   address: "",
@@ -69,7 +68,6 @@ class SubmitForm extends Component {
   render() {
     return (
       <div>
-        <Logo />
         <form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="name"> Restaurant Name *</label>

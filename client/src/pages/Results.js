@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Wrapper from "../Components/Wrapper";
 import Hero from "../Components/Hero";
 import BarCard from "../Components/BarCard";
 import Footer from "../Components/Footer";
@@ -8,7 +7,6 @@ import { Button } from "../Components/Search/Button";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
 import neighborhoods from "../data/neighborhoods.js";
-import Logo from "../Components/Logo";
 
 class Results extends Component {
   state = {
@@ -87,8 +85,7 @@ class Results extends Component {
 
   render() {
     return (
-      <Wrapper>
-        <Logo/>
+      <div>
         <Hero>
           <h1>{this.props.match.params.neighborhood}</h1>
           <div>
@@ -162,7 +159,7 @@ class Results extends Component {
               {/* End of Filter Conditional */}
         </div>
         <Footer />
-      </Wrapper>
+      </div>
     ); // end of return
   } // end of render
 } // end of class Results extends Component
