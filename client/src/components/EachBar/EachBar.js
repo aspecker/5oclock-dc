@@ -23,7 +23,7 @@ const EachBar = props => (
             <p>{props.cuisine}</p>
             <p className='menu'><a href={props.menuLink}>Menu</a></p>
             <Link to ={`/results/${props.neighborhood}`}>
-            <button type="submit" onClick={props.handleClick} className="btn btn-default">
+            <button type="submit" onClick={props.onClick} className="btn btn-default">
               Back to Results
             </button>
             </Link>

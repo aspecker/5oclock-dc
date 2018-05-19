@@ -1,13 +1,12 @@
 import React from "react";
-import "./About.css";
 import Row from "../../Components/Row";
 import Col from "../../Components/Col"
 
 
 const About = props => (
-  <Row className='aboutRow' align='center'>
+  <Row>
     <Col size='sm-12'>
-      <div className="about-us">
+      <div>
         <h2>
         About Us
         </h2>

@@ -1,16 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import ScrollLock from "react-scrolllock";
-import "./FilterModal.css";
 import { Button } from "../../Components/Search";
-
-const buttonStyle = {
-  height: "40px",
-  width: "120px",
-  marginTop: "30px",
-  marginLeft: "20px",
-  marginRight: "20px"
-};
 
 class FilterModal extends Component {
   state = {};
@@ -259,12 +249,12 @@ class FilterModal extends Component {
             <div className="buttonDiv">
 
               {/* <Link to={`/results/${this.props.neighborhood}`}> */}
-              <Button style={buttonStyle} handleClick={this.handleFormReset}>
+              <Button onClick={this.handleFormReset}>
                 {" "}
                 Reset
               </Button>
 
-              <Button style={buttonStyle} handleClick={this.handleFormSubmit}>
+              <Button onClick={this.handleFormSubmit}>
                 Submit
               </Button>
               {/* </Link> */}
