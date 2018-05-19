@@ -15,7 +15,7 @@ class Home extends Component {
       <div>
         <Hero backgroundImage={HeroPic}>
           <div>
-            <h1 className='homeTitle'>Find Your Happy Hour</h1>
+            <h1>Find Your Happy Hour</h1>
             <NeighborhoodDropDown />
           </div>
         </Hero>
