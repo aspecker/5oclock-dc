@@ -17,19 +17,18 @@ class NeighborhoodDropDown extends Component {
 
   render () {
   return (
-  <div>
-    <span>
-      <select value={this.state.value} onChange={this.handleChange} id="hood-name">
-        <option defaultValue>Choose a Neighborhood</option>
-          {neighborhoods.map(neighborhood =>
-        <option value={neighborhood.name} key={neighborhood.name}>{neighborhood.name}</option>
-      )}
-      </select>
-    </span>
-    <Link to={`/results/${this.state.selectedNeighborhood}`}>
-      <button >Submit</button>
-    </Link>
-  </div>
+    <div className="field has-addons has-addons-centered">
+      <div className="select">
+        <select value={this.state.value} onChange={this.handleChange} id="hood-name">
+          <option defaultValue>Choose a Neighborhood</option>
+            {neighborhoods.map(neighborhood => <option value={neighborhood.name} key={neighborhood.name}>{neighborhood.name}
+          </option>)}
+          </select>
+      </div>
+      <Link className="control" to={`/results/${this.state.selectedNeighborhood}`}>
+        <button className="button is-primary" >Submit</button>
+      </Link>
+    </div>
   )
 }
   }

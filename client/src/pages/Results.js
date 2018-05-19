@@ -86,7 +86,7 @@ class Results extends Component {
     return (
       <div>
         <Hero>
-          <h1>{this.props.match.params.neighborhood}</h1>
+          <h1 className="title is-1">{this.props.match.params.neighborhood}</h1>
           <div>
             <Link to="/">
               <Button> Change Neighborhood</Button>
