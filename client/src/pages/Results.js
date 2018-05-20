@@ -85,7 +85,10 @@ class Results extends Component {
   render() {
     return (
       <div>
-        <Hero>
+        <Hero backgroundImage={
+            this.findNeighborhoodImage(this.props.match.params.neighborhood)[0]
+              .image
+          }>
           <h1 className="title is-1">{this.props.match.params.neighborhood}</h1>
           <div>
             <Link to="/">
@@ -103,7 +106,7 @@ class Results extends Component {
             neighborhood={this.props.match.params.neighborhood}
           />
         </Hero>
-        <div>
+        <div className="columns is-tablet">
               {/* Filter Conditional */}
               {/* If there are no bars found in the filter, render nothing found
                   Else render the bar cards */}
@@ -117,7 +120,7 @@ class Results extends Component {
                 </div>
               ) : (
                 this.state.bars.map(bar => (
-                    <div key={bar._id} >
+                    <div className="column is-one-third-desktop is-half-tablet" key={bar._id} >
                       <div>
                         {/* modal conditional */}
                         {/* If the modal is not open, render the bar cards as links
