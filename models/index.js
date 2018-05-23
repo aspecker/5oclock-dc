@@ -1,5 +1,5 @@
 module.exports = {
-    Bars: require("./Bars"),
-    User: require("./User")
-  };
-  
+  Bars: require('./Bars'),
+  User: require('./User'),
+};
+
