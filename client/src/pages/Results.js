@@ -106,7 +106,7 @@ class Results extends Component {
             neighborhood={this.props.match.params.neighborhood}
           />
         </Hero>
-        <div className="columns is-tablet">
+        <div className="columns">
               {/* Filter Conditional */}
               {/* If there are no bars found in the filter, render nothing found
                   Else render the bar cards */}
