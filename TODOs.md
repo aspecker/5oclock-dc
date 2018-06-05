@@ -34,6 +34,10 @@
     * instead of the user inputting address, zip etc, integrate the yelp scraper to pull that data
     * allow users to upload their own photograph
     * take image link and download it into our database(Possible?)
+    
+* data sanitization
+   * add datafield for all displayed entries such as "displayed: true" and only display ones where value is true
+   * have submit form apply a "displayed: false" value until a developer approves the entry
 
 #DONES
 * add ability to search all neighborhoods
