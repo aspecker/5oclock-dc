@@ -4,7 +4,7 @@ const neighborhoods = [
     image: "/assets/images/neighborhoods/all-bars.jpeg"
   },
   {
-    name: "Adam's Morgan",
+    name: "Adams Morgan",
     image: "/assets/images/neighborhoods/admo.jpg"
   },
   {
