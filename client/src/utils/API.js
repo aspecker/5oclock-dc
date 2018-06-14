@@ -1,39 +1,44 @@
-import axios from "axios";
+import axios from 'axios';
+import yelp from 'yelp-fusion';
 
 // The getRecipes method retrieves recipes from the server
-// It accepts a "query" or term to search the recipe api for
+// It accepts a 'query' or term to search the recipe api for
 export default {
-  //authentication
-  signUp: function(obj) {
-    return axios.post("/api/user/signup", obj);
+  // authentication
+
+  signUp(obj) {
+    return axios.post('/api/user/signup', obj);
   },
-  logIn: function(obj) {
-    return axios.post("/api/user/login", obj);
+  logIn(obj) {
+    return axios.post('/api/user/login', obj);
   },
-  logOut: function() {
-    return axios.get("/logout");
+  logOut() {
+    return axios.get('/logout');
   },
-  currentUser: function() {
-    return axios.get("api/user/current");
+  currentUser() {
+    return axios.get('api/user/current');
   },
-  //bars
-  barFindOne: function(id) {
+  // bars
+  barFindOne(id) {
     return axios.get(`/api/bars/${id}`);
   },
-  barFindAll: function() {
-    return axios.get("/api/bars/data");
+  barFindAll() {
+    return axios.get('/api/bars/data');
   },
-  barNew: function(obj) {
-    return axios.post("/api/bars/new", obj);
+  barNew(obj) {
+    return axios.post('/api/bars/new', obj);
   },
-  barUpdate: function(id, obj) {
+  barUpdate(id, obj) {
     return axios.put(`/api/bars/${id}`, obj);
   },
-  //queries
-  queryNeighborhood: function(query) {
+  // queries
+  queryNeighborhood(query) {
     return axios.get(`/api/neighborhood/${query}`);
   },
-  queryFilters: function(neighborhood, price, cuisine) {
+  queryFilters(neighborhood, price, cuisine) {
     return axios.get(`/api/query/${neighborhood}/${price}/${cuisine}`);
+  },
+  yelpInfo(bar){
+
   }
 };
