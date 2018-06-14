@@ -39,6 +39,6 @@ export default {
     return axios.get(`/api/query/${neighborhood}/${price}/${cuisine}`);
   },
   yelpInfo(bar){
-
+    return ()
   }
 };
