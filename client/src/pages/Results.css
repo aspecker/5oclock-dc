@@ -1,3 +1,10 @@
+.container {
+  padding-top: 80px!important;
+}
+.barInput {
+  margin-bottom: 20px!important;
+}
+
 .results-container {
   max-width: 350px;
   margin-bottom: 30px;
@@ -42,8 +49,32 @@ a:visited {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 500px) {
 
+
+/* .bar-submit {
+  background-color: #900;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  color: #fff;
+  font-size: 1em;
+  height: 30px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+  .bar-submit:hover {
+    color: #900;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px solid #900;
+  } */
+
+@media screen and (min-width: 500px) {
+  .container {
+    padding-top: 90px!important;
+  }
+  .barInput {
+    margin-bottom: 30px!important;
+  }
   .results-container {
     max-width: 450px;
   }
@@ -62,6 +93,12 @@ a:visited {
   .noBarsFound {
     margin: 0 130px;
   }
+  .container {
+    padding-top: 100px!important;
+  }
+  .barInput {
+    margin-bottom: 40px!important;
+  }
 
 }
 
@@ -74,6 +111,12 @@ a:visited {
   .noBarsFound {
     margin: 0 210px;
     max-width: 850px;
+  }
+  .container {
+    padding-top: 105px!important;
+  }
+  .barInput {
+    margin-bottom: 45px!important;
   }
 
 }
